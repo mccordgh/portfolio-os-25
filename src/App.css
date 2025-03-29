@@ -1,0 +1,40 @@
+/* @font-face {
+  font-family: smallestPixel;
+  src: url('./fonts/smallest_pixel-7.ttf');
+} */
+
+div.App {
+  /* background: linear-gradient(#2c73ba, #5A7B9B); */
+  background-color: #0978B2;
+  color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+}
+
+h1 {
+  display: inline-block;
+}
+
+.text--white {
+  color: white;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; 
+}
+
+/* ::-webkit-scrollbar {
+  -webkit-appearance: scrollbarthumb-horizontal;
+  width: 10px;
+} */

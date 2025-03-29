@@ -1,0 +1,264 @@
+{
+	"data": [
+		{
+			"name": "Games",
+			"directory": "game_dev/",
+			"list": [
+				{
+					"name": "Bee Budz",
+					"shortText": "Fly around, collect pollen, help your bee budz!",
+					"description": [
+						"Written in Pico-8",
+						"Collaboration for Global Game Jam 2019!",
+						"I did the sfx, music, graphics (bees inspired by Bennett Foddy's pico-8 game \"Plan Bee\"), and just enough coding to lay out the sections of the outer world"
+					],
+					"links": [
+						{
+							"url": "https://www.lexaloffle.com/bbs/?tid=33064",
+							"text": "Play Bee Budz!"
+						},
+						{
+							"url": "https://github.com/global-game-jam-2019-team/the_letter_bee",
+							"text": "View Github Source"
+						}
+					],
+					"iconImage": "bee_budz_icon.png",
+					"headerImage": "bee_budz_header.png"
+				},
+				{
+					"name": "The CORE",
+					"shortText": "A procedurally generated adventure!",
+					"description": [
+						"Written in JavaScript",
+						"The CORE was written for the yearly code-golfing competition js13kgames, running from August 13 2018 to September 13 2018. The goal of this competition is to submit a full game made within a month, with all assets, libraries, etc coming in at under 13Kb compressed and able to run offline. The theme of this competition was \"offline.\"",
+						"You are one of many workers trapped in a factory and forced to work on THE CORE, a sinister mind control machine. The first version of THE CORE has everyone in the factory (workers, guards, managers) under it's control. The second version will enslave the world! Find the four keys, and use the on THE CORE to take it offline for good!",
+						"For a fun surprise, make sure to speak to a guard after you have taken the machine offline :)"
+					],
+					"links": [
+						{
+							"url": "https://mccordgh.github.io/the_line_js13kgames_2018/",
+							"text": "Play The CORE!"
+						},
+						{
+							"url": "https://github.com/mccordgh/the_line_js13kgames_2018",
+							"text": "View Github Source"
+						},
+						{
+							"url": "https://github.com/mccordgh/the_line_js13kgames_2018#post-mortem",
+							"text": "Post-mortem write up"
+						},
+						{
+							"url": "https://js13kgames.com",
+							"text": "js13kgames.com"
+						}
+					],
+					"iconImage": "the_core_icon.png",
+					"headerImage": "the_core_header.png"
+				},
+				{
+					"name": "Defend The Castle",
+					"shortText": "A twist on the classic tower defense genre!",
+					"description": [
+						"Written in JavaScript",
+						"Defend the Castle is a fast-paced arcade-style video game. The engine and game were written from scratch, and it runs right in your browser (best on Firefox and Google Chrome).",
+						"I wanted to create this game from scratch, to better understand how game engines work under the hood. The biggest challenge surfaced when I discovered that the tutorial I was following didn't actually bring the game to a basic completion. The series had left me with a solid foundation, no doubt, consisting of a tile map loader, a game camera, keyboard input and a hero to control, some basic collision detection, and some entity handling. The rest was up to me. Did I really want to stick this through, knowing it would be extremely challenging? In the end, I had to fully immerse myself in to this code base, and really learn how it worked in order to achieve the results that I desired. It was a wonderful learning experience."
+					],
+					"links": [
+						{
+							"url": "https://mccordgh.github.io/Defend_The_Castle",
+							"text": "Play Defend The Castle!"
+						},
+						{
+							"url": "https://www.github.com/mccordgh/Defend_The_Castle",
+							"text": "View Github Source"
+						}
+					],
+					"iconImage": "defend_the_castle_icon.png",
+					"headerImage": "defend_the_castle_header.png"
+				},
+				{
+					"name": "Golden Beak Golf",
+					"shortText": "Golfing meets flappy bird!",
+					"description": [
+						"Written in Pico-8 fantasy console.",
+						"Golden Beak Golf v1.0 was written during Ludum Dare 41 game jam taking place April 20th to April 23rd, 2018. The theme was \"Combine two incompatible genres\".",
+						"Golden Beak Golf v1.1 was an update to smooth out a couple of things:",
+						"• Main menu redesign.",
+						"• Graphics tweaks, and more animated sprites in background.",
+						"• Press Z to replay working properly."
+					],
+					"links": [
+						{
+							"url": "https://www.lexaloffle.com/bbs/?tid=31164",
+							"text": "Play Golden Beak Golf!"
+						},
+						{
+							"url": "https://github.com/mccordgh/all_pico_8_carts/blob/master/carts/ludum_dare_41/ld41_golf_flappy_bird.p8",
+							"text": "View Github Source"
+						}
+					],
+					"iconImage": "golden_beak_golf_icon.png",
+					"headerImage": "golden_beak_golf_header.png"
+				},
+				{
+					"name": "Waves '87: Business Cruizin'",
+					"shortText": "Take a cruise. No seriously, TAKE A CRUISE.",
+					"description": [
+						"Written in Python with the Ren'Py graphic novel engine.",
+						"This game was made during Global Game Jam 2017, which took place over 48 hour weekend period in January of 2017.",
+						"All sounds effects and music were recorded during Global Game Jam 2017",
+						"Kawa is your typical business man. Loathed by his peers and about to be fired from his job, a chance encounter with pirates may just turn his life around...",
+						"Builds of the game are available below for Linux, Mac, and PC."
+					],
+					"links": [
+						{
+							"url": "https://mccordinator.itch.io/waves-87-business-cruizin",
+							"text": "Play Waves '87 Business Cruizin'!"
+						},
+						{
+							"url": "https://github.com/GGJ-2017-waves-team/waves87",
+							"text": "View Github Source!"
+						}
+					],
+					"iconImage": "waves_87_icon.png",
+					"headerImage": "waves_87_header.png"
+				},
+				{
+					"name": "Battle Bots",
+					"shortText": "Local two player battle to the robot death!",
+					"description": [
+						"Written in HTML5, CSS, and JavaScript using Grunt, Browserify, and jQuery.",
+						"Each player chooses one of six classes (Johnny5, Wall-E, R2D2, R2BRO2, Bender, Baymax).",
+						"This project was an exercise in prototypal inheritance. One of the first \"games\" I ever made at Nashville Software School :)"
+					],
+					"links": [
+						{
+							"url": "https://mccordgh.github.io/battlebots_mjd_quiz_copy/",
+							"text": "View App!"
+						},
+						{
+							"url": "https://www.github.com/mccordgh/battlebots_mjd_quiz_copy",
+							"text": "View Github Source"
+						}
+					],
+					"iconImage": "battle_bots_icon.png",
+					"headerImage": "battle_bots_header.png"
+				}
+			]
+		},
+		{
+			"name": "Social Media",
+			"directory": "social_media/",
+			"list": [
+				{
+					"iconImage": "github_icon.png",
+					"name": "Github",
+					"activeLink": "https://github.com/mccordgh"
+				},
+				{
+					"iconImage": "itchio_icon.png",
+					"name": "Itch.io",
+					"activeLink": "https://mccordinator.itch.io/"
+				},
+				{
+					"iconImage": "linkedin_icon.png",
+					"name": "LinkedIn",
+					"activeLink": "https://www.linkedin.com/in/mccordinator/"
+				},
+				{
+					"iconImage": "steam_icon.png",
+					"name": "Steam",
+					"activeLink": "https://steamcommunity.com/id/mccordinator"
+				},
+				{
+					"iconImage": "twitter_icon.png",
+					"name": "Twitter",
+					"activeLink": "https://twitter.com/mattmccordmattm"
+				}
+			]
+		},
+		{
+			"name": "Music",
+			"directory": "music/",
+			"list": [
+				{
+					"name": "Future Unlimited",
+					"shortText": "\"Throwback rarely feels this genuine, a real accomplishment amongst so much nostalgia.\" - Adam Kivel, consequenceofsound.net",
+					"description": [
+						"Wrote and recorded songs with the band, toured the country, and played bass guitar (and sometimes keyboards).",
+						"We played festivals such as Bonaroo, Austin City Limits, Art Basel, and SXSW.",
+						"We have a music video directed by Shia LaBeouf for the single, \"Haunted Love\"",
+						"We self-released two EPs and multiple singles."
+					],
+					"links": [
+						{
+							"url": "https://soundcloud.com/future-unlimited",
+							"text": "Hear the music"
+						},
+						{
+							"url": "https://www.youtube.com/watch?v=jo2Z9DygPxY",
+							"text": "Live from the Basement / Nashville, TN 2014"
+						}
+					],
+					"iconImage": "future_unlimited_icon.jpg",
+					"headerImage": "future_unlimited_header.jpg"
+				},
+				{
+					"name": "Scatter the Ashes",
+					"shortText": "\"STA has potential to remind us 20-somethings why we decided to like music in the first place.\" - Jennifer R. Vertullo, epitaph.com",
+					"description": [
+						"Played bass guitar, toured the country and some of Canada, wrote and recorded music with the band.",
+						"We played a few festivals including a stint on the Warped Tour.",
+						"We were featured on Punk-O-Rama volumes 9 and 10, the last ever Punk-O-Rama released by Epitaph.",
+						"We released a full length LP through Epitaph records."
+					],
+					"links": [
+						{
+							"url": "https://open.spotify.com/artist/4BgMsEFXpb7U1uFdtaPzuD",
+							"text": "Hear the music"
+						},
+						{
+							"url": "https://www.youtube.com/watch?v=CpEDzLKOEZc",
+							"text": "Live from the Epitaph Tour 2005"
+						}
+					],
+					"iconImage": "scatter_the_ashes_icon.jpg",
+					"headerImage": "scatter_the_ashes_header.jpg"
+				},
+				{
+					"name": "Mother/Father",
+					"shortText": "\" Mother/Father definitely achieves a small sense of authenticity with their purist approach to late '70s gothic rock.\" - nashvillescene.com",
+					"description": [
+						"Toured the country playing bass guitar, and wrote and recorded music.",
+						"Produced and managed by Jacquire King (known for his work with Kings of Leon, Modest Mouse, Tom Waits, and more) and Jon Stinson.",
+						"Released two EPs.",
+						"Opened for Kings of Leon and White Lies at the Bridgestone Arena in Nashville, TN."
+					],
+					"links": [
+						{
+							"url": "https://www.youtube.com/watch?v=3tasyOiLx0U",
+							"text": "Live (Acoustic) on Balcony TV"
+						}
+					],
+					"iconImage": "mother_father_icon.jpg",
+					"headerImage": "mother_father_header.jpg"
+				},
+				{
+					"name": "MCCORDINATOR",
+					"shortText": "",
+					"description": [
+						"Solo work learning how to record music in a small, self-made, home studio."
+					],
+					"links": [
+						{
+							"url": "https://soundcloud.com/mmmmmusic",
+							"text": "SoundCloud demos"
+						}
+					],
+					"iconImage": "mccordinator_icon.png",
+					"headerImage": "mccordinator_header.png"
+				}
+			]
+		}
+	]
+}

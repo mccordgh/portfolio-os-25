@@ -1,0 +1,149 @@
+div.desktopGroupTitle {
+    display: inline-block;
+    cursor: pointer;
+    height: 8rem;
+    width: 12rem;
+}
+
+div.desktopGroupFolder {
+    background-color: #0978B2;
+    cursor: pointer;
+    height: 10rem;
+    margin: 0;
+    position: relative;
+    width: 12.2rem;
+    z-index: 10;
+}
+
+div.desktopAppGroupWrapper.expanded div.desktopGroupFolder div.desktopGroupFolder_front {
+    top: 2.3rem;
+    transform: rotateX(-35deg);
+}
+    
+div.desktopGroupFolder_back {
+    background-color: #B26B00;
+    border-radius: 1rem 0 0 1rem;
+    display: inline-block;
+    height: calc(100% - 5rem);
+    left: 4rem;
+    position: absolute;
+    top: 1rem;
+    width: 4rem;
+}
+
+div.desktopGroupFolder_back::before {
+    content: '';
+    border-left: 2rem solid transparent;
+    border-bottom: 2rem solid #B26B00;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    width: 0;
+}
+
+div.desktopGroupFolder_back::after {
+    background-color: #B26B00;
+    border-radius: 0 1rem 0 0;
+    content: '';
+    display: inline-block;
+    height: 6rem;
+    left: 4rem;
+    position: absolute;
+    top: -1rem;
+    width: 4rem;
+}
+
+/* div.desktopGroupFolder_front {
+    background-color: #FFA419;
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    width: 8rem;
+} */
+
+div.desktopGroupFolder_front {
+    background-color: #FFA419;
+    border-radius: 1rem 0 0 1rem;
+    display: inline-block;
+    height: calc(100% - 5rem);
+    left: 3.8rem;
+    position: absolute;
+    top: 2rem;
+    -webkit-transition: top 0.4s ease-out, -webkit-transform 0.4s ease-out;
+    transition: top 0.4s ease-out, -webkit-transform 0.4s ease-out;
+    -o-transition: transform 0.4s ease-out, top 0.4s ease-out;
+    transition: transform 0.4s ease-out, top 0.4s ease-out;
+    width: 4.2rem;
+}
+
+div.desktopGroupFolder_front::before {
+    content: '';
+    border-left: 2rem solid transparent;
+    border-bottom: 2rem solid #FFA419;
+    height: 0;
+    position: absolute;
+    right: 0.2rem;
+    top: -1rem;
+    width: 0;
+}
+
+div.desktopGroupFolder_front::after {
+    background-color: #FFA419;
+    border-radius: 0 1rem 1rem 0;
+    content: '';
+    display: inline-block;
+    height: 6rem;
+    left: 4rem;
+    position: absolute;
+    top: -1rem;
+    width: 4.4rem;
+}
+
+h1.desktopGroupTitle {
+    background-color: whitesmoke;
+    color: #B26B00;
+    display: block;
+    font-size: 1.2rem;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 1.6rem;
+    width: 8.4rem;
+    z-index: 2;
+}
+
+div.desktopAppGroupWrapper {
+    height: 9rem;
+    /* transition: height 0.3s ease-out; */
+    width: 100%;
+}
+
+/* div.desktopAppGroupWrapper.expanded { */
+    /* height: 13rem; */
+/* } */
+
+div.desktopAppWrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 7rem;
+    left: -40rem;
+    overflow: hidden;
+    position: relative;
+    top: -10rem;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+    width: calc(100% - 12rem);
+}
+
+div.desktopAppGroupWrapper.expanded div.desktopAppWrapper {
+    /* background-color: orange; */
+    /* max-width: 100%; */
+    left: 13.4rem;
+    visibility: visible;
+}
+
+div.desktopAppGroupWrapper.expanded div.desktopAppWrapper div.desktopApp div.desktopAppBackground {
+    transform: rotateZ(720deg);
+}
