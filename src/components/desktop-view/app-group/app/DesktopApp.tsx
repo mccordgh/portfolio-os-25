@@ -6,20 +6,20 @@ import './DesktopApp.css';
 type DesktopAppProps = {
     id: number;
     group: string;
-    iconImage: string;
+    iconImagePath: string;
     activeLink?: string;
     name?: string;
 }
 
 function DesktopApp (props: DesktopAppProps) {
-    const { id, group, iconImage, activeLink, name } = props;
+    const { id, group, iconImagePath, activeLink, name } = props;
     const { setSelectedApp } = useContext(AppsContext);
 
 
     const desktopAppStyleObject = () => {
         return {
             // backgroundImage: `url(${this.props.iconImage}), linear-gradient(to bottom right, ${this.props.bgColor} 30%, white 150%)`,
-            backgroundImage: `url(${iconImage})`,
+            backgroundImage: `url(${iconImagePath})`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',

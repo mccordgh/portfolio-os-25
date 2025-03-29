@@ -1,0 +1,41 @@
+div.desktop_banner-container {
+    background-color: #0065B2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 2rem;
+    font-size: 0.9rem;
+    left: 0;
+    padding: 0.5rem;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+div.desktop_banner-container span {
+     padding: 0.5rem 1rem;
+}
+
+div.desktop_banner-container span.banner-left--highlights,
+div.desktop_banner-container span.banner-left--highlights a {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.desktop_banner-container span.banner-left--highlights:hover {
+    background-color: #0978B2;
+}
+
+div.desktop_banner-left {
+    left: 3rem;
+    position: absolute;
+}
+
+div.desktop_banner-right {
+    position: absolute;
+    right: 3rem;
+    top: 0.5rem;
+}

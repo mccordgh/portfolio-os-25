@@ -2,7 +2,7 @@
 	"data": [
 		{
 			"name": "Games",
-			"directory": "game_dev/",
+			"directory": "game_dev",
 			"list": [
 				{
 					"name": "Bee Budz",
@@ -36,7 +36,7 @@
 					],
 					"links": [
 						{
-							"url": "https://mccordgh.github.io/the_line_js13kgames_2018/",
+							"url": "https://mccordgh.github.io/the_line_js13kgames_2018",
 							"text": "Play The CORE!"
 						},
 						{
@@ -133,7 +133,7 @@
 					],
 					"links": [
 						{
-							"url": "https://mccordgh.github.io/battlebots_mjd_quiz_copy/",
+							"url": "https://mccordgh.github.io/battlebots_mjd_quiz_copy",
 							"text": "View App!"
 						},
 						{
@@ -148,7 +148,7 @@
 		},
 		{
 			"name": "Social Media",
-			"directory": "social_media/",
+			"directory": "social_media",
 			"list": [
 				{
 					"iconImage": "github_icon.png",
@@ -158,12 +158,12 @@
 				{
 					"iconImage": "itchio_icon.png",
 					"name": "Itch.io",
-					"activeLink": "https://mccordinator.itch.io/"
+					"activeLink": "https://mccordinator.itch.io"
 				},
 				{
 					"iconImage": "linkedin_icon.png",
 					"name": "LinkedIn",
-					"activeLink": "https://www.linkedin.com/in/mccordinator/"
+					"activeLink": "https://www.linkedin.com/in/mccordinator"
 				},
 				{
 					"iconImage": "steam_icon.png",
@@ -179,7 +179,7 @@
 		},
 		{
 			"name": "Music",
-			"directory": "music/",
+			"directory": "music",
 			"list": [
 				{
 					"name": "Future Unlimited",

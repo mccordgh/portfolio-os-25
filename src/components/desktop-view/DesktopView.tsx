@@ -7,10 +7,11 @@ import { useContext } from 'react';
 
 import './DesktopView.css';
 import AppsContext from '../../context/AppsContext';
-import DesktopAppGroup from './AppGroup/DesktopAppGroup';
+import DesktopAppGroup from './app-group/DesktopAppGroup';
+import DesktopStatusBar from './status-bar/DesktopStatusBar';
 
 function DesktopView() {
-    const { apps } = useContext(AppsContext);
+    const { apps, selectedApp } = useContext(AppsContext);
 
     // const appGroups = (
     //     apps.map((appGroup, key) => {
@@ -26,23 +27,21 @@ function DesktopView() {
     //     })
     // );
 
-    // const selected = selectedApp.name
-    //     ? (<h2>{selectedApp.name}</h2>
-    //         // <OpenDesktopAppWindow
-    //         //     directory={this.props.selectedApp.directory}
-    //         //     app={this.props.selectedApp}
-    //         //     closeAppCallback={this.props.closeAppCallback}
-    //         // />
-    //     )
-    //     : (
-    //         <div></div>
-    //     );
+    const selected = selectedApp.name
+        ? (<h2>{selectedApp.name}</h2>
+            // <OpenDesktopAppWindow
+            //     directory={this.props.selectedApp.directory}
+            //     app={this.props.selectedApp}
+            //     closeAppCallback={this.props.closeAppCallback}
+            // />
+        )
+        : (
+            <div></div>
+        );
 
     return (
         <div className="desktop-container">
-            {/* <DesktopStatusBar
-                openAboutCallback={this.props.openAboutCallback}
-            /> */}
+            <DesktopStatusBar />
             
             { apps && 
                 apps.map((appGroup, key) => {
@@ -57,7 +56,7 @@ function DesktopView() {
                 })
             }
 
-            {/* { selectedApp } */}
+            { selected }
             {/* <Mccordinator /> */}
         </div>
     );

@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import DesktopApp from './App/DesktopApp';
+import DesktopApp from './app/DesktopApp';
 
 import { AppDescription } from '../../../models/AppData';
-// import IMAGE_PATH from '../../../constants/image-path';
 
 import './DesktopAppGroup.css';
 
@@ -41,13 +40,10 @@ function DesktopAppGroup (props: DesktopAppGroupProps) {
                         return <DesktopApp
                             key={key}
                             activeLink={item.activeLink}
-                            // bgColor={item.bgColor}
-                            // iconImage={`${IMAGE_PATH}/${directory}${item.iconImage}`}
-                            iconImage={`${directory}${item.iconImage}`}
+                            iconImagePath={`resources/${directory}/${item.iconImage}`}
                             group={name}
                             id={key}
                             name={item.name}
-                            // openAppCallback={this.props.openAppCallback}
                         />;
                     })
                 }
