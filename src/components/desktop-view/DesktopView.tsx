@@ -9,6 +9,7 @@ import './DesktopView.css';
 import AppsContext from '../../context/AppsContext';
 import DesktopAppGroup from './app-group/DesktopAppGroup';
 import DesktopStatusBar from './status-bar/DesktopStatusBar';
+import OpenDesktopApp from './open-app/OpenDesktopApp';
 
 function DesktopView() {
     const { apps, selectedApp } = useContext(AppsContext);
@@ -28,15 +29,15 @@ function DesktopView() {
     // );
 
     const selected = selectedApp.name
-        ? (<h2>{selectedApp.name}</h2>
-            // <OpenDesktopAppWindow
-            //     directory={this.props.selectedApp.directory}
-            //     app={this.props.selectedApp}
-            //     closeAppCallback={this.props.closeAppCallback}
-            // />
+        ? (
+            <OpenDesktopApp
+                // directory={selectedApp.directory}
+                app={selectedApp}
+                // closeAppCallback={this.props.closeAppCallback}
+            />
         )
         : (
-            <div></div>
+            <></>
         );
 
     return (

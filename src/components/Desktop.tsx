@@ -41,10 +41,15 @@ function Desktop() {
         console.log(`setSelectedAppLookup: ${id}, ${group}`);
 
         if (group === 'about') {
-                setSelectedApp(portfolioAbout as AppDescription);
-                return;
+            setSelectedApp(portfolioAbout as AppDescription);
+            return;
         }
-        
+
+        if (group === 'closeApp') {
+            setSelectedApp({});
+            return;
+        }
+
         const found = findAppByIdAndGroup(id, group);
         
         if (found) {
