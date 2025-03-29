@@ -10,6 +10,7 @@ import AppsContext from '../../context/AppsContext';
 import DesktopAppGroup from './app-group/DesktopAppGroup';
 import DesktopStatusBar from './status-bar/DesktopStatusBar';
 import OpenDesktopApp from './open-app/OpenDesktopApp';
+import Mccordinator from '../mccordinator/Mccordinator';
 
 function DesktopView() {
     const { apps, selectedApp } = useContext(AppsContext);
@@ -58,7 +59,7 @@ function DesktopView() {
             }
 
             { selected }
-            {/* <Mccordinator /> */}
+            <Mccordinator />
         </div>
     );
 }

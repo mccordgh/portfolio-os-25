@@ -1,0 +1,203 @@
+/* hr {
+    width: calc(100% - 2rem);
+    color: lightgrey;
+} */
+
+div.desktop-app_open {
+    background-color: #3378ad;
+    border-top: 0.2rem solid grey;
+    border-right: .2rem solid lightgrey;
+    border-bottom: 0.2rem solid lightgrey;
+    border-left: 0.2rem solid grey;
+    border-radius: 1rem;
+    box-shadow: -24px 23px 50px -12px #000;
+    -moz-box-shadow: -24px 23px 50px -12px #000;
+    -webkit-box-shadow: -24px 23px 50px -12px #000;
+    box-sizing: border-box;
+    color: black;
+    height: 40rem;
+    left: calc(50% - 35rem);
+    overflow: hidden;
+    padding-top: 2rem;
+    position: fixed;
+    top: calc(50% - 20rem);
+    width: 70rem;
+    z-index: 12;
+}
+
+/* div.desktop-app--content_wrapper ::-webkit-scrollbar-track:vertical {
+    border-left: 1px solid #E7E7E7;
+    box-shadow: 1px 0 1px 0 #F6F6F6 inset, -1px 0 1px 0 #F6F6F6 inset;
+} */
+
+/* div.desktop-app_open hr {
+    width: calc(100% - 6rem);
+} */
+
+div.desktop-app--content_wrapper {
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+div.desktop-app--content_wrapper h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+div.desktop-app--content_wrapper p {
+    background-color: #3378ad;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+    text-align: left;
+    padding: 1rem 0 1rem 2rem;
+}
+
+div.desktop-app--content_wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+div.desktop-app--content_wrapper ul {
+    background-color: #3378ad;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+div.desktop-app--content_wrapper ul li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+div.desktop-app--content_wrapper ul li a {
+    color: whitesmoke;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.desktop-app--content_wrapper ul li a:hover {
+    color: lightgrey;
+}
+
+/* div.desktop-app--content_wrapper hr {
+    margin-right: 3rem;
+    width: auto;
+} */
+
+div.app--header-image {
+    height: 24rem;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+div.app--header-image img {
+    width: 100%;
+}
+
+div.app-description_wrapper img {
+    border-radius: 1rem;
+    height: 1rem;
+    padding-right: 1rem;
+    width: 1rem;
+}
+
+div.app-description_wrapper {
+    background-color: #3378ad;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+div.app-description_wrapper p {
+    background-color: #f0f0f0;
+    border-radius: 0.6rem;
+    color: black;
+    font-style: initial;
+    padding: 1rem;
+    text-align: justify;
+}
+
+div.app-description_wrapper p:first-child {
+    margin-top: 0;
+}
+
+div.app-description_wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+div.app-description_wrapper a + a {
+    padding-left: 2rem;
+}
+
+div.appLinksWrapper {
+    text-align: left;
+}
+
+div.desktopAppLinksWrapper a {
+    display: block;
+    padding: 1rem;
+}
+
+div.desktop-app_close {
+    background-color: grey;
+    border-top: 3px solid #333;
+    border-right: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    border-left: 3px solid #333;
+    border-radius: 0.4rem;
+    color: black;
+    cursor: pointer;
+    height: 1rem;
+    font-size: 1rem;
+    left: calc(100% - 2.7rem);
+    margin: 0;
+    position: relative;
+    top: -1rem;
+    width: 1rem;
+}
+
+div.app_open-banner {
+    background: linear-gradient(0.45turn, #3378ad, #63B8F9);
+    border-bottom: 0.2rem solid grey;
+    color: whitesmoke;
+    height: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70rem;
+}
+
+div.app_open-banner span.windowTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.4rem;
+}
+
+div.desktop-app_behind {
+    background-color: #222222;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+div.app-button_exit {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+div.app-button_exit button {
+    height: 1.6rem;
+    width: 1.6rem;
+}
