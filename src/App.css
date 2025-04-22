@@ -5,7 +5,7 @@
 
 div.App {
   /* background: linear-gradient(#2c73ba, #5A7B9B); */
-  background-color: #0978B2;
+  background-color: #0978b2;
   color: whitesmoke;
   font-family: Helvetica, sans-serif;
   font-weight: 100;
@@ -28,10 +28,10 @@ h1 {
 .no-select {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; 
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 /* ::-webkit-scrollbar {

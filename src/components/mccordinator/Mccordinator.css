@@ -1,90 +1,90 @@
 div.mccordinatorHead {
-    background-image: url('resources/mccordinator2_head.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    bottom: 3rem;
-    height: 13rem;
-    position: fixed;
-    right: 3rem;
-    width: 9rem;
-    transform: rotate(5deg);
-    transform-origin: bottom;
-    transition: 300ms;
-    animation: shake 1.8s infinite alternate;
+  background-image: url("resources/mccordinator2_head.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 3rem;
+  height: 13rem;
+  position: fixed;
+  right: 3rem;
+  width: 9rem;
+  transform: rotate(5deg);
+  transform-origin: bottom;
+  transition: 300ms;
+  animation: shake 1.8s infinite alternate;
 }
 
 div.mccordinatorSpeechBubble {
-    background-color: whitesmoke;
-    /* border: 0.1rem solid #222; */
-    border-radius: 1rem;
-    box-shadow: 0rem 0 12rem -2rem #000;
-    -moz-box-shadow: -15px 10px 20px -12px #000;
-    /* -webkit-box-shadow: -15px 15px 50px -12px #000; */
-    bottom: 17rem;
-    position: fixed;
-    right: 3rem;
-    min-width: 10rem;
-    max-width: 20rem;
-    z-index: 2;
+  background-color: whitesmoke;
+  /* border: 0.1rem solid #222; */
+  border-radius: 1rem;
+  box-shadow: 0rem 0 12rem -2rem #000;
+  -moz-box-shadow: -15px 10px 20px -12px #000;
+  /* -webkit-box-shadow: -15px 15px 50px -12px #000; */
+  bottom: 17rem;
+  position: fixed;
+  right: 3rem;
+  min-width: 10rem;
+  max-width: 20rem;
+  z-index: 2;
 }
 
 div.mccordinatorSpeechBubble::after {
-    background: whitesmoke;
-    bottom: -0.6rem;
-    -webkit-box-shadow: 19px -30px 50px -10px #000;
-    box-shadow: 19px -30px 50px -10px #000;
-    content: "";
-    height: 2rem;
-    position: absolute;
-    right: 6rem;
-    -webkit-transform: rotate(90deg) skew(-50deg);
-    -ms-transform: rotate(90deg) skew(-50deg);
-    transform: rotate(90deg) skew(-45deg);
-    width: 2rem;
-    z-index: -1;
+  background: whitesmoke;
+  bottom: -0.6rem;
+  -webkit-box-shadow: 19px -30px 50px -10px #000;
+  box-shadow: 19px -30px 50px -10px #000;
+  content: "";
+  height: 2rem;
+  position: absolute;
+  right: 6rem;
+  -webkit-transform: rotate(90deg) skew(-50deg);
+  -ms-transform: rotate(90deg) skew(-50deg);
+  transform: rotate(90deg) skew(-45deg);
+  width: 2rem;
+  z-index: -1;
 }
 
 div.mccordinatorSpeechBubble p {
-    border-bottom: 0.1rem dotted #222;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.4rem;
-    margin: 0;
-    padding: 1rem;
-    text-align: justify;
-    width: 100%;
+  border-bottom: 0.1rem dotted #222;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: justify;
+  width: 100%;
 }
 
 div.mccordinatorSpeechBubble span {
-    box-sizing: border-box;
-    color: black;
-    display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    height: 1rem;
-    margin: 0.5rem 1rem 0;
-    width: calc(100% - 2rem);
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 1rem;
+  margin: 0.5rem 1rem 0;
+  width: calc(100% - 2rem);
 }
 
 div.mccordinatorSpeechBubble span:hover {
-    background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 div.mccordinatorSpeechBubble p + span {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 div.mccordinatorSpeechBubble span:last-child {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes shake {
-    0% {
-      transform: rotate(5deg);
-    }
-    100% {
-      transform: rotate(15deg);
-    }
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
 }

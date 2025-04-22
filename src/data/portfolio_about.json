@@ -1,22 +1,23 @@
 {
-    "name": "Portfolio OS v1.0",
-    "directory": "portfolio/",
-    "shortText": "Portfolio of Matthew McCord, full stack developer",
-    "description": [
-        "Written in JavaScript with REACT",
-        "All graphics, except for my pixel heads, and animations done with CSS.",
-        "All portfolio data is brought in through .json files",
-        "Deployed with Github Pages."
-    ],
-    "links": [{
-            "url": "http://mccordinator.cool",
-            "text": "View App! (Get META, dude)"
-        },
-        {
-            "url": "https://github.com/mccordgh/portfolio-os-react/",
-            "text": "View Github Source"
-        }
-    ],
-    "iconImage": "portfolio_os_icon.png",
-    "headerImage": "portfolio_os_header.png"
+  "name": "Portfolio OS v1.0",
+  "directory": "portfolio/",
+  "shortText": "Portfolio of Matthew McCord, full stack developer",
+  "description": [
+    "Written in JavaScript with REACT",
+    "All graphics, except for my pixel heads, and animations done with CSS.",
+    "All portfolio data is brought in through .json files",
+    "Deployed with Github Pages."
+  ],
+  "links": [
+    {
+      "url": "http://mccordinator.cool",
+      "text": "View App! (Get META, dude)"
+    },
+    {
+      "url": "https://github.com/mccordgh/portfolio-os-react/",
+      "text": "View Github Source"
+    }
+  ],
+  "iconImage": "portfolio_os_icon.png",
+  "headerImage": "portfolio_os_header.png"
 }
