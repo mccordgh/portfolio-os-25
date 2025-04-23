@@ -27,7 +27,7 @@ function Desktop() {
     setMode(mode);
   };
 
-  const findAppByIdAndGroup = (id: number, groupName: string) => {
+  const findAppByIdAndGroup = (groupName: string, id: number) => {
     const group = apps.find((app) => app.name === groupName);
     const appToOpen = group?.list[id];
 
@@ -38,9 +38,7 @@ function Desktop() {
     return appToOpen;
   };
 
-  const setSelectedAppLookup = (id: number, group: string) => {
-    console.log(`setSelectedAppLookup: ${id}, ${group}`);
-
+  const setSelectedAppLookup = (group: string, id?: number) => {
     if (group === "about") {
       setSelectedApp(portfolioAbout as AppDescription);
       return;
@@ -51,7 +49,12 @@ function Desktop() {
       return;
     }
 
-    const found = findAppByIdAndGroup(id, group);
+    if (id === undefined) {
+      console.error("Cannot find app when id is undefined");
+      return;
+    }
+
+    const found = findAppByIdAndGroup(group, id);
 
     if (found) {
       setSelectedApp(found);

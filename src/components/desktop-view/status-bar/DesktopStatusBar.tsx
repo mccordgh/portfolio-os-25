@@ -75,7 +75,7 @@ function DesktopStatusBar() {
         <span
           className="banner-left--highlights"
           onClick={() => {
-            setSelectedApp(-1, "about");
+            setSelectedApp("about");
           }}
         >
           About This Portfolio

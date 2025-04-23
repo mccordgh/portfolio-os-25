@@ -5,7 +5,7 @@ import { AppDescription, AppGroup } from "../models/AppData";
 export type AppsContextType = {
   apps: AppGroup[];
   selectedApp: AppDescription;
-  setSelectedApp: (id: number, group: string) => void;
+  setSelectedApp: (group: string, id?: number) => void;
 };
 
 const AppsContext = createContext<AppsContextType>({

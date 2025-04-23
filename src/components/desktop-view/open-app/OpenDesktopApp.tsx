@@ -40,7 +40,7 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
   );
 
   const closeAppCallback = () => {
-    setSelectedApp(-1, "closeApp");
+    setSelectedApp("closeApp");
   };
 
   return (

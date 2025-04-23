@@ -30,7 +30,7 @@ function DesktopApp(props: DesktopAppProps) {
       return;
     }
 
-    setSelectedApp(id, group);
+    setSelectedApp(group, id);
     // this.props.openAppCallback(this.props.id, this.props.group);
   };
 
