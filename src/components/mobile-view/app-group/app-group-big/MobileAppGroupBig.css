@@ -1,0 +1,36 @@
+div.MobileAppGroupBig {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 3rem;
+  margin: 1.5rem 0;
+  width: 33%;
+}
+
+div.MobileAppGroupBigBackground {
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+div.MobileAppGroupBigContainer {
+  align-content: flex-start;
+  align-items: center;
+  background-size: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.MobileAppGroupBigTitle {
+  text-align: center;
+}
+
+div.MobileAppGroupBigTitle h3 {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0;
+  padding: 0 0.2rem;
+}

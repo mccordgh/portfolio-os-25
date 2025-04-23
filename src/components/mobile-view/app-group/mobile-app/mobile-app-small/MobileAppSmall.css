@@ -1,0 +1,43 @@
+div.mobileAppGroupSmall {
+  box-sizing: border-box;
+  height: 25%;
+  margin: 3.125% 3.125%;
+  width: 25%;
+}
+
+/* set right margin on the last item of each row */
+div.mobileAppGroupSmall:nth-child(3n) {
+  margin-right: 6.25%;
+}
+
+/* set left margin on the first item of each row */
+div.mobileAppGroupSmall:nth-child(3n - 2) {
+  margin-left: 6.25%;
+}
+
+/* set top margin on the first row of items */
+div.mobileAppGroupSmall:nth-child(-n + 3) {
+  margin-top: 6.25%;
+}
+
+/* set bottom margin on the last row of items */
+div.mobileAppGroupSmall:nth-child(n + 7):nth-child(-n + 9) {
+  margin-bottom: 6.25%;
+}
+
+div.mobileAppGroupSmallBackground {
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+div.mobileAppGroupSmallContainer {
+  align-content: flex-start;
+  align-items: center;
+  background-size: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
