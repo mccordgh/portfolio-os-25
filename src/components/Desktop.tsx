@@ -18,7 +18,7 @@ const IPAD_PRO_WIDTH = 1024;
 function Desktop() {
   const apps: AppGroup[] = appsList.data;
   // const [apps, setApps] = useState<AppGroup[]>(appsList.data);
-  const [selectedApp, setSelectedApp] = useState({});
+  const [selectedApp, setSelectedApp] = useState({ name: "placeholder" });
   const [mode, setMode] = useState("");
 
   const setModeByClientWidth = () => {

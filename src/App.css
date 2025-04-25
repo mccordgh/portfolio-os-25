@@ -13,8 +13,11 @@ div.App {
   margin: 0;
   overflow: hidden;
   padding: 0;
-  position: relative;
+  /* position: relative; */
   width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem auto;
 }
 
 h1 {

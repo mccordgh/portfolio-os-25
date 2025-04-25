@@ -1,19 +1,20 @@
 div.desktop_banner-container {
+  grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0065b2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 2rem;
+  /* height: 2rem; */
   font-size: 1rem;
-  left: 0;
+  /* left: 0; */
   /* padding: 0.5rem; */
-  position: fixed;
+  /* position: fixed; */
   /* text-align: center; */
-  top: 0;
-  width: 100%;
-  z-index: 999;
+  /* top: 0; */
+  /* width: 100%; */
+  /* z-index: 999;
 }
 
 div.desktop_banner-container span {

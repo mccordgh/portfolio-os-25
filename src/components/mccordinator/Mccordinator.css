@@ -2,10 +2,10 @@ div.mccordinatorHead {
   background-image: url("resources/mccordinator2_head.png");
   background-position: center center;
   background-repeat: no-repeat;
-  bottom: 3rem;
+  bottom: 1rem;
   height: 13rem;
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   width: 9rem;
   transform: rotate(5deg);
   transform-origin: bottom;
@@ -20,7 +20,7 @@ div.mccordinatorSpeechBubble {
   box-shadow: 0rem 0 12rem -2rem #000;
   -moz-box-shadow: -15px 10px 20px -12px #000;
   /* -webkit-box-shadow: -15px 15px 50px -12px #000; */
-  bottom: 17rem;
+  bottom: 14rem;
   position: fixed;
   right: 3rem;
   min-width: 10rem;

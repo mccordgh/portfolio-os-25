@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 // import DesktopAppGroup from './DesktopAppGroup/DesktopAppGroup';
 // import DesktopStatusBar from './DesktopStatusBar/DesktopStatusBar';
@@ -14,33 +14,58 @@ import Mccordinator from "../mccordinator/Mccordinator";
 
 function DesktopView() {
   const { apps, selectedApp } = useContext(AppsContext);
+  const [expandedGroupName, setExpandedGroupName] = useState("");
 
-  const selected = selectedApp.name ? (
-    <OpenDesktopApp app={selectedApp} />
-  ) : (
-    <></>
-  );
+  const selected =
+    selectedApp.name && selectedApp.name !== "placeholder" ? (
+      <OpenDesktopApp app={selectedApp} />
+    ) : (
+      <></>
+    );
+
+  const toggleExpansionClass = (groupName: string) => {
+    if (expandedGroupName === "") {
+      setExpandedGroupName(groupName);
+      return;
+    }
+
+    if (expandedGroupName === groupName) {
+      setExpandedGroupName("");
+      return;
+    }
+
+    setExpandedGroupName(groupName);
+    // const expandedClass = expanded ? "expanded" : "";
+
+    // setWrapperClass(expandedClass);
+  };
 
   return (
-    <div className="desktop-container">
+    <>
       <DesktopStatusBar />
 
-      {apps &&
-        apps.map((appGroup, key) => {
-          return (
-            <DesktopAppGroup
-              key={key}
-              name={appGroup.name}
-              list={appGroup.list}
-              directory={appGroup.directory}
-            />
-          );
-        })}
+      <div className="desktop-container">
+        {apps &&
+          apps.map((appGroup, key) => {
+            return (
+              <DesktopAppGroup
+                expanded={expandedGroupName === appGroup.name}
+                toggleExpansionClass={() => {
+                  toggleExpansionClass(appGroup.name);
+                }}
+                key={key}
+                name={appGroup.name}
+                list={appGroup.list}
+                directory={appGroup.directory}
+              />
+            );
+          })}
 
-      {selected}
+        {selected}
 
-      <Mccordinator />
-    </div>
+        <Mccordinator />
+      </div>
+    </>
   );
 }
 

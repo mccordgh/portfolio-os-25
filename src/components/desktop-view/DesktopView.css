@@ -1,11 +1,13 @@
 div.desktop-container {
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* height: 100%; */
   /* overflow-y: scroll; */
   overflow: hidden;
-  position: relative;
-  padding: 5rem 4rem 0 0;
-  width: 100%;
+  /* position: relative; */
+  padding: 2rem;
+  /* width: 100%; */
+  grid-row: 2;
 }

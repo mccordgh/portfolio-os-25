@@ -10,22 +10,16 @@ type DesktopAppGroupProps = {
   name: string;
   list: AppDescription[];
   directory: string;
+  expanded: boolean;
+  toggleExpansionClass: () => void;
 };
 
 function DesktopAppGroup(props: DesktopAppGroupProps) {
-  const [wrapperClass, setWrapperClass] = useState("");
-
-  const { name, list, directory } = props;
-
-  const toggleExpansionClasses = () => {
-    const expandedClass = wrapperClass === "expanded" ? "" : "expanded";
-
-    setWrapperClass(expandedClass);
-  };
+  const { name, list, directory, expanded, toggleExpansionClass } = props;
 
   return (
-    <div className={`desktopAppGroupWrapper ${wrapperClass}`}>
-      <div className="desktopGroupFolder" onClick={toggleExpansionClasses}>
+    <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
+      <div className="desktopGroupFolder" onClick={toggleExpansionClass}>
         <div className="desktopGroupFolder_back"></div>
 
         <div className="desktopGroupFolder_front">
