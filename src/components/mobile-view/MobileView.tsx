@@ -9,32 +9,34 @@ function MobileView() {
   const { apps, selectedApp } = useContext(AppsContext);
 
   return (
-    <div className="mobileContainer">
+    <>
       <Banner />
 
-      <div className="appgroupContainer">
-        {apps.map((appGroup, key) => {
-          return (
-            <MobileAppGroup
-              key={key}
-              name={appGroup.name}
-              list={appGroup.list}
-              directory={appGroup.directory}
-            />
-          );
-        })}
-      </div>
+      <div className="mobileContainer">
+        <div className="appgroupContainer">
+          {apps.map((appGroup, key) => {
+            return (
+              <MobileAppGroup
+                key={key}
+                name={appGroup.name}
+                list={appGroup.list}
+                directory={appGroup.directory}
+              />
+            );
+          })}
+        </div>
 
-      <div className="osImage">
-        <img
-          src="resources/mccordinator2_head.png"
-          alt="Mccordinator's Pixel Head"
-        />
-      </div>
+        <div className="mobileImage">
+          <img
+            src="resources/mccordinator2_head.png"
+            alt="Mccordinator's Pixel Head"
+          />
+        </div>
 
-      <h1>{selectedApp.name}</h1>
-      {/* {selectedApp.name && <OpenAppWindow app={selectedApp} />} */}
-    </div>
+        <h1>{selectedApp.name}</h1>
+        {/* {selectedApp.name && <OpenAppWindow app={selectedApp} />} */}
+      </div>
+    </>
   );
 }
 

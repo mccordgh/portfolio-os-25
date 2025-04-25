@@ -1,4 +1,5 @@
 div.mobileContainer {
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 1rem;
+  grid-row: 2;
 }

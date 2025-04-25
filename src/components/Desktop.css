@@ -3,12 +3,12 @@ div.appgroupContainer {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 1.2rem 1rem 1rem;
 }
 
-div.osImage {
+div.mobileImage {
   height: 20rem;
   left: calc(50% - 7.5rem);
   opacity: 0.8;
@@ -17,7 +17,7 @@ div.osImage {
   width: 15rem;
 }
 
-div.osImage img {
+div.mobileImage img {
   display: block;
   margin: 0 auto;
   height: 20rem;
