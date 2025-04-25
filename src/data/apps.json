@@ -143,32 +143,11 @@
           ],
           "iconImage": "waves_87_icon.png",
           "headerImage": "waves_87_header.png"
-        },
-        {
-          "name": "Battle Bots",
-          "shortText": "Local two player battle to the robot death!",
-          "description": [
-            "Written in HTML5, CSS, and JavaScript using Grunt, Browserify, and jQuery.",
-            "Each player chooses one of six classes (Johnny5, Wall-E, R2D2, R2BRO2, Bender, Baymax).",
-            "This project was an exercise in prototypal inheritance. One of the first \"games\" I ever made at Nashville Software School :)"
-          ],
-          "links": [
-            {
-              "url": "https://mccordgh.github.io/battlebots_mjd_quiz_copy",
-              "text": "View App!"
-            },
-            {
-              "url": "https://www.github.com/mccordgh/battlebots_mjd_quiz_copy",
-              "text": "View Github Source"
-            }
-          ],
-          "iconImage": "battle_bots_icon.png",
-          "headerImage": "battle_bots_header.png"
         }
       ]
     },
     {
-      "name": "Social Media",
+      "name": "Socials",
       "directory": "social_media",
       "list": [
         {
