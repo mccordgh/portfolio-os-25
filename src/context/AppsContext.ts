@@ -10,7 +10,7 @@ export type AppsContextType = {
 
 const AppsContext = createContext<AppsContextType>({
   apps: [],
-  selectedApp: {},
+  selectedApp: { name: "placeholder" },
   setSelectedApp: () => {},
 });
 
