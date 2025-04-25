@@ -158,7 +158,7 @@
         {
           "iconImage": "itchio_icon.png",
           "name": "Itch.io",
-          "activeLink": "https://mccordinator.itch.io"
+          "activeLink": "https://mccordinator.itch.io/"
         },
         {
           "iconImage": "linkedin_icon.png",
@@ -171,9 +171,14 @@
           "activeLink": "https://steamcommunity.com/id/mccordinator"
         },
         {
-          "iconImage": "twitter_icon.png",
-          "name": "Twitter",
-          "activeLink": "https://twitter.com/mattmccordmattm"
+          "iconImage": "bluesky_icon.webp",
+          "name": "Blue Sky",
+          "activeLink": "https://bsky.app/profile/mccordinator.bsky.social"
+        },
+        {
+          "iconImage": "x_icon.webp",
+          "name": "X",
+          "activeLink": "https://x.com/mattmccordmattm"
         }
       ]
     },
@@ -247,7 +252,7 @@
           "name": "MCCORDINATOR",
           "shortText": "",
           "description": [
-            "Solo work learning how to record music in a small, self-made, home studio."
+            "Solo work recording music in a self-made, home studio."
           ],
           "links": [
             {
