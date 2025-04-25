@@ -45,6 +45,7 @@ function DesktopView() {
       <DesktopStatusBar />
 
       <div className="desktop-container">
+        <div className="floating-wall"></div>
         {apps &&
           apps.map((appGroup, key) => {
             return (

@@ -9,12 +9,12 @@ div.desktopAppBackground {
   border-radius: 1rem;
   /* -webkit-box-shadow: 0 0px 10px -3px black;
     box-shadow: 0 0px 10px -3px black; */
-  height: 4rem;
+  height: 0.1rem;
   margin: 0.5rem auto;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  width: 4rem;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  width: 0.1rem;
 }
 
 div.desktopAppTitle {

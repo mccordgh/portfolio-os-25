@@ -10,6 +10,8 @@ div.mccordinatorHead {
   transform: rotate(5deg);
   transform-origin: bottom;
   transition: 300ms;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
   animation: shake 1.8s infinite alternate;
 }
 

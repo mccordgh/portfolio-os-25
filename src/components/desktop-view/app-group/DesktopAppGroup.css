@@ -15,15 +15,21 @@ div.desktopGroupFolder {
   left: -4rem;
   top: 3rem;
   z-index: 10;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
 }
 
 div.desktopAppGroupWrapper.expanded
   div.desktopGroupFolder
   div.desktopGroupFolder_front {
   top: 2.3rem;
-  transform: rotateX(-35deg);
+  transform: rotateX(-55deg);
 }
 
+div.desktopAppGroupWrapper.expanded div.desktopGroupFolder {
+  transform: rotateZ(45deg);
+}
 div.desktopGroupFolder_back {
   background-color: #b26b00;
   border-radius: 1rem 0 0 1rem;
@@ -147,6 +153,8 @@ div.desktopAppWrapper {
   position: relative;
   top: -10rem;
   transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
   visibility: hidden;
   width: calc(100% - 10rem);
 }
@@ -162,5 +170,7 @@ div.desktopAppGroupWrapper.expanded
   div.desktopAppWrapper
   div.desktopApp
   div.desktopAppBackground {
-  transform: rotateZ(1440deg);
+  transform: rotateZ(720deg);
+  width: 4rem;
+  height: 4rem;
 }

@@ -11,3 +11,13 @@ div.desktop-container {
   /* width: 100%; */
   grid-row: 2;
 }
+
+div.floating-wall {
+  background-color: #0978b2;
+  position: absolute;
+  height: 100vh;
+  width: 10rem;
+  top: 0rem;
+  z-index: 9;
+  left: 0rem;
+}
