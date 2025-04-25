@@ -15,26 +15,8 @@ import Mccordinator from "../mccordinator/Mccordinator";
 function DesktopView() {
   const { apps, selectedApp } = useContext(AppsContext);
 
-  // const appGroups = (
-  //     apps.map((appGroup, key) => {
-  //         return (
-  //             <DesktopAppGroup
-  //                 key={key}
-  //                 name={appGroup.name}
-  //                 list={appGroup.list}
-  //                 directory={appGroup.directory}
-  //                 // openAppCallback={this.props.openAppCallback}
-  //             />
-  //         );
-  //     })
-  // );
-
   const selected = selectedApp.name ? (
-    <OpenDesktopApp
-      // directory={selectedApp.directory}
-      app={selectedApp}
-      // closeAppCallback={this.props.closeAppCallback}
-    />
+    <OpenDesktopApp app={selectedApp} />
   ) : (
     <></>
   );
@@ -56,6 +38,7 @@ function DesktopView() {
         })}
 
       {selected}
+
       <Mccordinator />
     </div>
   );

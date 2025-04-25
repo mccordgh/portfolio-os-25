@@ -2,37 +2,45 @@
 // import OsApp from "../OsApp/OsApp";
 import "./MobileAppGroupSmall.css";
 import { AppDescription } from "../../../../models/AppData";
+import MobileApp from "../mobile-app/MobileApp";
+import { useContext } from "react";
+import MobileAppsContext from "../../../../context/MobileAppsContext";
 
 type MobileAppGroupSmallProps = {
   name: string;
   list: AppDescription[];
   directory: string;
-  clickCallback: () => void;
-  state: string;
+  state: "small" | "big";
+  activeLink?: string;
 };
 
 function MobileAppGroupSmall(props: MobileAppGroupSmallProps) {
+  const { name, list, state, directory } = props;
+
+  const { setAppSize } = useContext(MobileAppsContext);
+
   return (
-    <div className="mobileAppGroupSmall" onClick={props.clickCallback}>
+    <div className="mobileAppGroupSmall" onClick={() => setAppSize("big")}>
       <div className="mobileAppGroupSmallBackground">
         <div className="mobileAppGroupSmallContainer">
-          {props.list.map((item, key) => {
+          {list.map((item, key) => {
+            const { activeLink, iconImage, id } = item;
+
             return (
-              <OsApp
+              <MobileApp
                 key={key}
-                name={item.name}
-                // bgColor={item.bgColor}
-                activeLink={item.activeLink}
-                iconImage={item.iconImage}
-                directory={props.directory}
-                state={props.state}
+                id={id}
+                name={name}
+                activeLink={activeLink}
+                imagePath={`resources/${directory}/${iconImage}`}
+                state={state}
               />
             );
           })}
         </div>
 
         <div className="mobileAppGroupSmallTitle">
-          <h3>{props.name}</h3>
+          <h3>{name}</h3>
         </div>
       </div>
     </div>

@@ -1,27 +1,29 @@
-import React, { Component } from "react";
-
 import "./MobileAppSmall.css";
 
-export default class MobileAppSmall extends Component {
-  render() {
-    return (
-      <div className="mobileAppGroupSmall">
-        <div
-          className="mobileAppGroupSmallBackground"
-          style={this.mobileAppSmallStyleObject()}
-        >
-          <div className="mobileAppGroupSmallContainer"></div>
-        </div>
-      </div>
-    );
-  }
+type MobileAppSmallProps = {
+  iconImage: string; // Path to the icon image
+};
 
-  mobileAppSmallStyleObject() {
-    return {
-      backgroundImage: `url(${this.props.iconImage})`,
-      backgroundSize: "contain",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-    };
-  }
+function MobileAppSmall(props: MobileAppSmallProps) {
+  const { iconImage } = props;
+
+  const mobileAppSmallStyleObject = {
+    backgroundImage: `url(${iconImage})`,
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  };
+
+  return (
+    <div className="mobileAppGroupSmall">
+      <div
+        className="mobileAppGroupSmallBackground"
+        style={mobileAppSmallStyleObject}
+      >
+        <div className="mobileAppGroupSmallContainer"></div>
+      </div>
+    </div>
+  );
 }
+
+export default MobileAppSmall;

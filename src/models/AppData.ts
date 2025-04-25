@@ -5,7 +5,7 @@ type LinkDescription = {
 
 export type AppDescription = {
   id?: number;
-  name?: string;
+  name: string;
   iconImage?: string;
   shortText?: string;
   description?: string[];

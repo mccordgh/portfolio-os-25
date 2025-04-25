@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 import AppsContext from "../../context/AppsContext";
 import Banner from "./banner/Banner";
+import MobileAppGroup from "./app-group/MobileAppGroup";
 
 function MobileView() {
   const { apps, selectedApp } = useContext(AppsContext);
@@ -14,11 +15,11 @@ function MobileView() {
       <div className="appgroupContainer">
         {apps.map((appGroup, key) => {
           return (
-            <AppGroup
+            <MobileAppGroup
               key={key}
               name={appGroup.name}
               list={appGroup.list}
-              directory={`resources/${appGroup.directory}`}
+              directory={appGroup.directory}
             />
           );
         })}

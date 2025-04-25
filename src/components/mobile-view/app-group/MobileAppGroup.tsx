@@ -1,52 +1,58 @@
 import { useContext, useState } from "react";
-// import AppGroupSmall from "./AppGroupSmall/AppGroupSmall";
-// import AppGroupBig from "./AppGroupBig/AppGroupBig";
 import AppsContext from "../../../context/AppsContext";
 import { AppDescription } from "../../../models/AppData";
+import MobileAppGroupSmall from "./app-group-small/MobileAppGroupSmall";
+import MobileAppGroupBig from "./app-group-big/MobileAppGroupBig";
+import MobileAppsContext from "../../../context/MobileAppsContext";
 
 type MobileAppGroupProps = {
   name: string;
   list: AppDescription[];
   directory: string;
+  activeLink?: string;
 };
 
+type MobileAppGroupState = "small" | "big";
+
 function MobileAppGroup(props: MobileAppGroupProps) {
+  const { name, list, directory, activeLink } = props;
   const { setSelectedApp } = useContext(AppsContext);
 
-  const [state, setState] = useState("small");
+  const [state, setState] = useState<MobileAppGroupState>("small");
 
-  // const makeGroupBig = () => {
-  //   setState("big");
-  // };
+  const contextValue = {
+    openMobileApp(group: string, id?: number) {
+      this.setAppSize("small");
 
-  const makeGroupSmall = () => {
-    setState("small");
+      setSelectedApp(group, id);
+    },
+    setAppSize(size: "small" | "big") {
+      setState(size);
+    },
   };
 
-  const openApp = (group: string, id?: number) => {
-    makeGroupSmall();
+  const appGroup =
+    state === "small" ? (
+      <MobileAppGroupSmall
+        list={list}
+        name={name}
+        activeLink={activeLink}
+        state={state}
+        directory={directory}
+      />
+    ) : (
+      <MobileAppGroupBig
+        list={list}
+        name={name}
+        state={state}
+        directory={directory}
+      />
+    );
 
-    setSelectedApp(group, id);
-  };
-
-  return state === "small" ? (
-    <AppGroupSmall
-      list={props.list}
-      name={props.name}
-      activeLink={props.activeLink}
-      clickCallback={makeGroupBig}
-      state={state.state}
-      directory={props.directory}
-    />
-  ) : (
-    <AppGroupBig
-      list={props.list}
-      name={props.name}
-      state={state.state}
-      directory={props.directory}
-      openAppCallback={openApp}
-      makeGroupSmall={makeGroupSmall}
-    />
+  return (
+    <MobileAppsContext.Provider value={contextValue}>
+      {appGroup}
+    </MobileAppsContext.Provider>
   );
 }
 
