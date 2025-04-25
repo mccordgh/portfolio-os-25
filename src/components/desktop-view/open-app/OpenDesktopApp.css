@@ -16,12 +16,14 @@ div.desktop-app_open {
   box-sizing: border-box;
   color: black;
   height: 40rem;
-  left: calc(50% - 35rem);
+  left: calc(50% - 30rem);
   overflow: hidden;
   padding-top: 2rem;
   position: fixed;
   top: calc(50% - 20rem);
-  width: 70rem;
+  min-width: 50rem;
+  width: 75%;
+  max-width: 70rem;
   z-index: 12;
 }
 
@@ -155,11 +157,20 @@ div.desktop-app_close {
   cursor: pointer;
   height: 1rem;
   font-size: 1rem;
-  left: calc(100% - 2.7rem);
+  margin: 0.4rem;
+  /* left: calc(100% - 2.7rem);
   margin: 0;
   position: relative;
-  top: -1rem;
+  top: -1rem; */
   width: 1rem;
+}
+
+div.desktop-app_close span {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 div.app_open-banner {
@@ -168,16 +179,21 @@ div.app_open-banner {
   color: whitesmoke;
   height: 2rem;
   position: absolute;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
   top: 0;
-  width: 70rem;
+  width: 100%;
 }
 
 div.app_open-banner span.windowTitle {
   font-size: 1.2rem;
   font-weight: bold;
-  position: relative;
-  top: 0.4rem;
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 0.1rem;
+  /* position: relative; */
+  /* top: 0.4rem; */
 }
 
 div.desktop-app_behind {
