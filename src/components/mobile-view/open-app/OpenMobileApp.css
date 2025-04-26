@@ -125,6 +125,9 @@ div.app_close {
   text-align: center;
   top: 0;
   width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.app-description--image-wrapper {

@@ -11,10 +11,6 @@ import OpenMobileApp from "./open-app/OpenMobileApp";
 function MobileView() {
   const { apps, selectedApp } = useContext(AppsContext);
 
-  console.log(
-    "app selected?:",
-    selectedApp.name && selectedApp.name !== "placeholder"
-  );
   return (
     <>
       <Banner />

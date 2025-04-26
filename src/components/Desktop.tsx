@@ -26,8 +26,8 @@ function Desktop() {
     setMode(mode);
   };
 
-  const findAppByIdAndGroup = (groupName: string, id: number) => {
-    const group = apps.find((app) => app.name === groupName);
+  const findAppByIdAndGroup = (directory: string, id: number) => {
+    const group = apps.find((app) => app.directory === directory);
     const appToOpen = group?.list[id];
 
     if (appToOpen) {
