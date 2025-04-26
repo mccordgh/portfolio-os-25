@@ -16,7 +16,7 @@ div.mccordinatorHead {
 }
 
 div.mccordinatorSpeechBubble {
-  background-color: whitesmoke;
+  background-color: var(--white);
   /* border: 0.1rem solid #222; */
   border-radius: 1rem;
   box-shadow: 0rem 0 12rem -2rem #000;
@@ -31,7 +31,7 @@ div.mccordinatorSpeechBubble {
 }
 
 div.mccordinatorSpeechBubble::after {
-  background: whitesmoke;
+  background: var(--white);
   bottom: -0.6rem;
   -webkit-box-shadow: 19px -30px 50px -10px #000;
   box-shadow: 19px -30px 50px -10px #000;
@@ -69,10 +69,11 @@ div.mccordinatorSpeechBubble span {
   height: 1rem;
   margin: 0.5rem 1rem 0;
   width: calc(100% - 2rem);
+  cursor: pointer;
 }
 
 div.mccordinatorSpeechBubble span:hover {
-  background-color: #e5e5e5;
+  background-color: var(--white);
 }
 
 div.mccordinatorSpeechBubble p + span {

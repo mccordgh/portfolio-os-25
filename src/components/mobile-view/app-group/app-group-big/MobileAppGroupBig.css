@@ -60,7 +60,7 @@ div.backGroundBlur {
 }
 
 div.MobileOsAppGroupDimBehind {
-  background-color: #222222;
+  background-color: var(--black);
   height: 100%;
   left: 0;
   opacity: 0.9;

@@ -1,5 +1,5 @@
 div.openApp {
-  background-color: #0978b2;
+  background-color: var(--dark-color);
   color: black;
   left: 0;
   height: calc(100% - 2rem);
@@ -11,7 +11,7 @@ div.openApp {
 }
 
 div.openApp ul {
-  /* background-color: #3378ad; */
+  /* background-color: var(--dark-color); */
   font-size: 1rem;
   list-style: none;
   margin: 0;
@@ -24,13 +24,13 @@ div.openApp ul li {
 }
 
 div.openApp ul li a {
-  color: whitesmoke;
+  color: var(--white);
   display: inline-block;
   font-weight: bold;
 }
 
 div.openApp p {
-  color: whitesmoke;
+  color: var(--white);
   font-size: 1rem;
   font-style: italic;
   line-height: 1.2rem;
@@ -38,9 +38,9 @@ div.openApp p {
 }
 
 div.appImageTitle {
-  background: linear-gradient(162deg, #3378ad, #63b8f9);
+  background: linear-gradient(162deg, var(--dark-color), var(--darkest-color));
   border-bottom: 0.2rem solid grey;
-  color: whitesmoke;
+  color: var(--white);
   height: 2rem;
   text-align: center;
 }
@@ -63,7 +63,7 @@ div.appImageWrapper img {
 }
 
 div.appDescriptionWrapper {
-  background-color: #0978b2;
+  background-color: var(--dark-color);
   box-sizing: border-box;
   font-size: 1rem;
   padding: 0;
@@ -126,7 +126,7 @@ div.app_close {
 }
 
 div.app-description--image-wrapper {
-  background-color: #f0f0f0;
+  background-color: var(--white);
   padding: 1rem;
   margin: 1rem;
 }

@@ -4,7 +4,7 @@
 } */
 
 div.desktop-app_open {
-  background-color: #3378ad;
+  background-color: var(--dark-color);
   border-top: 0.2rem solid grey;
   border-right: 0.2rem solid lightgrey;
   border-bottom: 0.2rem solid lightgrey;
@@ -48,8 +48,8 @@ div.desktop-app--content_wrapper h1 {
 }
 
 div.desktop-app--content_wrapper p {
-  background-color: #3378ad;
-  color: whitesmoke;
+  background-color: var(--dark-color);
+  color: var(--white);
   font-size: 1rem;
   font-style: italic;
   margin: 0;
@@ -63,7 +63,7 @@ div.desktop-app--content_wrapper p {
 }
 
 div.desktop-app--content_wrapper ul {
-  background-color: #3378ad;
+  background-color: var(--dark-color);
   font-size: 1rem;
   list-style: none;
   margin: 0;
@@ -76,7 +76,7 @@ div.desktop-app--content_wrapper ul li {
 }
 
 div.desktop-app--content_wrapper ul li a {
-  color: whitesmoke;
+  color: var(--white);
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
@@ -109,7 +109,7 @@ div.app-description_wrapper img {
 }
 
 div.app-description_wrapper {
-  background-color: #3378ad;
+  background-color: var(--dark-color);
   box-sizing: border-box;
   font-size: 1rem;
   padding: 0 1rem;
@@ -117,7 +117,7 @@ div.app-description_wrapper {
 }
 
 div.app-description_wrapper p {
-  background-color: #f0f0f0;
+  background-color: var(--white);
   border-radius: 0.6rem;
   color: black;
   font-style: initial;
@@ -174,9 +174,13 @@ div.desktop-app_close span {
 }
 
 div.app_open-banner {
-  background: linear-gradient(0.45turn, #3378ad, #63b8f9);
+  background: linear-gradient(
+    0.45turn,
+    var(--dark-color),
+    var(--darkest-color)
+  );
   border-bottom: 0.2rem solid grey;
-  color: whitesmoke;
+  color: var(--white);
   height: 2rem;
   position: absolute;
   /* text-align: center; */
@@ -197,7 +201,7 @@ div.app_open-banner span.windowTitle {
 }
 
 div.desktop-app_behind {
-  background-color: #222222;
+  background-color: var(--black);
   height: 100%;
   left: 0;
   opacity: 0.6;

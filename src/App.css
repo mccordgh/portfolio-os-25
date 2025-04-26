@@ -3,10 +3,22 @@
   src: url('./fonts/smallest_pixel-7.ttf');
 } */
 
+:root {
+  --white: whitesmoke;
+  --lightest-color: #b3cbb9;
+  --light-color: #8fb996;
+  --medium-color: #709775;
+  --dark-color: #415d43;
+  --dark-color-rgba: rgba(65, 93, 67, 1);
+  --darkest-color: #111d13;
+  --black: #242424;
+  --light-transparent-bg: hsla(135, 19%, 75%, 0.4);
+}
+
 div.App {
   /* background: linear-gradient(#2c73ba, #5A7B9B); */
-  background-color: #0978b2;
-  color: whitesmoke;
+  background-color: var(--dark-color);
+  color: var(--white);
   font-family: Helvetica, sans-serif;
   font-weight: 100;
   height: 100vh;

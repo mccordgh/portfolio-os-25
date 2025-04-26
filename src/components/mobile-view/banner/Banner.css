@@ -1,5 +1,6 @@
 div.banner-container {
-  background-color: #0065b2;
+  color: var(--black);
+  background-color: var(--medium-color);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* height: 2rem; */
@@ -18,7 +19,7 @@ div.banner-container span {
 }
 
 div.banner-container span.banner-left--highlights:hover {
-  background-color: #0978b2;
+  background-color: var(--dark-color);
 }
 
 div.banner-left {
@@ -28,7 +29,7 @@ div.banner-left {
 
 div.banner-left span,
 div.banner-left a {
-  color: white;
+  /* color: white; */
   font-weight: bold;
   text-decoration: none;
 }

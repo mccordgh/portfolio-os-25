@@ -13,7 +13,7 @@ div.desktop-container {
 }
 
 div.floating-wall {
-  background-color: #0978b2;
+  background-color: var(--dark-color);
   position: absolute;
   height: 100vh;
   width: 10rem;
