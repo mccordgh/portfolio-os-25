@@ -1,6 +1,6 @@
 const daysOfWeek = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
 
-export default class Clock {
+export default class ClockHelper {
   static currentTime = () => {
     const currentTime = new Date(),
       currentDay = currentTime.getDay(),
