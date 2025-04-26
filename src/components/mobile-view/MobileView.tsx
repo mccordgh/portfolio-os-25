@@ -25,29 +25,15 @@ function MobileView() {
             return (
               <MobileAppGroup
                 key={key}
-                name={appGroup.name}
-                list={appGroup.list}
-                directory={appGroup.directory}
+                group={appGroup}
+                // name={appGroup.name}
+                // list={appGroup.list}
+                // directory={appGroup.directory}
               />
             );
           })}
-          {/* TODO: TESTING REMOVE LATER
-          <MobileAppGroup
-            key={1234}
-            name={apps[0].name}
-            list={apps[0].list}
-            directory={apps[0].directory}
-          /> */}
         </div>
 
-        {/* <div className="mobileImage">
-          <img
-            src="resources/mccordinator2_head.png"
-            alt="Mccordinator's Pixel Head"
-          />
-        </div> */}
-
-        {/* <h1>{selectedApp.name}</h1> */}
         {selectedApp.name && selectedApp.name !== "placeholder" && (
           <OpenMobileApp app={selectedApp} />
         )}

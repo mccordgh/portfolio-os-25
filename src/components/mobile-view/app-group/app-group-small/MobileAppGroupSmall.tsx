@@ -1,21 +1,23 @@
 // import React, { Component } from "react";
 // import OsApp from "../OsApp/OsApp";
 import "./MobileAppGroupSmall.css";
-import { AppDescription } from "../../../../models/AppData";
+import { AppGroup } from "../../../../models/AppData";
 import MobileApp from "../mobile-app/MobileApp";
 import { useContext } from "react";
 import MobileAppsContext from "../../../../context/MobileAppsContext";
 
 type MobileAppGroupSmallProps = {
-  name: string;
-  list: AppDescription[];
-  directory: string;
+  group: AppGroup;
+  // name: string;
+  // list: AppDescription[];
+  // directory: string;
   state: "small" | "big";
-  activeLink?: string;
+  // activeLink?: string;
 };
 
 function MobileAppGroupSmall(props: MobileAppGroupSmallProps) {
-  const { name, list, state, directory } = props;
+  const { state } = props;
+  const { name, list, directory } = props.group;
 
   const { setAppSize } = useContext(MobileAppsContext);
 
@@ -24,15 +26,17 @@ function MobileAppGroupSmall(props: MobileAppGroupSmallProps) {
       <div className="mobileAppGroupSmallBackground">
         <div className="mobileAppGroupSmallContainer">
           {list.map((item, key) => {
-            const { activeLink, iconImage, id } = item;
+            // const { activeLink, iconImage, id } = item;
 
             return (
               <MobileApp
                 key={key}
-                id={id}
-                name={name}
-                activeLink={activeLink}
-                imagePath={`resources/${directory}/${iconImage}`}
+                id={key}
+                item={item}
+                directory={directory}
+                // name={name}
+                // activeLink={activeLink}
+                // imagePath={`resources/${directory}/${iconImage}`}
                 state={state}
               />
             );

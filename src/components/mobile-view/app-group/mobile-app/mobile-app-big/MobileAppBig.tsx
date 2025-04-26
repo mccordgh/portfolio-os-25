@@ -2,21 +2,22 @@ import { useContext } from "react";
 
 import "./MobileAppBig.css";
 import AppsContext from "../../../../../context/AppsContext";
+import { AppDescription } from "../../../../../models/AppData";
+import ImageHelper from "../../../../../helpers/ImageHelper";
 
 type MobileAppBigProps = {
-  iconImage: string;
-  activeLink?: string;
-  name: string;
-  id?: number;
+  id: number;
+  directory: string;
+  item: AppDescription;
 };
 
 function MobileAppBig(props: MobileAppBigProps) {
-  const { iconImage, activeLink, name, id } = props;
+  const { directory, id, item } = props;
+  const { iconImage, activeLink, name } = item;
 
   const { setSelectedApp } = useContext(AppsContext);
-
   const mobileOsAppBigStyleObject = {
-    backgroundImage: `url(${iconImage})`,
+    backgroundImage: `url(${ImageHelper.getImagePath(directory, iconImage || "")})`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -29,7 +30,7 @@ function MobileAppBig(props: MobileAppBigProps) {
       return;
     }
 
-    setSelectedApp(name, id);
+    setSelectedApp(directory, id);
   };
 
   return (

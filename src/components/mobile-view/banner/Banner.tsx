@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import AppsContext from "../../../context/AppsContext";
 import "./Banner.css";
-import Clock from "../../../helpers/Clock";
+import ClockHelper from "../../../helpers/ClockHelper";
 
 function Banner() {
   const { setSelectedApp } = useContext(AppsContext);
@@ -28,7 +28,7 @@ function Banner() {
       </div>
 
       <div className="banner-right">
-        <span>{Clock.currentTime()}</span>
+        <span>{ClockHelper.currentTime()}</span>
       </div>
     </div>
   );

@@ -1,21 +1,18 @@
 import { useContext, useState } from "react";
 import AppsContext from "../../../context/AppsContext";
-import { AppDescription } from "../../../models/AppData";
+import { AppGroup } from "../../../models/AppData";
 import MobileAppGroupSmall from "./app-group-small/MobileAppGroupSmall";
 import MobileAppGroupBig from "./app-group-big/MobileAppGroupBig";
 import MobileAppsContext from "../../../context/MobileAppsContext";
 
 type MobileAppGroupProps = {
-  name: string;
-  list: AppDescription[];
-  directory: string;
-  activeLink?: string;
+  group: AppGroup;
 };
 
 type MobileAppGroupState = "small" | "big";
 
 function MobileAppGroup(props: MobileAppGroupProps) {
-  const { name, list, directory, activeLink } = props;
+  const { group } = props;
   const { setSelectedApp } = useContext(AppsContext);
 
   const [state, setState] = useState<MobileAppGroupState>("small");
@@ -34,18 +31,19 @@ function MobileAppGroup(props: MobileAppGroupProps) {
   const appGroup =
     state === "small" ? (
       <MobileAppGroupSmall
-        list={list}
-        name={name}
-        activeLink={activeLink}
+        group={group}
+        // list={list}
+        // name={name}
         state={state}
-        directory={directory}
+        // directory={directory}
       />
     ) : (
       <MobileAppGroupBig
-        list={list}
-        name={name}
+        group={group}
+        // list={list}
+        // name={name}
         state={state}
-        directory={directory}
+        // directory={directory}
       />
     );
 

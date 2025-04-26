@@ -4,7 +4,6 @@ type LinkDescription = {
 };
 
 export type AppDescription = {
-  id?: number;
   name: string;
   iconImage?: string;
   shortText?: string;

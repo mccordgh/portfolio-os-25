@@ -1,25 +1,34 @@
+import ImageHelper from "../../../../helpers/ImageHelper";
+import { AppDescription } from "../../../../models/AppData";
 import MobileAppBig from "./mobile-app-big/MobileAppBig";
 import MobileAppSmall from "./mobile-app-small/MobileAppSmall";
 
 type MobileAppProps = {
-  imagePath: string;
+  id: number;
   state: "small" | "big";
-  id?: number;
-  activeLink?: string;
-  name: string;
+  item: AppDescription;
+  // imagePath: string;
+  // activeLink?: string;
+  // name: string;
+  directory: string;
 };
 
 function MobileApp(props: MobileAppProps) {
-  const { imagePath, state, activeLink, name, id } = props;
+  const { state, directory, item, id } = props;
+  // const { activeLink, name } = item;
 
   return state === "small" ? (
-    <MobileAppSmall iconImage={imagePath} />
+    <MobileAppSmall
+      iconImage={ImageHelper.getImagePath(directory, item?.iconImage || "")}
+    />
   ) : (
     <MobileAppBig
+      directory={directory}
       id={id}
-      activeLink={activeLink}
-      name={name}
-      iconImage={imagePath}
+      item={item}
+      // activeLink={activeLink}
+      // name={name}
+      // iconImage={imagePath}
     />
   );
 }
