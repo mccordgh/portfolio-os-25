@@ -1,21 +1,21 @@
-import { useState } from "react";
-
 import DesktopApp from "./app/DesktopApp";
 
-import { AppDescription } from "../../../models/AppData";
+import { AppGroup } from "../../../models/AppData";
 
 import "./DesktopAppGroup.css";
 
 type DesktopAppGroupProps = {
-  name: string;
-  list: AppDescription[];
-  directory: string;
+  // name: string;
+  // list: AppDescription[];
+  // directory: string;
+  group: AppGroup;
   expanded: boolean;
   toggleExpansionClass: () => void;
 };
 
 function DesktopAppGroup(props: DesktopAppGroupProps) {
-  const { name, list, directory, expanded, toggleExpansionClass } = props;
+  const { group, expanded, toggleExpansionClass } = props;
+  const { name, list, directory } = group;
 
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
@@ -32,11 +32,12 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
           return (
             <DesktopApp
               key={key}
-              activeLink={item.activeLink}
-              iconImagePath={`resources/${directory}/${item.iconImage}`}
-              group={name}
+              item={item}
+              // activeLink={item.activeLink}
+              // iconImagePath={`resources/${directory}/${item.iconImage}`}
+              directory={directory}
               id={key}
-              name={item.name}
+              // name={item.name}
             />
           );
         })}

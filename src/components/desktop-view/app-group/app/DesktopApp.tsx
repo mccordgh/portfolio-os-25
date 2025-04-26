@@ -2,22 +2,27 @@ import { useContext } from "react";
 import AppsContext from "../../../../context/AppsContext";
 
 import "./DesktopApp.css";
+import { AppDescription } from "../../../../models/AppData";
+import ImageHelper from "../../../../helpers/ImageHelper";
 
 type DesktopAppProps = {
   id: number;
-  group: string;
-  iconImagePath: string;
-  activeLink?: string;
-  name?: string;
+  directory: string;
+  item: AppDescription;
+  // iconImagePath: string;
+  // activeLink?: string;
+  // name?: string;
 };
 
 function DesktopApp(props: DesktopAppProps) {
-  const { id, group, iconImagePath, activeLink, name } = props;
+  const { id, directory, item } = props;
+  const { iconImage, activeLink, name } = item;
+
   const { setSelectedApp } = useContext(AppsContext);
 
   const desktopAppStyleObject = {
     // backgroundImage: `url(${this.props.iconImage}), linear-gradient(to bottom right, ${this.props.bgColor} 30%, white 150%)`,
-    backgroundImage: `url(${iconImagePath})`,
+    backgroundImage: `url(${ImageHelper.getImagePath(directory, iconImage || "")})`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -30,7 +35,7 @@ function DesktopApp(props: DesktopAppProps) {
       return;
     }
 
-    setSelectedApp(group, id);
+    setSelectedApp(directory, id);
     // this.props.openAppCallback(this.props.id, this.props.group);
   };
 

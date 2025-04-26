@@ -55,9 +55,10 @@ function DesktopView() {
                   toggleExpansionClass(appGroup.name);
                 }}
                 key={key}
-                name={appGroup.name}
-                list={appGroup.list}
-                directory={appGroup.directory}
+                group={appGroup}
+                // name={appGroup.name}
+                // list={appGroup.list}
+                // directory={appGroup.directory}
               />
             );
           })}
