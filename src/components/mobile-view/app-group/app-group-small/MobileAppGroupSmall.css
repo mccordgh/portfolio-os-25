@@ -23,6 +23,13 @@ div.mobileAppGroupSmallBackground {
 }
 
 div.mobileAppGroupSmallContainer {
+  /* align-content: flex-start;
+  align-items: center;
+  background-size: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
   align-content: flex-start;
   background-size: auto;
   box-sizing: border-box;
@@ -69,14 +76,4 @@ div.mobileAppGroupSmallBackground {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-}
-
-div.mobileAppGroupSmallContainer {
-  align-content: flex-start;
-  align-items: center;
-  background-size: auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }

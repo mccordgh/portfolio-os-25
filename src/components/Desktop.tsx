@@ -10,7 +10,6 @@ import AppsContext from "../context/AppsContext";
 import { AppDescription, AppGroup } from "../models/AppData";
 
 import appsList from "../data/apps.json";
-import "./Desktop.css";
 import MobileView from "./mobile-view/MobileView";
 
 const IPAD_PRO_WIDTH = 1024;
@@ -45,7 +44,7 @@ function Desktop() {
     }
 
     if (group === "closeApp") {
-      setSelectedApp({});
+      setSelectedApp({ name: "placeholder" });
       return;
     }
 
@@ -76,7 +75,6 @@ function Desktop() {
   };
 
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
-  //   const view = mode === "desktop" ? <DesktopView /> : <h1>Mobile View</h1>;
 
   if (mode === "") {
     return <></>;

@@ -5,9 +5,16 @@ import AppsContext from "../../context/AppsContext";
 import Banner from "./banner/Banner";
 import MobileAppGroup from "./app-group/MobileAppGroup";
 
+import "./MobileView.css";
+import OpenMobileApp from "./open-app/OpenMobileApp";
+
 function MobileView() {
   const { apps, selectedApp } = useContext(AppsContext);
 
+  console.log(
+    "app selected?:",
+    selectedApp.name && selectedApp.name !== "placeholder"
+  );
   return (
     <>
       <Banner />
@@ -26,15 +33,17 @@ function MobileView() {
           })}
         </div>
 
-        <div className="mobileImage">
+        {/* <div className="mobileImage">
           <img
             src="resources/mccordinator2_head.png"
             alt="Mccordinator's Pixel Head"
           />
-        </div>
+        </div> */}
 
-        <h1>{selectedApp.name}</h1>
-        {/* {selectedApp.name && <OpenAppWindow app={selectedApp} />} */}
+        {/* <h1>{selectedApp.name}</h1> */}
+        {selectedApp.name && selectedApp.name !== "placeholder" && (
+          <OpenMobileApp app={selectedApp} />
+        )}
       </div>
     </>
   );

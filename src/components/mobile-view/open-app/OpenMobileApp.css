@@ -1,0 +1,134 @@
+/* hr {
+    width: calc(100% - 2rem);
+    color: lightgrey;
+} */
+
+div.openApp {
+  background-color: #0978b2;
+  color: black;
+  left: 0;
+  height: calc(100% - 2rem);
+  overflow-y: scroll;
+  position: fixed;
+  top: 2rem;
+  width: 100%;
+  z-index: 10;
+}
+
+div.openApp ul {
+  background-color: #3378ad;
+  font-size: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+div.openApp ul li {
+  padding: 1rem 0;
+}
+
+div.openApp ul li a {
+  color: whitesmoke;
+  display: inline-block;
+  font-weight: bold;
+}
+
+div.openApp p {
+  color: whitesmoke;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  margin: 1rem;
+}
+
+div.appImageTitle {
+  background: linear-gradient(162deg, #3378ad, #63b8f9);
+  border-bottom: 0.2rem solid grey;
+  color: #f5f5f5;
+  height: 2rem;
+  text-align: center;
+}
+
+div.appImageTitle span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+div.appImageWrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 8rem;
+}
+
+div.appImageWrapper img {
+  width: 100%;
+}
+
+div.appDescriptionWrapper {
+  background-color: #0978b2;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0;
+  width: 100%;
+}
+
+div.appDescriptionWrapper img {
+  border-radius: 1rem;
+  height: 1rem;
+  padding-right: 1rem;
+  width: 1rem;
+}
+
+div.appDescriptionWrapper p {
+  color: black;
+  display: inline;
+  font-style: initial;
+  margin: 1rem 0;
+}
+
+div.appDescriptionWrapper a {
+  padding: 0.6rem;
+  padding-left: 0;
+}
+
+div.appLinksWrapper {
+  text-align: center;
+}
+
+div.appLinksWrapper a {
+  display: block;
+  padding: 1rem;
+}
+
+div.closeAppWrapper {
+  height: 2rem;
+  font-size: 2rem;
+  right: 1rem;
+  position: fixed;
+  top: 2rem;
+  width: 2rem;
+}
+
+div.app_close {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.1rem;
+  color: black;
+  cursor: pointer;
+  height: 2rem;
+  font-size: 1.8rem;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 2rem;
+}
+
+div.app-description--image-wrapper {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 1rem;
+}
