@@ -15,7 +15,7 @@ function MobileAppBig(props: MobileAppBigProps) {
 
   const { setSelectedApp } = useContext(AppsContext);
 
-  const mobileAppBigStyleObject = {
+  const mobileOsAppBigStyleObject = {
     backgroundImage: `url(${iconImage})`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
@@ -33,18 +33,18 @@ function MobileAppBig(props: MobileAppBigProps) {
   };
 
   return (
-    <div className="mobileAppGroupBig">
+    <div className="mobileOsAppGroupBig">
       <div
-        className="mobileAppGroupBigBackground"
-        style={mobileAppBigStyleObject}
+        className="mobileOsAppGroupBigBackground"
+        style={mobileOsAppBigStyleObject}
         onClick={() => {
           clickHandler();
         }}
       >
-        <div className="mobileAppGroupBigContainer"></div>
+        <div className="mobileOsAppGroupBigContainer"></div>
       </div>
 
-      <div className="mobileAppGroupBigTitle">
+      <div className="mobileOsAppGroupBigTitle">
         <h3>{name}</h3>
       </div>
     </div>

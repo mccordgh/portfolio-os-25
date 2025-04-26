@@ -15,12 +15,12 @@ function MobileAppSmall(props: MobileAppSmallProps) {
   };
 
   return (
-    <div className="mobileAppGroupSmall">
+    <div className="mobileOsAppGroupSmall">
       <div
-        className="mobileAppGroupSmallBackground"
+        className="mobileOsAppGroupSmallBackground"
         style={mobileAppSmallStyleObject}
       >
-        <div className="mobileAppGroupSmallContainer"></div>
+        <div className="mobileOsAppGroupSmallContainer"></div>
       </div>
     </div>
   );

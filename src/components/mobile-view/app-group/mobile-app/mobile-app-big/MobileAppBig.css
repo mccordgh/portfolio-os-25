@@ -1,4 +1,4 @@
-div.mobileAppGroupBig {
+div.mobileOsAppGroupBig {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 3rem;
@@ -6,7 +6,7 @@ div.mobileAppGroupBig {
   width: 33%;
 }
 
-div.mobileAppGroupBigBackground {
+div.mobileOsAppGroupBigBackground {
   border-radius: 0.4rem;
   box-sizing: border-box;
   height: 100%;
@@ -14,7 +14,7 @@ div.mobileAppGroupBigBackground {
   width: 50%;
 }
 
-div.mobileAppGroupBigContainer {
+div.mobileOsAppGroupBigContainer {
   align-content: flex-start;
   align-items: center;
   background-size: auto;
@@ -24,11 +24,11 @@ div.mobileAppGroupBigContainer {
   justify-content: center;
 }
 
-div.mobileAppGroupBigTitle {
+div.mobileOsAppGroupBigTitle {
   text-align: center;
 }
 
-div.mobileAppGroupBigTitle h3 {
+div.mobileOsAppGroupBigTitle h3 {
   font-weight: 100;
   font-size: 0.9rem;
   margin: 0.2rem 0 0;
