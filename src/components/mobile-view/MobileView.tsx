@@ -21,7 +21,7 @@ function MobileView() {
 
       <div className="mobileContainer">
         <div className="appgroupContainer">
-          {/* {apps.map((appGroup, key) => {
+          {apps.map((appGroup, key) => {
             return (
               <MobileAppGroup
                 key={key}
@@ -30,14 +30,14 @@ function MobileView() {
                 directory={appGroup.directory}
               />
             );
-          })} */}
-          {/* TODO: TESTING REMOVE LATER  */}
+          })}
+          {/* TODO: TESTING REMOVE LATER
           <MobileAppGroup
             key={1234}
             name={apps[0].name}
             list={apps[0].list}
             directory={apps[0].directory}
-          />
+          /> */}
         </div>
 
         {/* <div className="mobileImage">

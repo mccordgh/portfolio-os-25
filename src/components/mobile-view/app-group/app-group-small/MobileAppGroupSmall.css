@@ -1,8 +1,7 @@
 div.mobileAppGroupSmall {
   box-sizing: border-box;
-  height: 25%;
-  margin: 3.125%;
-  width: 25%;
+  height: 10rem;
+  width: 10rem;
 }
 
 div.mobileAppGroupSmallBackground {
