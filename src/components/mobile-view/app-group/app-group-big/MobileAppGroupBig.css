@@ -1,36 +1,71 @@
-div.MobileAppGroupBig {
-  -webkit-box-sizing: border-box;
+div.mobileAppGroupSmallPlaceholder {
   box-sizing: border-box;
-  height: 3rem;
-  margin: 1.5rem 0;
-  width: 33%;
+  height: 40%;
+  margin: 1rem 5% 0;
+  width: 40%;
 }
 
-div.MobileAppGroupBigBackground {
-  border-radius: 0.4rem;
+div.mobileAppGroupBig {
+  height: 19rem;
+  left: calc(50% - 9.5rem);
+  position: fixed;
+  top: calc(50% - 13.8rem);
+  width: 19rem;
+  z-index: 10;
+}
+
+div.mobileAppGroupBigBackground {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-radius: 1rem;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
   box-sizing: border-box;
+  display: inline-block;
   height: 100%;
-  margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
-div.MobileAppGroupBigContainer {
+div.mobileAppGroupBigContainer {
   align-content: flex-start;
-  align-items: center;
   background-size: auto;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.4rem;
+  width: 100%;
 }
 
-div.MobileAppGroupBigTitle {
+div.mobileAppGroupBigTitle {
+  display: block;
   text-align: center;
 }
 
-div.MobileAppGroupBigTitle h3 {
+div.mobileAppGroupBigTitle h1 {
   font-weight: 100;
-  font-size: 0.9rem;
-  margin: 0.2rem 0 0;
-  padding: 0 0.2rem;
+}
+
+div.backGroundBlur {
+  opacity: 0.8;
+  filter: blur(5rem);
+  background-color: black;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+div.MobileOsAppGroupDimBehind {
+  background-color: #222222;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: fixed;
+  top: 1.5rem;
+  width: 100%;
+  z-index: 4;
 }
