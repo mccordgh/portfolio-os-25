@@ -16,7 +16,10 @@ function MobileView() {
       <Banner />
 
       <div className="mobileContainer">
-        <div className="appgroupContainer">
+        <div
+          className="appgroupContainer"
+          style={{ backgroundImage: 'url("resources/mccordinator2_head.png")' }}
+        >
           {apps.map((appGroup, key) => {
             return (
               <MobileAppGroup

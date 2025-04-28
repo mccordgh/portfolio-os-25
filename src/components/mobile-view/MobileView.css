@@ -12,7 +12,6 @@ div.appgroupContainer {
   align-items: center;
   justify-content: space-between;
   padding: 10rem 1rem;
-  background: url(resources/mccordinator2_head.png);
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-color: var(--dark-color-rgba);

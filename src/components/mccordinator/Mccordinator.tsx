@@ -42,7 +42,11 @@ function Mccordinator() {
 
   return (
     <div>
-      <div onClick={clickyTheFace} className="mccordinatorHead"></div>
+      <div
+        onClick={clickyTheFace}
+        className="mccordinatorHead"
+        style={{ backgroundImage: 'url("resources/mccordinator2_head.png")' }}
+      ></div>
 
       {showBubble && (
         <div className="mccordinatorSpeechBubble">
