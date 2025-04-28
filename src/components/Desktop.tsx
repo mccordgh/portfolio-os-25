@@ -6,7 +6,7 @@ import DesktopView from "./desktop-view/DesktopView";
 import portfolioAbout from "../data/portfolio_about.json";
 
 // import headIcon from '../res/mccordinator2_head.png';
-import AppsContext from "../context/AppsContext";
+import AppsContext, { ViewMode } from "../context/AppsContext";
 import { AppDescription, AppGroup } from "../models/AppData";
 
 import appsList from "../data/apps.json";
@@ -18,7 +18,7 @@ function Desktop() {
   const apps: AppGroup[] = appsList.data;
   // const [apps, setApps] = useState<AppGroup[]>(appsList.data);
   const [selectedApp, setSelectedApp] = useState({ name: "placeholder" });
-  const [mode, setMode] = useState("");
+  const [mode, setMode] = useState<ViewMode>(undefined);
 
   const setModeByClientWidth = () => {
     const mode = window.innerWidth > IPAD_PRO_WIDTH ? "desktop" : "mobile";
@@ -69,6 +69,7 @@ function Desktop() {
   }, [mode]);
 
   const contextValue = {
+    mode,
     apps,
     selectedApp,
     setSelectedApp: setSelectedAppLookup,
@@ -76,7 +77,7 @@ function Desktop() {
 
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
 
-  if (mode === "") {
+  if (!mode) {
     return <></>;
   }
 
