@@ -1,20 +1,23 @@
 {
-  "name": "Portfolio OS v1.0",
+  "name": "Portfolio OS v2.0",
   "directory": "portfolio/",
-  "shortText": "Portfolio of Matthew McCord, full stack developer",
+  "shortText": "Portfolio of Matthew McCord",
   "description": [
-    "Written in JavaScript with REACT",
-    "All graphics, except for my pixel heads, and animations done with CSS.",
+    "Version 2.0 Update!:",
+    "Upgraded from React 16 to React 19",
+    "Translated Javascript in to TypeScript for better type safety",
+    "Removed props drilling in favor of the Context API",
+    "All graphics and animations done with CSS (excluding my pixelated head).",
     "All portfolio data is brought in through .json files",
     "Deployed with Github Pages."
   ],
   "links": [
     {
-      "url": "http://mccordinator.cool",
+      "url": "https://mccordinator.com/",
       "text": "View App! (Get META, dude)"
     },
     {
-      "url": "https://github.com/mccordgh/portfolio-os-react/",
+      "url": "https://github.com/mccordgh/portfolio-os-25/",
       "text": "View Github Source"
     }
   ],
