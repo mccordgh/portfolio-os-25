@@ -23,6 +23,10 @@ div.openApp ul li {
   padding: 1rem 0;
 }
 
+div.openApp ul li span {
+  color: var(--white);
+}
+
 div.openApp ul li a {
   color: var(--white);
   display: inline-block;

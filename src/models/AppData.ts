@@ -4,6 +4,7 @@ type LinkDescription = {
 };
 
 export type AppDescription = {
+  isMobileFriendly?: boolean; // able to play or navigate on mobile
   name: string;
   iconImage?: string;
   shortText?: string;

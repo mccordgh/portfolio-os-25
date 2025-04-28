@@ -6,6 +6,7 @@
       "list": [
         {
           "name": "ACME Time Fixers",
+          "isMobileFriendly": false,
           "shortText": "Solve puzzles to fix time and save people from accidents!",
           "description": [
             "Written in HTML5/JS w/ Canvas",
@@ -27,6 +28,7 @@
         },
         {
           "name": "Bee Budz",
+          "isMobileFriendly": true,
           "shortText": "Fly around, collect pollen, help your bee budz!",
           "description": [
             "Written in Pico-8",
@@ -48,6 +50,7 @@
         },
         {
           "name": "The CORE",
+          "isMobileFriendly": false,
           "shortText": "A procedurally generated adventure!",
           "description": [
             "Written in JavaScript",
@@ -78,6 +81,7 @@
         },
         {
           "name": "Defend The Castle",
+          "isMobileFriendly": false,
           "shortText": "A twist on the classic tower defense genre!",
           "description": [
             "Written in JavaScript",
@@ -99,6 +103,7 @@
         },
         {
           "name": "Golden Beak Golf",
+          "isMobileFriendly": true,
           "shortText": "Golfing meets flappy bird!",
           "description": [
             "Written in Pico-8 fantasy console.",
@@ -123,6 +128,8 @@
         },
         {
           "name": "Waves '87: Business Cruizin'",
+          "isMobileFriendly": false,
+
           "shortText": "Take a cruise. No seriously, TAKE A CRUISE.",
           "description": [
             "Written in Python with the Ren'Py graphic novel engine.",

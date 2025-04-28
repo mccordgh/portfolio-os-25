@@ -8,7 +8,7 @@ type OpenMobileAppProps = {
 };
 
 function OpenMobileApp(props: OpenMobileAppProps) {
-  const { setSelectedApp } = useContext(AppsContext);
+  const { setSelectedApp, mode } = useContext(AppsContext);
   const { app } = props;
 
   const image = `resources/${app.directory}/${app.headerImage}`;
@@ -16,6 +16,16 @@ function OpenMobileApp(props: OpenMobileAppProps) {
   const links = app?.links?.length ? (
     <ul>
       {app.links.map((link, key) => {
+        // The first link will direct user to go play the game in a browser.
+        // When the user is on mobile, any game with isMobileFriendly set to false will not be playable.
+        if (key === 0 && mode === "mobile" && !app.isMobileFriendly) {
+          return (
+            <li key={key}>
+              <span>(To play this game, please use a Desktop device)</span>
+            </li>
+          );
+        }
+
         return (
           <li key={key}>
             <a href={link.url} target="_blank" rel="noopener noreferrer">
