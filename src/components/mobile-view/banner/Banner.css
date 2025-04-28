@@ -3,19 +3,18 @@ div.banner-container {
   background-color: var(--medium-color);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* height: 2rem; */
-  font-size: 0.9rem;
-  /* left: 0; */
-  padding: 0.5rem;
-  /* position: fixed; */
-  text-align: center;
-  /* top: 0; */
-  /* width: 100%; */
+  font-size: 1rem;
+  padding: 0.2rem;
   grid-row: 1;
+  padding: 0.1rem 0.6rem;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 div.banner-container span {
-  padding: 0.5rem 1rem;
+  /* margin-bottom: 0.2rem; */
 }
 
 div.banner-container span.banner-left--highlights:hover {
@@ -23,8 +22,8 @@ div.banner-container span.banner-left--highlights:hover {
 }
 
 div.banner-left {
-  left: 0;
-  position: absolute;
+  /* left: 0; */
+  /* position: absolute; */
 }
 
 div.banner-left span,
@@ -35,7 +34,7 @@ div.banner-left a {
 }
 
 div.banner-right {
-  position: absolute;
-  right: 0;
-  top: 0.5rem;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 0.5rem; */
 }
