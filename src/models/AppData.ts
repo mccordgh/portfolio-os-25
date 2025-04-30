@@ -3,21 +3,23 @@ type LinkDescription = {
   text: string;
 };
 
+type AppDirectory = "social_media" | "game_dev" | "music";
+
 export type AppDescription = {
   isMobileFriendly?: boolean; // able to play or navigate on mobile
-  name: string;
+  name?: string;
   iconImage?: string;
   shortText?: string;
   description?: string[];
   links?: LinkDescription[];
   headerImage?: string;
   activeLink?: string;
-  directory?: string;
+  directory: AppDirectory;
 };
 
 export type AppGroup = {
   name: string;
-  directory: string;
+  directory: AppDirectory;
   list: AppDescription[];
 };
 

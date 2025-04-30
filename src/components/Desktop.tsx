@@ -15,9 +15,8 @@ import MobileView from "./mobile-view/MobileView";
 const IPAD_PRO_WIDTH = 1024;
 
 function Desktop() {
-  const apps: AppGroup[] = appsList.data;
-  // const [apps, setApps] = useState<AppGroup[]>(appsList.data);
-  const [selectedApp, setSelectedApp] = useState({ name: "placeholder" });
+  const apps: AppGroup[] = appsList.data as AppGroup[];
+  const [selectedApp, setSelectedApp] = useState({} as AppDescription);
   const [mode, setMode] = useState<ViewMode>(undefined);
 
   const setModeByClientWidth = () => {
@@ -44,7 +43,7 @@ function Desktop() {
     }
 
     if (group === "closeApp") {
-      setSelectedApp({ name: "placeholder" });
+      setSelectedApp({} as AppDescription);
       return;
     }
 
