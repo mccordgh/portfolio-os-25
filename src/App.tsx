@@ -6,6 +6,7 @@ import Desktop from "./components/Desktop";
   - utilize isMobileFriendly property
   - Fix Padding on top mobile view status bar
   - Fix view now link on Portfolio about.
+  - Fix dead images in THE CORE post-mortem!
 */
 function App() {
   // const loc = window.location;
