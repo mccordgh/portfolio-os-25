@@ -5,7 +5,7 @@
   "description": [
     "Version 2.0 Update!:",
     "Upgraded from React 16 to React 19",
-    "Translated Javascript in to TypeScript for better type safety",
+    "From Javascript to TypeScript for better type safety",
     "Removed props drilling in favor of the Context API",
     "All graphics and animations done with CSS (excluding my pixelated head).",
     "All portfolio data is brought in through .json files",

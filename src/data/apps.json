@@ -163,9 +163,9 @@
           "activeLink": "https://github.com/mccordgh"
         },
         {
-          "iconImage": "itchio_icon.png",
-          "name": "Itch.io",
-          "activeLink": "https://mccordinator.itch.io/"
+          "iconImage": "bluesky_icon.webp",
+          "name": "Blue Sky",
+          "activeLink": "https://bsky.app/profile/mccordinator.bsky.social"
         },
         {
           "iconImage": "linkedin_icon.png",
@@ -173,19 +173,19 @@
           "activeLink": "https://www.linkedin.com/in/mccordinator"
         },
         {
+          "iconImage": "x_icon.webp",
+          "name": "X",
+          "activeLink": "https://x.com/mattmccordmattm"
+        },
+        {
           "iconImage": "steam_icon.png",
           "name": "Steam",
           "activeLink": "https://steamcommunity.com/id/mccordinator"
         },
         {
-          "iconImage": "bluesky_icon.webp",
-          "name": "Blue Sky",
-          "activeLink": "https://bsky.app/profile/mccordinator.bsky.social"
-        },
-        {
-          "iconImage": "x_icon.webp",
-          "name": "X",
-          "activeLink": "https://x.com/mattmccordmattm"
+          "iconImage": "itchio_icon.png",
+          "name": "Itch.io",
+          "activeLink": "https://mccordinator.itch.io/"
         }
       ]
     },
