@@ -12,6 +12,7 @@ div.mobileOsAppGroupBigBackground {
   height: 100%;
   margin: 0 auto;
   width: 50%;
+  cursor: pointer;
 }
 
 div.mobileOsAppGroupBigContainer {
