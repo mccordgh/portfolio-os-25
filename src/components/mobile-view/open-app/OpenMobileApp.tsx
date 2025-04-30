@@ -42,33 +42,18 @@ function OpenMobileApp(props: OpenMobileAppProps) {
             );
           }
 
-  const image = `resources/${app.directory}/${app.headerImage}`;
-  const iconImage = `resources/${app.directory}/${app.iconImage}`;
-  const links = app?.links?.length ? (
-    <ul>
-      {app.links.map((link, key) => {
-        // The first link will direct user to go play the game in a browser.
-        // When the user is on mobile, any game with isMobileFriendly set to false will not be playable.
-        if (key === 0 && mode === "mobile" && !app.isMobileFriendly) {
           return (
             <li key={key}>
-              <span>(To play this game, please use a Desktop device)</span>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.text}
+              </a>
             </li>
           );
-        }
-
-        return (
-          <li key={key}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.text}
-            </a>
-          </li>
-        );
-      })}
-    </ul>
-  ) : (
-    <></>
-  );
+        })}
+      </ul>
+    ) : (
+      <></>
+    );
 
   return (
     <div className="openApp">
@@ -77,7 +62,7 @@ function OpenMobileApp(props: OpenMobileAppProps) {
                 </div> */}
 
       <div className="appImageTitle">
-        <span>{app.name}</span>
+        <span>{name}</span>
 
         <div className="app_close">
           <span
@@ -94,15 +79,15 @@ function OpenMobileApp(props: OpenMobileAppProps) {
         <img src={image} alt="App Logo" />
       </div>
 
-      <p>{app.shortText}</p>
+      <p>{shortText}</p>
 
       <div className="appDescriptionWrapper">
-        {app.description?.map((paragraph, key) => {
+        {description?.map((paragraph, key) => {
           return (
             <div key={key} className="app-description--image-wrapper">
               <img
                 className="app-description--icon"
-                src={iconImage}
+                src={iconImagePath}
                 alt="bullet points for description"
               ></img>
               <p>{paragraph}</p>
@@ -111,7 +96,7 @@ function OpenMobileApp(props: OpenMobileAppProps) {
         })}
       </div>
 
-      {links}
+      {appLinks}
     </div>
   );
 }
