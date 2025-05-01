@@ -147,23 +147,21 @@ div.desktopAppGroupWrapper {
 div.desktopAppWrapper {
   display: inline-flex;
   flex-wrap: wrap;
-  /* height: 7rem; */
   left: -60rem;
-  /* overflow: hidden; */
   position: relative;
-  top: -10rem;
+  top: -6rem;
   transition: all 0.6s ease-out;
   -webkit-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
   visibility: hidden;
-  width: calc(100% - 10rem);
+  width: 200%;
 }
 
 div.desktopAppGroupWrapper.expanded div.desktopAppWrapper {
-  /* background-color: orange; */
-  /* max-width: 100%; */
   left: 11rem;
   visibility: visible;
+  padding-top: 4rem;
+  width: calc(100% - 10rem);
 }
 
 div.desktopAppGroupWrapper.expanded

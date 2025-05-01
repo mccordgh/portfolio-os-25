@@ -7,17 +7,18 @@ div.desktop-container {
   /* overflow-y: scroll; */
   overflow: hidden;
   /* position: relative; */
-  padding: 2rem;
+  padding: 2rem 5rem;
   /* width: 100%; */
   grid-row: 2;
+  background-color: var(--dark-color);
 }
 
 div.floating-wall {
   background-color: var(--dark-color);
   position: absolute;
   height: 100vh;
-  width: 10rem;
+  width: 20rem;
   top: 0rem;
   z-index: 9;
-  left: 0rem;
+  left: -7rem;
 }
