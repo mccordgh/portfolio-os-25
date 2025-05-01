@@ -41,6 +41,11 @@ div.desktop_banner-container span.banner-left--highlights:hover {
   color: var(--white);
 }
 
+div.desktop_banner-container span.banner-left--highlights a:hover {
+  background-color: var(--dark-color);
+  color: var(--white);
+}
+
 div.desktop_banner-left {
   display: flex;
   margin-left: 1rem;
@@ -48,6 +53,11 @@ div.desktop_banner-left {
   justify-content: flex-start;
   /* left: 3rem; */
   /* position: absolute; */
+}
+
+div.desktop_banner-left .resume-link {
+  font-weight: bold;
+  color: var(--black);
 }
 
 div.desktop_banner-right {

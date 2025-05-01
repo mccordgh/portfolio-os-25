@@ -22,8 +22,15 @@ div.banner-container span.banner-left--highlights:hover {
 }
 
 div.banner-left {
-  /* left: 0; */
-  /* position: absolute; */
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.banner-left .resume-link {
+  padding-left: 1rem;
+  color: var(--black);
 }
 
 div.banner-left span,

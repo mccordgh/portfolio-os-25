@@ -16,15 +16,16 @@ function Banner() {
         >
           About
         </span>
-        {/* <span>
-            <a
-              href={`${IMAGE_PATH}/resume.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </span> */}
+        <span>
+          <a
+            className="resume-link"
+            href="resources/matthew-mccord-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </span>
       </div>
 
       <div className="banner-right">

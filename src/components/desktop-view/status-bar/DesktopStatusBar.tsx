@@ -80,6 +80,16 @@ function DesktopStatusBar() {
         >
           About This Portfolio
         </span>
+        <span className="banner-left--highlights">
+          <a
+            className="resume-link"
+            href="resources/matthew-mccord-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </span>
       </div>
 
       <div className="desktop_banner-right">
