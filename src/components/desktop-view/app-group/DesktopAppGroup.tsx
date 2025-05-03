@@ -12,10 +12,8 @@ type DesktopAppGroupProps = {
 };
 
 function DesktopAppGroup(props: DesktopAppGroupProps) {
-  const { group, expanded, toggleExpansionClass, index } = props;
+  const { group, expanded, toggleExpansionClass } = props;
   const { name, list, directory } = group;
-
-  const appWrapperExtraStyles = index === 0 ? {} : { top: `-${index * 6}rem` };
 
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
@@ -27,10 +25,7 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
         </div>
       </div>
 
-      <div
-        className="desktopAppWrapper"
-        style={expanded ? appWrapperExtraStyles : {}}
-      >
+      <div className="desktopAppWrapper">
         {list.map((item, key) => {
           return (
             <DesktopApp key={key} item={item} directory={directory} id={key} />

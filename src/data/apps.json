@@ -154,6 +154,91 @@
       ]
     },
     {
+      "name": "Community Content",
+      "directory": "community_content",
+      "list": [
+        {
+          "name": "Veevalidate Talk",
+          "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
+          "description": [
+            "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
+            "From this talk I learned a lot about the library, and how to present information to an audience.",
+            "The slides linked below were shown during my talk."
+          ],
+          "links": [
+            {
+              "url": "https://github.com/mccordgh/vee-validate-presentation",
+              "text": "View the slides here."
+            },
+            {
+              "url": "https://vee-validate.logaretm.com/v4/",
+              "text": "Veevalidate v4 (latest) official site"
+            }
+          ],
+          "iconImage": "vue-js-icon.png",
+          "headerImage": "veevalidate-code-snippet.png"
+        },
+        {
+          "name": "React Native Android Development",
+          "shortText": "Article written on medium.com",
+          "description": [
+            "I was facing a frustrating issue that when finally solved, I wanted to document for anyone else that may be facing it.",
+            "The article provides a guide for setting up Android emulation on a MacBook, building on a previous article by Matt Mcnamee.",
+            "It outlines the steps to install Android Studio and configure the necessary Android system images,",
+            "The guide also includes instructions for accessing the SDK Manager, selecting the appropriate packages, and creating an Android Virtual Device (AVD) using the Nexus 5X configuration.",
+            "Finally, it explains how to launch the emulator and run apps using Expo or React Native commands."
+          ],
+          "links": [
+            {
+              "url": "https://medium.com/@mccordinator/react-native-android-development-for-mac-in-2019-401ed2eeb798",
+              "text": "View the article here."
+            }
+          ],
+          "iconImage": "medium-icon.png",
+          "headerImage": "medium-article-screenshot.png"
+        },
+        {
+          "name": "{Placeholder}",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        },
+        {
+          "name": "{Placeholder}",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        },
+        {
+          "name": "{Placeholder}",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        }
+      ]
+    },
+    {
       "name": "Socials",
       "directory": "social_media",
       "list": [
@@ -269,85 +354,6 @@
           ],
           "iconImage": "mccordinator_icon.png",
           "headerImage": "mccordinator_header.png"
-        }
-      ]
-    },
-    {
-      "name": "Community Content",
-      "directory": "community_content",
-      "list": [
-        {
-          "name": "Veevalidate Talk",
-          "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
-          "description": [
-            "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
-            "From this talk I learned a lot about the library, and how to present information to an audience.",
-            "The slides linked below were shown during my talk."
-          ],
-          "links": [
-            {
-              "url": "https://github.com/mccordgh/vee-validate-presentation",
-              "text": "View the slides here."
-            },
-            {
-              "url": "https://vee-validate.logaretm.com/v4/",
-              "text": "Veevalidate v4 (latest) official site"
-            }
-          ],
-          "iconImage": "vue-js-icon.png",
-          "headerImage": "veevalidate-code-snippet.png"
-        },
-        {
-          "name": "Vuejs Meetup talk - Veevalidate",
-          "shortText": "",
-          "description": [""],
-          "links": [
-            {
-              "url": "",
-              "text": ""
-            }
-          ],
-          "iconImage": "",
-          "headerImage": ""
-        },
-        {
-          "name": "Vuejs Meetup talk - Veevalidate",
-          "shortText": "",
-          "description": [""],
-          "links": [
-            {
-              "url": "",
-              "text": ""
-            }
-          ],
-          "iconImage": "",
-          "headerImage": ""
-        },
-        {
-          "name": "Vuejs Meetup talk - Veevalidate",
-          "shortText": "",
-          "description": [""],
-          "links": [
-            {
-              "url": "",
-              "text": ""
-            }
-          ],
-          "iconImage": "",
-          "headerImage": ""
-        },
-        {
-          "name": "Vuejs Meetup talk - Veevalidate",
-          "shortText": "",
-          "description": [""],
-          "links": [
-            {
-              "url": "",
-              "text": ""
-            }
-          ],
-          "iconImage": "",
-          "headerImage": ""
         }
       ]
     }
