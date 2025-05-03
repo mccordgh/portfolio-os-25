@@ -134,3 +134,7 @@ div.app-description--image-wrapper {
   padding: 1rem;
   margin: 1rem;
 }
+
+div.openApp .app-links {
+  padding-bottom: 1rem;
+}

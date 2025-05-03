@@ -25,7 +25,7 @@ function OpenMobileApp(props: OpenMobileAppProps) {
   const iconImagePath = `resources/${directory}/${iconImage}`;
   const appLinks =
     links && links.length ? (
-      <ul>
+      <ul className="app-links">
         {links?.map((link, key) => {
           // The first link will direct user to go play the game in a browser.
           // When the user is on mobile, any game with isMobileFriendly set to false will not be playable.
