@@ -16,7 +16,6 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
   const { name, list, directory } = group;
 
   const appWrapperExtraStyles = index === 0 ? {} : { top: `-${index * 6}rem` };
-  console.log(name, appWrapperExtraStyles);
 
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>

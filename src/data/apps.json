@@ -271,6 +271,85 @@
           "headerImage": "mccordinator_header.png"
         }
       ]
+    },
+    {
+      "name": "Community Content",
+      "directory": "community_content",
+      "list": [
+        {
+          "name": "Veevalidate Talk",
+          "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
+          "description": [
+            "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
+            "From this talk I learned a lot about the library, and how to present information to an audience.",
+            "The slides linked below were shown during my talk."
+          ],
+          "links": [
+            {
+              "url": "https://github.com/mccordgh/vee-validate-presentation",
+              "text": "View the slides here."
+            },
+            {
+              "url": "https://vee-validate.logaretm.com/v4/",
+              "text": "Veevalidate v4 (latest) official site"
+            }
+          ],
+          "iconImage": "vue-js-icon.png",
+          "headerImage": "veevalidate-code-snippet.png"
+        },
+        {
+          "name": "Vuejs Meetup talk - Veevalidate",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        },
+        {
+          "name": "Vuejs Meetup talk - Veevalidate",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        },
+        {
+          "name": "Vuejs Meetup talk - Veevalidate",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        },
+        {
+          "name": "Vuejs Meetup talk - Veevalidate",
+          "shortText": "",
+          "description": [""],
+          "links": [
+            {
+              "url": "",
+              "text": ""
+            }
+          ],
+          "iconImage": "",
+          "headerImage": ""
+        }
+      ]
     }
   ]
 }
