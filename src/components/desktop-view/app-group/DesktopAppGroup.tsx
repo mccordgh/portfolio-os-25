@@ -5,17 +5,18 @@ import { AppGroup } from "../../../models/AppData";
 import "./DesktopAppGroup.css";
 
 type DesktopAppGroupProps = {
-  // name: string;
-  // list: AppDescription[];
-  // directory: string;
   group: AppGroup;
   expanded: boolean;
   toggleExpansionClass: () => void;
+  index: number;
 };
 
 function DesktopAppGroup(props: DesktopAppGroupProps) {
-  const { group, expanded, toggleExpansionClass } = props;
+  const { group, expanded, toggleExpansionClass, index } = props;
   const { name, list, directory } = group;
+
+  const appWrapperExtraStyles = index === 0 ? {} : { top: `-${index * 6}rem` };
+  console.log(name, appWrapperExtraStyles);
 
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
@@ -27,18 +28,13 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
         </div>
       </div>
 
-      <div className="desktopAppWrapper">
+      <div
+        className="desktopAppWrapper"
+        style={expanded ? appWrapperExtraStyles : {}}
+      >
         {list.map((item, key) => {
           return (
-            <DesktopApp
-              key={key}
-              item={item}
-              // activeLink={item.activeLink}
-              // iconImagePath={`resources/${directory}/${item.iconImage}`}
-              directory={directory}
-              id={key}
-              // name={item.name}
-            />
+            <DesktopApp key={key} item={item} directory={directory} id={key} />
           );
         })}
       </div>

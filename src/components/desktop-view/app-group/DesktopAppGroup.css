@@ -134,7 +134,7 @@ h1.desktopGroupTitle {
 
 div.desktopAppGroupWrapper {
   flex-grow: 1;
-  height: 33%;
+  height: 20%;
   /* height: 9rem; */
   /* transition: height 0.3s ease-out; */
   /* width: 100%; */
@@ -149,7 +149,7 @@ div.desktopAppWrapper {
   flex-wrap: wrap;
   left: -60rem;
   position: relative;
-  top: -6rem;
+  top: -8rem;
   transition: all 0.6s ease-out;
   -webkit-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -160,7 +160,6 @@ div.desktopAppWrapper {
 div.desktopAppGroupWrapper.expanded div.desktopAppWrapper {
   left: 11rem;
   visibility: visible;
-  padding-top: 4rem;
   width: calc(100% - 10rem);
 }
 

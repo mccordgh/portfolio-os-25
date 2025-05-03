@@ -47,14 +47,15 @@ function DesktopView() {
       <div className="desktop-container">
         <div className="floating-wall"></div>
         {apps &&
-          apps.map((appGroup, key) => {
+          apps.map((appGroup, index) => {
             return (
               <DesktopAppGroup
                 expanded={expandedGroupName === appGroup.name}
                 toggleExpansionClass={() => {
                   toggleExpansionClass(appGroup.name);
                 }}
-                key={key}
+                key={index}
+                index={index}
                 group={appGroup}
                 // name={appGroup.name}
                 // list={appGroup.list}
