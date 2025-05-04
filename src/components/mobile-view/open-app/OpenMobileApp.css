@@ -59,7 +59,7 @@ div.appImageTitle span {
 div.appImageWrapper {
   width: 100%;
   overflow: hidden;
-  height: 8rem;
+  /* height: 8rem; */
 }
 
 div.appImageWrapper img {

@@ -92,7 +92,7 @@ div.desktop-app--content_wrapper ul li a:hover {
 } */
 
 div.app--header-image {
-  height: 24rem;
+  /* height: 24rem; */
   overflow-y: hidden;
   width: 100%;
 }
