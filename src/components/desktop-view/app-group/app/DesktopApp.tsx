@@ -40,12 +40,8 @@ function DesktopApp(props: DesktopAppProps) {
   };
 
   return (
-    <div className="desktopApp">
-      <div
-        className="desktopAppBackground"
-        style={desktopAppStyleObject}
-        onClick={onAppClick}
-      ></div>
+    <div className="desktopApp" onClick={onAppClick}>
+      <div className="desktopAppBackground" style={desktopAppStyleObject}></div>
 
       <div className="desktopAppTitle">
         <h3>{name}</h3>

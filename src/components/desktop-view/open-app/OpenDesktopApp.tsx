@@ -45,8 +45,7 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
 
   return (
     <div>
-      <div className="desktop-app_behind" onClick={closeAppCallback}></div>
-
+      <div className="desktop-app_behind" onClick={closeAppCallback} />
       <div className="desktop-app_open">
         <div className="app_open-banner">
           <span className="windowTitle">{app.name}</span>

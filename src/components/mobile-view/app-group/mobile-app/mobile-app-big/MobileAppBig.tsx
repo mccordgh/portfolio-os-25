@@ -34,13 +34,15 @@ function MobileAppBig(props: MobileAppBigProps) {
   };
 
   return (
-    <div className="mobileOsAppGroupBig">
+    <div
+      className="mobileOsAppGroupBig"
+      onClick={() => {
+        clickHandler();
+      }}
+    >
       <div
         className="mobileOsAppGroupBigBackground"
         style={mobileOsAppBigStyleObject}
-        onClick={() => {
-          clickHandler();
-        }}
       >
         <div className="mobileOsAppGroupBigContainer"></div>
       </div>
