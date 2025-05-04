@@ -15,16 +15,18 @@ div.desktop-app_open {
   -webkit-box-shadow: -24px 23px 50px -12px #000;
   box-sizing: border-box;
   color: black;
-  height: 40rem;
-  left: calc(50% - 30rem);
   overflow: hidden;
   padding-top: 2rem;
-  position: fixed;
-  top: calc(50% - 20rem);
   min-width: 50rem;
+  z-index: 999;
+  top: 1rem;
   width: 75%;
-  max-width: 70rem;
-  z-index: 12;
+  position: fixed;
+  left: 50%;
+  margin-left: -37.5%;
+  height: 80%;
+  bottom: 50%;
+  margin-top: 4rem;
 }
 
 /* div.desktop-app--content_wrapper ::-webkit-scrollbar-track:vertical {
