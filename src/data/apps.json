@@ -182,7 +182,7 @@
           "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
           "description": [
             "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
-            "From this talk I learned a lot about the library, and how to present information to an audience.",
+            "From this talk I learned a lot about Veevalidate, and how to present information to an audience.",
             "The slides linked below were shown during my talk."
           ],
           "links": [
@@ -218,43 +218,61 @@
           "headerImage": "medium-article-screenshot.png"
         },
         {
-          "name": "{Placeholder}",
-          "shortText": "",
-          "description": [""],
+          "name": "Video: Global Game Jam 2020",
+          "shortText": "Presenting a game made for GGJ 2020 for the theme \"Repair\".",
+          "description": [
+            "GGJ 2020 was hosted on-site at the Science Center in Seattle, WA."
+          ],
           "links": [
             {
-              "url": "",
-              "text": ""
+              "url": "https://youtu.be/ss1gLg25BHU?si=-VQQkiFZ2fEOAoWg&t=6631",
+              "text": "Presentation on youtube @ 1:50:31"
+            },
+            {
+              "url": "https://globalgamejam.org",
+              "text": "Visit Global Game Jam!"
             }
           ],
-          "iconImage": "",
-          "headerImage": ""
+          "iconImage": "ggj-icon.png",
+          "headerImage": "ggj-2020-video-header.png"
         },
         {
-          "name": "{Placeholder}",
-          "shortText": "",
-          "description": [""],
+          "name": "Video: Seattle Indies Game Jam 2019",
+          "shortText": "Presenting a game made for Seattle Indies Game Jam 2019 for the theme \"Intentionally broken\".",
+          "description": [
+            "Seattle indies Game Jam 2019 was hosted on-site at the Science Center in Seattle, WA."
+          ],
           "links": [
             {
-              "url": "",
-              "text": ""
+              "url": "https://youtu.be/b1J8RZjH-kc?si=3KlD21k2LNtAXdWg&t=7135",
+              "text": "Presentation on youtube @ 1:58:55"
+            },
+            {
+              "url": "https://www.seattleindies.org/",
+              "text": "Visit Seattle Indies!"
             }
           ],
-          "iconImage": "",
-          "headerImage": ""
+          "iconImage": "seattle-indies-icon.png",
+          "headerImage": "seattle-indies-2019-jam-header.png"
         },
         {
-          "name": "{Placeholder}",
-          "shortText": "",
-          "description": [""],
+          "name": "Video: Global Game Jam 2019",
+          "shortText": "Presenting a game made for GGJ 2019 for the theme \"What home means to you\"",
+          "description": [
+            "GGJ 2019 was hosted on-site at the Science Center in Seattle, WA."
+          ],
           "links": [
             {
-              "url": "",
-              "text": ""
+              "url": "https://youtu.be/gs6iah5wkwM?si=USfyuFGgRBU4Nj0W&t=6401",
+              "text": "Presentation on youtube @ 1:46:41"
+            },
+            {
+              "url": "https://globalgamejam.org",
+              "text": "Visit Global Game Jam!"
             }
           ],
-          "iconImage": "",
-          "headerImage": ""
+          "iconImage": "ggj-icon.png",
+          "headerImage": "ggj-2019-video-header.png"
         }
       ]
     },
