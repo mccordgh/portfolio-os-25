@@ -129,7 +129,6 @@
         {
           "name": "Waves '87: Business Cruizin'",
           "isMobileFriendly": false,
-
           "shortText": "Take a cruise. No seriously, TAKE A CRUISE.",
           "description": [
             "Written in Python with the Ren'Py graphic novel engine.",
@@ -150,6 +149,27 @@
           ],
           "iconImage": "waves_87_icon.png",
           "headerImage": "waves_87_header.png"
+        },
+        {
+          "name": "UUD4T",
+          "isMobileFriendly": true,
+          "shortText": "A game about repairing the world with WD-40.",
+          "description": [
+            "Written in Unity game engine.",
+            "This game was made during Global Game Jam 2020.",
+            "Cross-site collaboration with a dev and artist in Galway, Ireland.",
+            "You are trapped in a building, but fear not!",
+            "Use the magical can that repairs anything, removes rust & propels you through the air.",
+            "Move through the building cleaning the rust & avoiding the angry robots!"
+          ],
+          "links": [
+            {
+              "url": "https://v3.globalgamejam.org/2020/games/uud4t-0",
+              "text": "View / Play UUD4T on GlobalGameJam.org!"
+            }
+          ],
+          "iconImage": "uud4t-icon.png",
+          "headerImage": "uud4t-header.png"
         }
       ]
     },
