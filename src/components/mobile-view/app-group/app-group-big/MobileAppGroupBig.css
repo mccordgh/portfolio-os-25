@@ -6,7 +6,7 @@ div.mobileAppGroupSmallPlaceholder {
 }
 
 div.mobileAppGroupBig {
-  height: 19rem;
+  height: 20rem;
   left: calc(50% - 9.5rem);
   position: fixed;
   top: calc(50% - 13.8rem);
@@ -33,7 +33,7 @@ div.mobileAppGroupBigContainer {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 80%;
+  /* height: 80%; */
   overflow: hidden;
   padding: 0 0.4rem 1rem;
   width: 100%;
