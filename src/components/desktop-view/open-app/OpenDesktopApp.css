@@ -16,7 +16,6 @@ div.desktop-app_open {
   box-sizing: border-box;
   color: black;
   overflow: hidden;
-  padding-top: 2rem;
   min-width: 50rem;
   z-index: 999;
   top: 1rem;
@@ -184,11 +183,13 @@ div.app_open-banner {
   border-bottom: 0.2rem solid grey;
   color: var(--white);
   height: 2rem;
-  position: absolute;
+  /* position: absolute; */
   /* text-align: center; */
   display: flex;
   flex-direction: row;
-  top: 0;
+  justify-content: center;
+  align-items: center;
+  /* top: 0; */
   width: 100%;
 }
 

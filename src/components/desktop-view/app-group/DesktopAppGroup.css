@@ -147,7 +147,7 @@ div.desktopAppGroupWrapper {
 div.desktopAppWrapper {
   display: inline-flex;
   flex-wrap: wrap;
-  left: -60rem;
+  left: -100rem;
   position: relative;
   top: -8rem;
   transition: all 0.6s ease-out;
