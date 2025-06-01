@@ -7,33 +7,17 @@ div.desktop_banner-container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: var(--black);
-  /* height: 2rem; */
   font-size: 1rem;
   z-index: 99;
-  /* left: 0; */
-  /* padding: 0.5rem; */
-  /* position: fixed; */
-  /* text-align: center; */
-  /* top: 0; */
-  /* width: 100%; */
-  /* z-index: 999;
 }
 
-div.desktop_banner-container span {
-  /* padding: 0.5rem 1rem; */
-  /* margin-top: 0.4rem; */
-}
-
-/* div.desktop_banner-container span.banner-left--highlights a */
 div.desktop_banner-container span.banner-left--highlights {
-  /* color: white; */
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
   margin-left: 0.5rem;
   padding-top: 0.4rem;
   padding: 0 0.5rem;
-  /* height: 2rem; */
 }
 
 div.desktop_banner-container span.banner-left--highlights:hover {
@@ -51,8 +35,6 @@ div.desktop_banner-left {
   margin-left: 1rem;
   flex-grow: 1;
   justify-content: flex-start;
-  /* left: 3rem; */
-  /* position: absolute; */
 }
 
 div.desktop_banner-left .resume-link {
@@ -65,8 +47,4 @@ div.desktop_banner-right {
   flex-grow: 1;
   justify-content: flex-end;
   margin-right: 1rem;
-  /* margin-top: 0.4rem; */
-  /* position: absolute; */
-  /* right: 3rem; */
-  /* top: 0.5rem; */
 }

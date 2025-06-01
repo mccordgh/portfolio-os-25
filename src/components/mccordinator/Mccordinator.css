@@ -16,11 +16,9 @@ div.mccordinatorHead {
 
 div.mccordinatorSpeechBubble {
   background-color: var(--white);
-  /* border: 0.1rem solid #222; */
   border-radius: 1rem;
   box-shadow: 0rem 0 12rem -2rem #000;
   -moz-box-shadow: -15px 10px 20px -12px #000;
-  /* -webkit-box-shadow: -15px 15px 50px -12px #000; */
   bottom: 14rem;
   position: fixed;
   right: 3rem;

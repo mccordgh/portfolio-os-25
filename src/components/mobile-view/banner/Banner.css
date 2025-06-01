@@ -22,7 +22,6 @@ div.banner-left {
 }
 
 div.banner-left .resume-link {
-  /* padding-left: 1rem; */
   color: var(--black);
 }
 
@@ -32,13 +31,6 @@ div.banner-left span {
 
 div.banner-left span,
 div.banner-left a {
-  /* color: white; */
   font-weight: bold;
   text-decoration: none;
-}
-
-div.banner-right {
-  /* position: absolute; */
-  /* right: 0; */
-  /* top: 0.5rem; */
 }

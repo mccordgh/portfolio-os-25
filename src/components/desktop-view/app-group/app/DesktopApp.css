@@ -7,8 +7,6 @@ div.desktopApp {
 
 div.desktopAppBackground {
   border-radius: 1rem;
-  /* -webkit-box-shadow: 0 0px 10px -3px black;
-    box-shadow: 0 0px 10px -3px black; */
   height: 0.1rem;
   margin: 0.5rem auto;
   -webkit-transition: all 0.8s ease-out;
@@ -18,7 +16,6 @@ div.desktopAppBackground {
 }
 
 div.desktopAppTitle {
-  /* background: linear-gradient(to right, transparent, #111, transparent); */
   margin-top: 0.4rem;
   text-align: center;
   width: 100%;

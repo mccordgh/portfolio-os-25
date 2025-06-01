@@ -1,8 +1,3 @@
-/* hr {
-    width: calc(100% - 2rem);
-    color: lightgrey;
-} */
-
 div.desktop-app_open {
   background-color: var(--dark-color);
   border-top: 0.2rem solid grey;
@@ -27,15 +22,6 @@ div.desktop-app_open {
   bottom: 50%;
   margin-top: 4rem;
 }
-
-/* div.desktop-app--content_wrapper ::-webkit-scrollbar-track:vertical {
-    border-left: 1px solid #E7E7E7;
-    box-shadow: 1px 0 1px 0 #F6F6F6 inset, -1px 0 1px 0 #F6F6F6 inset;
-} */
-
-/* div.desktop-app_open hr {
-    width: calc(100% - 6rem);
-} */
 
 div.desktop-app--content_wrapper {
   padding: 0;
@@ -87,15 +73,10 @@ div.desktop-app--content_wrapper ul li a:hover {
   color: lightgrey;
 }
 
-/* div.desktop-app--content_wrapper hr {
-    margin-right: 3rem;
-    width: auto;
-} */
-
 div.app--header-image {
-  /* height: 24rem; */
   overflow-y: hidden;
   width: 100%;
+  max-height: 55%;
 }
 
 div.app--header-image img {
@@ -159,10 +140,6 @@ div.desktop-app_close {
   height: 1rem;
   font-size: 1rem;
   margin: 0.4rem;
-  /* left: calc(100% - 2.7rem);
-  margin: 0;
-  position: relative;
-  top: -1rem; */
   width: 1rem;
 }
 
@@ -183,13 +160,10 @@ div.app_open-banner {
   border-bottom: 0.2rem solid grey;
   color: var(--white);
   height: 2rem;
-  /* position: absolute; */
-  /* text-align: center; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* top: 0; */
   width: 100%;
 }
 
@@ -199,8 +173,6 @@ div.app_open-banner span.windowTitle {
   flex-grow: 1;
   text-align: center;
   padding-top: 0.1rem;
-  /* position: relative; */
-  /* top: 0.4rem; */
 }
 
 div.desktop-app_behind {

@@ -33,7 +33,6 @@ div.mobileAppGroupBigContainer {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  /* height: 80%; */
   overflow: hidden;
   padding: 0 0.4rem 1rem;
   width: 100%;

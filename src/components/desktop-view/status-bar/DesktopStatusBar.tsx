@@ -27,7 +27,6 @@ function DesktopStatusBar() {
     <div className="desktop_banner-container">
       <div className="desktop_banner-left">
         <span>Portfolio OS v{version}</span>
-        {/* <span>Portfolio OS v2.0.0</span> */}
         <span
           className="banner-left--highlights"
           onClick={() => {

@@ -57,10 +57,6 @@ function OpenMobileApp(props: OpenMobileAppProps) {
 
   return (
     <div className="openApp">
-      {/* <div className="closeAppWrapper">
-                    <span onClick={() => {closeAppCallback()}}>[X]</span>
-                </div> */}
-
       <div className="appImageTitle">
         <span>{name}</span>
 

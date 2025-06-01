@@ -64,14 +64,6 @@ div.desktopGroupFolder_back::after {
   width: 4rem;
 }
 
-/* div.desktopGroupFolder_front {
-    background-color: #FFA419;
-    display: inline-block;
-    height: 100%;
-    position: absolute;
-    width: 8rem;
-} */
-
 div.desktopGroupFolder_front {
   background-color: #ffa419;
   border-radius: 1rem 0 0 1rem;
@@ -135,14 +127,7 @@ h1.desktopGroupTitle {
 div.desktopAppGroupWrapper {
   flex-grow: 1;
   height: 20%;
-  /* height: 9rem; */
-  /* transition: height 0.3s ease-out; */
-  /* width: 100%; */
 }
-
-/* div.desktopAppGroupWrapper.expanded { */
-/* height: 13rem; */
-/* } */
 
 div.desktopAppWrapper {
   display: inline-flex;
