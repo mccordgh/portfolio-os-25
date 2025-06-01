@@ -1,16 +1,13 @@
 import { useContext, useState } from "react";
 
-// import DesktopAppGroup from './DesktopAppGroup/DesktopAppGroup';
-// import DesktopStatusBar from './DesktopStatusBar/DesktopStatusBar';
-// import Mccordinator from '../Mccordinator/Mccordinator';
-// import OpenDesktopAppWindow from './OpenDesktopAppWindow/OpenDesktopAppWindow';
-
-import "./DesktopView.css";
 import AppsContext from "../../context/AppsContext";
+
 import DesktopAppGroup from "./app-group/DesktopAppGroup";
 import DesktopStatusBar from "./status-bar/DesktopStatusBar";
 import OpenDesktopApp from "./open-app/OpenDesktopApp";
 import Mccordinator from "../mccordinator/Mccordinator";
+
+import "./DesktopView.css";
 
 function DesktopView() {
   const { apps, selectedApp } = useContext(AppsContext);
@@ -35,9 +32,6 @@ function DesktopView() {
     }
 
     setExpandedGroupName(groupName);
-    // const expandedClass = expanded ? "expanded" : "";
-
-    // setWrapperClass(expandedClass);
   };
 
   return (
@@ -57,9 +51,6 @@ function DesktopView() {
                 key={index}
                 index={index}
                 group={appGroup}
-                // name={appGroup.name}
-                // list={appGroup.list}
-                // directory={appGroup.directory}
               />
             );
           })}

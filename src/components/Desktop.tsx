@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
-// import MobileView from './MobileView/MobileView';
 
 import DesktopView from "./desktop-view/DesktopView";
+import MobileView from "./mobile-view/MobileView";
 
-import portfolioAbout from "../data/portfolio_about.json";
-
-// import headIcon from '../res/mccordinator2_head.png';
 import AppsContext, { ViewMode } from "../context/AppsContext";
 import { AppDescription, AppGroup } from "../models/AppData";
 
 import appsList from "../data/apps.json";
-import MobileView from "./mobile-view/MobileView";
+import portfolioAbout from "../data/portfolio_about.json";
 
 const IPAD_PRO_WIDTH = 1024;
 
@@ -75,10 +72,6 @@ function Desktop() {
   };
 
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
-
-  if (!mode) {
-    return <></>;
-  }
 
   return (
     <AppsContext.Provider value={contextValue}>{view}</AppsContext.Provider>
