@@ -1,11 +1,24 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import AppsContext from "../../../context/AppsContext";
 import "./Banner.css";
 import ClockHelper from "../../../helpers/ClockHelper";
 import { version } from "../../../data/version.json";
 
 function Banner() {
+  const [time, setTime] = useState("");
+  const [timeInterval, setTimeInterval] = useState<NodeJS.Timeout | null>(null);
+
   const { setSelectedApp } = useContext(AppsContext);
+
+  useEffect(() => {
+    if (!timeInterval) {
+      const interval = setInterval(() => {
+        setTime(ClockHelper.currentTime());
+      }, 1000);
+
+      setTimeInterval(interval);
+    }
+  }, [timeInterval]);
 
   return (
     <div className="banner-container">
@@ -32,7 +45,7 @@ function Banner() {
       </div>
 
       <div className="banner-right">
-        <span>{ClockHelper.currentTime()}</span>
+        <span>{time}</span>
       </div>
     </div>
   );

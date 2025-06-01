@@ -4,10 +4,16 @@ export default class ClockHelper {
   static currentTime = () => {
     const currentTime = new Date(),
       currentDay = currentTime.getDay(),
-      minutes = currentTime.getMinutes();
+      minutes = currentTime.getMinutes(),
+      seconds = currentTime.getSeconds();
 
     let hours = currentTime.getHours(),
-      displayMinutes = minutes.toString();
+      displayMinutes = minutes.toString(),
+      displaySeconds = seconds.toString();
+
+    if (seconds < 10) {
+      displaySeconds = `0${seconds}`;
+    }
 
     if (minutes < 10) {
       displayMinutes = `0${minutes}`;
@@ -24,6 +30,6 @@ export default class ClockHelper {
       hours = 12;
     }
 
-    return `${daysOfWeek[currentDay]} ${hours}:${displayMinutes} ${suffix}`;
+    return `${daysOfWeek[currentDay]} ${hours}:${displayMinutes}:${displaySeconds} ${suffix}`;
   };
 }

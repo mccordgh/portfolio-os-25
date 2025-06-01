@@ -3,6 +3,7 @@ import "./DesktopStatusBar.css";
 
 import { version } from "../../../data/version.json";
 import { useContext, useEffect, useState } from "react";
+import ClockHelper from "../../../helpers/ClockHelper";
 
 function DesktopStatusBar() {
   const [time, setTime] = useState("");
@@ -10,55 +11,10 @@ function DesktopStatusBar() {
 
   const { setSelectedApp } = useContext(AppsContext);
 
-  const getCurrentTime = (): string => {
-    const days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
-    const currentTime = new Date(),
-      currentDay = currentTime.getDay();
-
-    let hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes(),
-      seconds = currentTime.getSeconds();
-
-    let hoursStr, minutesStr, secondsStr;
-
-    if (minutes < 10) {
-      minutesStr = `0${minutes}`;
-    } else {
-      minutesStr = `${minutes}`;
-    }
-
-    if (seconds < 10) {
-      secondsStr = `0${seconds}`;
-    } else {
-      secondsStr = `${seconds}`;
-    }
-
-    let suffix = "AM";
-
-    if (hours >= 12) {
-      suffix = "PM";
-      hours = hours - 12;
-    }
-
-    if (hours === 0) {
-      hours = 12;
-    }
-
-    if (hours < 10) {
-      hoursStr = `0${hours}`;
-    } else {
-      hoursStr = `${hours}`;
-    }
-
-    return `${days[currentDay]} ${hoursStr}:${minutesStr}:${secondsStr} ${suffix}`;
-  };
-
   useEffect(() => {
-    setTime(getCurrentTime());
-
     if (!timeInterval) {
       const interval = setInterval(() => {
-        setTime(getCurrentTime());
+        setTime(ClockHelper.currentTime());
 
         return;
       }, 1000);
