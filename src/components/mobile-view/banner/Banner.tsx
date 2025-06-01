@@ -2,6 +2,7 @@ import { useContext } from "react";
 import AppsContext from "../../../context/AppsContext";
 import "./Banner.css";
 import ClockHelper from "../../../helpers/ClockHelper";
+import { version } from "../../../data/version.json";
 
 function Banner() {
   const { setSelectedApp } = useContext(AppsContext);
@@ -9,6 +10,8 @@ function Banner() {
   return (
     <div className="banner-container">
       <div className="banner-left">
+        <span>v{version}</span>
+
         <span
           onClick={() => {
             setSelectedApp("about");

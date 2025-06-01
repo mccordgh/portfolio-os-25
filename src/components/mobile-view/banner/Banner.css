@@ -22,8 +22,12 @@ div.banner-left {
 }
 
 div.banner-left .resume-link {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   color: var(--black);
+}
+
+div.banner-left span {
+  padding-right: 1rem;
 }
 
 div.banner-left span,
