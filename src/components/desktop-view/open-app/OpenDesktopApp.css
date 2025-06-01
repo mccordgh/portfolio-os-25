@@ -39,7 +39,7 @@ div.desktop-app_open {
 
 div.desktop-app--content_wrapper {
   padding: 0;
-  height: 100%;
+  height: 95%;
   overflow-y: scroll;
 }
 
