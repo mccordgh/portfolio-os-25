@@ -3,9 +3,15 @@ import dialogue from "../../data/dialogue.json";
 
 import "./Mccordinator.css";
 
+type MccordinatorDialogue = {
+  text: string;
+  continue: string;
+  exit: string;
+};
+
 function Mccordinator() {
   const [dialogueNumber, setDialogueNumber] = useState(0);
-  const [bubbleText, setBubbleText] = useState({
+  const [bubbleText, setBubbleText] = useState<MccordinatorDialogue>({
     text: "",
     continue: "",
     exit: "",

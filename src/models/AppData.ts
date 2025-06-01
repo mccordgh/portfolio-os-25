@@ -6,7 +6,7 @@ type LinkDescription = {
 type AppDirectory = "social_media" | "game_dev" | "music";
 
 export type AppDescription = {
-  isMobileFriendly?: boolean; // able to play or navigate on mobile
+  isMobileFriendly?: boolean; // able to play game or navigate on mobile
   name?: string;
   iconImage?: string;
   shortText?: string;

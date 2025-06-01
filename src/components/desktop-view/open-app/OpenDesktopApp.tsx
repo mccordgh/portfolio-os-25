@@ -1,14 +1,9 @@
-// import React, { Component } from 'react';
-// import ImageProcessor from '../../../Processors/ImageProcessor';
-
 import { useContext } from "react";
 import { AppDescription } from "../../../models/AppData";
 
 import AppsContext from "../../../context/AppsContext";
 
 import "./OpenDesktopApp.css";
-
-// import IMAGE_PATH from '../../../constants/image_path';
 
 type OpenDesktopAppProps = {
   app: AppDescription;

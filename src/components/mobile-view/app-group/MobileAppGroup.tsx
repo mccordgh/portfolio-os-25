@@ -30,21 +30,9 @@ function MobileAppGroup(props: MobileAppGroupProps) {
 
   const appGroup =
     state === "small" ? (
-      <MobileAppGroupSmall
-        group={group}
-        // list={list}
-        // name={name}
-        state={state}
-        // directory={directory}
-      />
+      <MobileAppGroupSmall group={group} state={state} />
     ) : (
-      <MobileAppGroupBig
-        group={group}
-        // list={list}
-        // name={name}
-        state={state}
-        // directory={directory}
-      />
+      <MobileAppGroupBig group={group} state={state} />
     );
 
   return (

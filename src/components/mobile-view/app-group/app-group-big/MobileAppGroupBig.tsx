@@ -6,9 +6,6 @@ import MobileAppsContext from "../../../../context/MobileAppsContext";
 
 type MobileAppGroupBigProps = {
   group: AppGroup;
-  // name: string;
-  // list: AppDescription[];
-  // directory: string;
   state: "small" | "big";
 };
 
@@ -19,7 +16,6 @@ function MobileAppGroupBig(props: MobileAppGroupBigProps) {
   const { setAppSize } = useContext(MobileAppsContext);
 
   return (
-    // <div className="appGroupSmallPlaceholder">
     <>
       <div
         className="MobileOsAppGroupDimBehind"
@@ -36,16 +32,12 @@ function MobileAppGroupBig(props: MobileAppGroupBigProps) {
         <div className="mobileAppGroupBigBackground">
           <div className="mobileAppGroupBigContainer">
             {list.map((item, key) => {
-              // const { name: itemName, activeLink, iconImage } = item;
               return (
                 <MobileApp
                   key={key}
                   id={key}
                   item={item}
                   directory={directory}
-                  // name={itemName}
-                  // activeLink={activeLink}
-                  // imagePath={`resources/${directory}/${iconImage}`}
                   state={state}
                 />
               );
@@ -54,7 +46,6 @@ function MobileAppGroupBig(props: MobileAppGroupBigProps) {
         </div>
       </div>
     </>
-    // </div>
   );
 }
 

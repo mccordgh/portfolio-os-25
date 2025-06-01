@@ -1,5 +1,4 @@
 import { useContext } from "react";
-// import OpenAppWindow from "../OpenAppWindow/OpenAppWindow";
 
 import AppsContext from "../../context/AppsContext";
 import Banner from "./banner/Banner";
@@ -21,15 +20,7 @@ function MobileView() {
           style={{ backgroundImage: 'url("resources/mccordinator2_head.png")' }}
         >
           {apps.map((appGroup, key) => {
-            return (
-              <MobileAppGroup
-                key={key}
-                group={appGroup}
-                // name={appGroup.name}
-                // list={appGroup.list}
-                // directory={appGroup.directory}
-              />
-            );
+            return <MobileAppGroup key={key} group={appGroup} />;
           })}
         </div>
 
