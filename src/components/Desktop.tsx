@@ -8,8 +8,7 @@ import { AppDescription, AppGroup } from "../models/AppData";
 
 import appsList from "../data/apps.json";
 import portfolioAbout from "../data/portfolio_about.json";
-
-const IPAD_PRO_WIDTH = 1024;
+import WindowDimensionsHelper from "../helpers/WindowDimensionsHelper";
 
 function Desktop() {
   const apps: AppGroup[] = appsList.data as AppGroup[];
@@ -17,9 +16,7 @@ function Desktop() {
   const [mode, setMode] = useState<ViewMode>(undefined);
 
   const setModeByClientWidth = () => {
-    const mode = window.innerWidth > IPAD_PRO_WIDTH ? "desktop" : "mobile";
-
-    setMode(mode);
+    setMode(WindowDimensionsHelper.getModeByClientWidth());
   };
 
   const findAppByIdAndGroup = (directory: string, id: number) => {
