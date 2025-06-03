@@ -14,7 +14,7 @@ export type AppDescription = {
   links?: LinkDescription[];
   headerImage?: string;
   activeLink?: string;
-  directory: AppDirectory;
+  directory?: AppDirectory;
 };
 
 export type AppGroup = {

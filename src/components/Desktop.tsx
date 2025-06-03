@@ -6,12 +6,13 @@ import MobileView from "./mobile-view/MobileView";
 import AppsContext, { ViewMode } from "../context/AppsContext";
 import { AppDescription, AppGroup } from "../models/AppData";
 
-import appsList from "../data/apps.json";
-import portfolioAbout from "../data/portfolio_about.json";
 import WindowDimensionsHelper from "../helpers/WindowDimensionsHelper";
+import AppsRepository from "../repositories/AppsRepository";
+
+const appsRepository = new AppsRepository();
 
 function Desktop() {
-  const apps: AppGroup[] = appsList.data as AppGroup[];
+  const apps: AppGroup[] = appsRepository.getApps();
   const [selectedApp, setSelectedApp] = useState({} as AppDescription);
   const [mode, setMode] = useState<ViewMode>(undefined);
 
@@ -19,40 +20,8 @@ function Desktop() {
     setMode(WindowDimensionsHelper.getModeByClientWidth());
   };
 
-  const findAppByIdAndGroup = (directory: string, id: number) => {
-    const group = apps.find((app) => app.directory === directory);
-    const appToOpen = group?.list[id];
-
-    if (appToOpen) {
-      appToOpen.directory = group.directory;
-    }
-
-    return appToOpen;
-  };
-
   const setSelectedAppLookup = (group: string, id?: number) => {
-    if (group === "about") {
-      setSelectedApp(portfolioAbout as AppDescription);
-      return;
-    }
-
-    if (group === "closeApp") {
-      setSelectedApp({} as AppDescription);
-      return;
-    }
-
-    if (id === undefined) {
-      console.error("Cannot find app when id is undefined");
-      return;
-    }
-
-    const found = findAppByIdAndGroup(group, id);
-
-    if (found) {
-      setSelectedApp(found);
-    } else {
-      console.error(`App with id ${id} not found in group ${group}`);
-    }
+    setSelectedApp(appsRepository.setSelectedAppLookup(group, id));
   };
 
   useEffect(() => {
