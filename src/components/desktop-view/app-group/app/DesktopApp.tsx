@@ -50,7 +50,7 @@ function DesktopApp(props: DesktopAppProps) {
       <div className="desktopAppBackground" style={desktopAppStyleObject}></div>
 
       <div className="desktopAppTitle">
-        <h3>{name}</h3>
+        <h2>{name}</h2>
       </div>
     </div>
   );

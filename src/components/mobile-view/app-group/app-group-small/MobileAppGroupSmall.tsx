@@ -33,7 +33,7 @@ function MobileAppGroupSmall(props: MobileAppGroupSmallProps) {
         </div>
 
         <div className="mobileAppGroupSmallTitle">
-          <h3>{name}</h3>
+          <h2>{name}</h2>
         </div>
       </div>
     </div>

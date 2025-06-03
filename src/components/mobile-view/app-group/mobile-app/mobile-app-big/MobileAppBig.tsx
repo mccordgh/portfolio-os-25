@@ -60,7 +60,7 @@ function MobileAppBig(props: MobileAppBigProps) {
       </div>
 
       <div className="mobileOsAppGroupBigTitle">
-        <h3>{name}</h3>
+        <h2>{name}</h2>
       </div>
     </div>
   );
