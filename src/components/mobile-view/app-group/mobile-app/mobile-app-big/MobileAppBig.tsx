@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 
 import "./MobileAppBig.css";
 import AppsContext from "../../../../../context/AppsContext";
 import { AppDescription } from "../../../../../models/AppData";
 import ImageHelper from "../../../../../helpers/ImageHelper";
+import AnimationsHelper from "../../../../../helpers/AnimationsHelper";
 
 type MobileAppBigProps = {
   id: number;
@@ -16,6 +17,9 @@ function MobileAppBig(props: MobileAppBigProps) {
   const { iconImage, activeLink, name } = item;
 
   const { setSelectedApp } = useContext(AppsContext);
+
+  const parentRef = useRef<HTMLDivElement>(null);
+
   const mobileOsAppBigStyleObject = {
     backgroundImage: `url(${ImageHelper.getImagePath(directory, iconImage || "")})`,
     backgroundSize: "contain",
@@ -24,18 +28,26 @@ function MobileAppBig(props: MobileAppBigProps) {
   };
 
   const clickHandler = () => {
-    if (activeLink) {
-      window.open(activeLink, "_blank");
+    AnimationsHelper.applyAnimationToElement(
+      parentRef.current,
+      "bounce",
+      600,
+      () => {
+        if (activeLink) {
+          window.open(activeLink, "_blank");
 
-      return;
-    }
+          return;
+        }
 
-    setSelectedApp(directory, id);
+        setSelectedApp(directory, id);
+      }
+    );
   };
 
   return (
     <div
       className="mobileOsAppGroupBig"
+      ref={parentRef}
       onClick={() => {
         clickHandler();
       }}
