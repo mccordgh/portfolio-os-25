@@ -23,7 +23,9 @@ function Banner() {
   return (
     <div className="banner-container">
       <div className="banner-left">
-        <span>v{version}</span>
+        <span className="small-light--text" id="portfolio-title">
+          Portfolio v{version}
+        </span>
 
         <span
           onClick={() => {
@@ -45,7 +47,7 @@ function Banner() {
       </div>
 
       <div className="banner-right">
-        <span>{time}</span>
+        <span className="small-light--text">{time}</span>
       </div>
     </div>
   );

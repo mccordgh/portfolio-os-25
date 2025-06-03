@@ -40,7 +40,9 @@ function Desktop() {
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
 
   return (
-    <AppsContext.Provider value={contextValue}>{view}</AppsContext.Provider>
+    <AppsContext.Provider value={contextValue}>
+      <section aria-labelledby="portfolio-title">{view}</section>
+    </AppsContext.Provider>
   );
 }
 
