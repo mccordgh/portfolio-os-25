@@ -1,10 +1,11 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 
 import AppsContext from "../../../../context/AppsContext";
 import { AppDescription } from "../../../../models/AppData";
 import ImageHelper from "../../../../helpers/ImageHelper";
 
 import "./DesktopApp.css";
+import AnimationsHelper from "../../../../helpers/AnimationsHelper";
 
 type DesktopAppProps = {
   id: number;
@@ -18,6 +19,8 @@ function DesktopApp(props: DesktopAppProps) {
 
   const { setSelectedApp } = useContext(AppsContext);
 
+  const parentRef = useRef<HTMLDivElement>(null);
+
   const desktopAppStyleObject = {
     backgroundImage: `url(${ImageHelper.getImagePath(directory, iconImage || "")})`,
     backgroundSize: "contain",
@@ -26,17 +29,24 @@ function DesktopApp(props: DesktopAppProps) {
   };
 
   const onAppClick = () => {
-    if (activeLink) {
-      window.open(activeLink, "_blank");
+    AnimationsHelper.applyAnimationToElement(
+      parentRef.current,
+      "bounce",
+      600,
+      () => {
+        if (activeLink) {
+          window.open(activeLink, "_blank");
 
-      return;
-    }
+          return;
+        }
 
-    setSelectedApp(directory, id);
+        setSelectedApp(directory, id);
+      }
+    );
   };
 
   return (
-    <div className="desktopApp" onClick={onAppClick}>
+    <div className="desktopApp" onClick={onAppClick} ref={parentRef}>
       <div className="desktopAppBackground" style={desktopAppStyleObject}></div>
 
       <div className="desktopAppTitle">
