@@ -79,12 +79,3 @@ div.mccordinatorSpeechBubble p + span {
 div.mccordinatorSpeechBubble span:last-child {
   margin-bottom: 1rem;
 }
-
-@keyframes shake {
-  0% {
-    transform: rotate(5deg);
-  }
-  100% {
-    transform: rotate(15deg);
-  }
-}
