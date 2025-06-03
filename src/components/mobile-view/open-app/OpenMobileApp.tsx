@@ -60,15 +60,7 @@ function OpenMobileApp(props: OpenMobileAppProps) {
       <div className="appImageTitle">
         <span>{name}</span>
 
-        <div className="app_close">
-          <span
-            onClick={() => {
-              setSelectedApp("closeApp");
-            }}
-          >
-            X
-          </span>
-        </div>
+        <CloseButton view="mobile" onClickCallback={closeApp} />
       </div>
 
       <div className="appImageWrapper">
