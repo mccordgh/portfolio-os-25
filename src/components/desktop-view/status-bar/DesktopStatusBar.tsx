@@ -42,7 +42,7 @@ function DesktopStatusBar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Resume
+            Resume as PDF
           </a>
         </span>
       </div>

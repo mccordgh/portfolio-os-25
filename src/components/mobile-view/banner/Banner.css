@@ -39,6 +39,7 @@ div.banner-left span,
 div.banner-left a {
   font-weight: bold;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .small-light--text {
