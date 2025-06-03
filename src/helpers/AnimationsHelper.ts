@@ -2,42 +2,59 @@ type AnimationClassName = {
   [key: string]: string;
 };
 
-type AnimationName = "bounce";
+type AnimationName = "bounce" | "fadeOut" | "fadeIn";
 
 const animationClassNames: AnimationClassName[] = [
   { bounce: "bouncing-element" },
+  { fadeOut: "fade-out-element" },
+  { fadeIn: "fade-in-element" },
 ];
 
 class AnimationsHelper {
   static applyAnimationToElement(
     element: HTMLElement | null,
     animationName: AnimationName,
-    duration: number,
-    callback: () => void = () => {}
+    duration?: number,
+    callback?: () => void
   ): void {
     const animationClass = animationClassNames.find(
       (anim) => anim[animationName]
     );
 
-    if (!element) {
-      console.warn("Element is null or undefined.");
+    if (!element || !animationClass) {
       return;
     }
 
-    if (!animationClass) {
-      console.warn(`Animation ${animationName} not found.`);
-      return;
+    if (!duration) {
+      duration = 1000; // Default duration if not provided
     }
 
     const className = Object.values(animationClass)[0];
     element.classList.add(className);
-    console.log(`Adding animation class: ${className}`);
 
     setTimeout(() => {
-      console.log(`Removing animation class: ${className}`);
       element.classList.remove(className);
-      callback();
+      if (callback) {
+        callback();
+      }
     }, duration);
+  }
+
+  static removeAnimationFromElement(
+    element: HTMLElement | null,
+    animationName: AnimationName
+  ): void {
+    const animationClass = animationClassNames.find(
+      (anim) => anim[animationName]
+    );
+
+    if (!element || !animationClass) {
+      return;
+    }
+
+    const className = Object.values(animationClass)[0];
+    element.classList.remove(className);
+    console.log(`Animation ${animationName} removed from element.`);
   }
 }
 

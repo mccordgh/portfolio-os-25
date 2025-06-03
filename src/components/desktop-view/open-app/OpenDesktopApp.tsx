@@ -1,9 +1,11 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { AppDescription } from "../../../models/AppData";
 
 import AppsContext from "../../../context/AppsContext";
 
 import "./OpenDesktopApp.css";
+import CloseButton from "../../buttons/CloseButton";
+import AnimationsHelper from "../../../helpers/AnimationsHelper";
 
 type OpenDesktopAppProps = {
   app: AppDescription;
@@ -14,6 +16,9 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
   const { headerImage, iconImage, directory } = app;
 
   const { setSelectedApp } = useContext(AppsContext);
+
+  const openAppRef = useRef<HTMLDivElement>(null);
+  const openAppBehindRef = useRef<HTMLDivElement>(null);
 
   const headerImagePath = `resources/${directory}/${headerImage}`;
   const iconImagePath = `resources/${directory}/${iconImage}`;
@@ -34,14 +39,32 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
     <div></div>
   );
 
-  const closeAppCallback = () => {
-    setSelectedApp("closeApp");
+  const closeApp = () => {
+    AnimationsHelper.removeAnimationFromElement(openAppRef.current, "fadeIn");
+
+    AnimationsHelper.applyAnimationToElement(
+      openAppRef.current,
+      "fadeOut",
+      400,
+      () => {
+        setSelectedApp("closeApp");
+      }
+    );
+
+    AnimationsHelper.applyAnimationToElement(
+      openAppBehindRef.current,
+      "fadeOut"
+    );
   };
 
   return (
     <div>
-      <div className="desktop-app_behind" onClick={closeAppCallback} />
-      <div className="desktop-app_open">
+      <div
+        className="desktop-app_behind"
+        ref={openAppBehindRef}
+        onClick={closeApp}
+      />
+      <div className="desktop-app_open fade-in-element" ref={openAppRef}>
         <div className="app_open-banner">
           <span className="windowTitle">{app.name}</span>
           <CloseButton view="desktop" onClickCallback={closeApp} />

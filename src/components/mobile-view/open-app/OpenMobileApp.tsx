@@ -1,14 +1,19 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { AppDescription } from "../../../models/AppData";
 import "./OpenMobileApp.css";
 import AppsContext from "../../../context/AppsContext";
+import CloseButton from "../../buttons/CloseButton";
+import AnimationsHelper from "../../../helpers/AnimationsHelper";
 
 type OpenMobileAppProps = {
   app: AppDescription;
 };
 
 function OpenMobileApp(props: OpenMobileAppProps) {
-  const { setSelectedApp, mode } = useContext(AppsContext);
+  const { mode, setSelectedApp } = useContext(AppsContext);
+
+  const openAppRef = useRef<HTMLDivElement>(null);
+
   const { app } = props;
   const {
     directory,
@@ -55,8 +60,21 @@ function OpenMobileApp(props: OpenMobileAppProps) {
       <></>
     );
 
+  const closeApp = () => {
+    AnimationsHelper.removeAnimationFromElement(openAppRef.current, "fadeIn");
+
+    AnimationsHelper.applyAnimationToElement(
+      openAppRef.current,
+      "fadeOut",
+      400,
+      () => {
+        setSelectedApp("closeApp");
+      }
+    );
+  };
+
   return (
-    <div className="openApp">
+    <div className="openApp fade-in-element" ref={openAppRef}>
       <div className="appImageTitle">
         <span>{name}</span>
 
