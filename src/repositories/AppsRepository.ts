@@ -45,7 +45,8 @@ class AppsRepository {
       return this.getPortfolioAbout();
     }
 
-    if (!id) {
+    // first item in each collection will have an id of 0
+    if (!id && id !== 0) {
       return {} as AppDescription;
     }
 
