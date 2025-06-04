@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import dialogue from "../../data/dialogue.json";
 
 import "./Mccordinator.css";
@@ -19,6 +19,9 @@ function Mccordinator() {
   const [showBubble, setShowBubble] = useState(false);
   const [hasInitialized, setHasInitialized] = useState(false);
 
+  const firstDialogueOptionRef = useRef<HTMLAnchorElement>(null);
+  const headLinkRef = useRef<HTMLAnchorElement>(null);
+
   const nextDialogueQueue = () => {
     const next = dialogueNumber >= dialogue.length - 1 ? 0 : dialogueNumber + 1;
 
@@ -31,6 +34,10 @@ function Mccordinator() {
     setDialogueNumber(0);
 
     nextDialogueQueue();
+
+    setTimeout(() => {
+      headLinkRef.current?.focus();
+    }, 100);
   };
 
   const showDialogue = () => {
@@ -44,28 +51,42 @@ function Mccordinator() {
     }
 
     showDialogue();
+
+    setTimeout(() => {
+      firstDialogueOptionRef.current?.focus();
+    }, 100);
   };
 
   return (
     <div>
       <div
-        onClick={clickyTheFace}
         className="mccordinatorHead"
         style={{ backgroundImage: 'url("resources/mccordinator2_head.png")' }}
-      ></div>
+      >
+        <a
+          href="#"
+          onClick={clickyTheFace}
+          className="mccordinatorHeadLink"
+          ref={headLinkRef}
+        ></a>
+      </div>
 
       {showBubble && (
         <div className="mccordinatorSpeechBubble">
           <p>{bubbleText.text}</p>
           <div className="speechBubbleChoicesWrapper">
-            <span onClick={nextDialogueQueue}>
+            <a
+              onClick={nextDialogueQueue}
+              ref={firstDialogueOptionRef}
+              href="#"
+            >
               {" "}
               {">"} {bubbleText.continue}
-            </span>
-            <span onClick={closeDialogue}>
+            </a>
+            <a onClick={closeDialogue} href="#">
               {" "}
               {">"} {bubbleText.exit}
-            </span>
+            </a>
           </div>
         </div>
       )}

@@ -15,6 +15,12 @@ div.mccordinatorHead {
   cursor: pointer;
 }
 
+.mccordinatorHeadLink {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 div.mccordinatorSpeechBubble {
   background-color: var(--white);
   border-radius: 2rem;
@@ -65,10 +71,10 @@ div.mccordinatorSpeechBubble p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.speechBubbleChoicesWrapper span {
+.speechBubbleChoicesWrapper a {
   box-sizing: border-box;
   color: black;
   display: block;
@@ -79,16 +85,9 @@ div.mccordinatorSpeechBubble p {
   cursor: pointer;
   padding: 0.4rem;
   overflow-y: hidden;
-  height:;
+  padding: 0 0 0.2rem 0;
 }
 
-.speechBubbleChoicesWrapper span:hover {
+.speechBubbleChoicesWrapper a:hover {
   background-color: var(--light-transparent-bg);
 }
-
-/* div.mccordinatorSpeechBubble p + span {
-  margin-top: 1rem;
-}
-div.mccordinatorSpeechBubble span:last-child {
-  margin-bottom: 1rem;
-} */
