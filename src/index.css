@@ -34,6 +34,10 @@ h2 {
   font-size: 20px;
 }
 
+ul {
+  padding: 0 1rem 0 2rem;
+}
+
 a {
   font-weight: 500;
   color: var(--light-color);

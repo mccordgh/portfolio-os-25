@@ -1,5 +1,5 @@
 div.desktop-app_open {
-  background-color: var(--dark-color);
+  background-color: var(--white);
   border-top: 0.2rem solid grey;
   border-right: 0.2rem solid lightgrey;
   border-bottom: 0.2rem solid lightgrey;
@@ -24,7 +24,7 @@ div.desktop-app_open {
 }
 
 div.desktop-app--content_wrapper {
-  padding: 0;
+  padding: 1rem 2rem;
   height: 95%;
   overflow-y: scroll;
 }
@@ -49,17 +49,19 @@ div.desktop-app--content_wrapper p {
   line-height: 1.8rem;
 }
 
-div.desktop-app--content_wrapper ul {
+/* div.desktop-app--content_wrapper ul {
   background-color: var(--dark-color);
   font-size: 1rem;
   list-style: none;
   margin: 0;
   padding: 1rem 1rem 1rem 2rem;
+  list-style-type: disc;
 }
 
 div.desktop-app--content_wrapper ul li {
   display: inline-block;
   padding-right: 2rem;
+  display: block;
 }
 
 div.desktop-app--content_wrapper ul li a {
@@ -71,12 +73,13 @@ div.desktop-app--content_wrapper ul li a {
 
 div.desktop-app--content_wrapper ul li a:hover {
   color: lightgrey;
-}
+} */
 
 div.app--header-image {
+  margin-top: 1rem;
   overflow-y: hidden;
   width: 100%;
-  height: 60%;
+  height: 32rem;
 }
 
 div.app--header-image img {
@@ -205,4 +208,44 @@ div.app-button_exit button {
 
 div.openApp ul li a {
   text-decoration: underline;
+}
+
+div.app-header-content--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+div.app-header-content--wrapper .app-header-title {
+  margin-bottom: 0.2rem;
+}
+
+.app-header-subtext {
+  font-style: italic;
+}
+
+div.desktop-app--content_wrapper main li {
+  font-size: 1rem;
+  background-color: var(--white);
+  line-height: 1.4rem;
+}
+
+.app-content-entry-title {
+  margin-bottom: 0.4rem;
+}
+
+div.app-call-to-action-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+div.app-header-divider {
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(0.45turn, var(--light-color), var(--dark-color));
+  margin: 1rem 0;
 }

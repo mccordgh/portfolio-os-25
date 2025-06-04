@@ -6,6 +6,7 @@ import AppsContext from "../../../context/AppsContext";
 import "./OpenDesktopApp.css";
 import CloseButton from "../../buttons/CloseButton";
 import AnimationsHelper from "../../../helpers/AnimationsHelper";
+import CallToActionButton from "../../buttons/CallToActionButton";
 
 type OpenDesktopAppProps = {
   app: AppDescription;
@@ -23,22 +24,6 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
 
   const headerImagePath = `resources/${directory}/${headerImage}`;
   const iconImagePath = `resources/${directory}/${iconImage}`;
-
-  const links = app?.links?.length ? (
-    <ul>
-      {app.links.map((link, key) => {
-        return (
-          <li key={key}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.text}
-            </a>
-          </li>
-        );
-      })}
-    </ul>
-  ) : (
-    <div></div>
-  );
 
   const closeApp = () => {
     AnimationsHelper.removeAnimationFromElement(openAppRef.current, "fadeIn");
@@ -58,6 +43,106 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
     );
   };
 
+  const { name, shortText, description, descriptions } = app;
+
+  const links = app?.links?.length ? (
+    app.links.map((link, key) => {
+      const { text, url } = link;
+
+      return <CallToActionButton key={key} buttonText={text} href={url} />;
+    })
+  ) : (
+    <></>
+  );
+
+  let content = (
+    <>
+      {!!headerImage && (
+        <div className="app--header-image">
+          <img src={headerImagePath} alt="App Logo" />
+        </div>
+      )}
+
+      <p>{shortText}</p>
+
+      <div className="app-description_wrapper">
+        {app &&
+          description &&
+          description.length > 0 &&
+          description.map((paragraph, key) => {
+            return (
+              <p key={key}>
+                <img
+                  className="app-description--icon"
+                  src={iconImagePath}
+                  alt="bullet points for description"
+                ></img>
+                {paragraph}
+              </p>
+            );
+          })}
+      </div>
+
+      {links}
+    </>
+  );
+
+  const getDescriptions = (): React.ReactNode => {
+    if (!descriptions) return <></>;
+
+    const entries = Object.entries(descriptions || {});
+    if (!entries || !entries.length) return <></>;
+
+    return entries.map(([title, subTextArray], index) => {
+      return (
+        <section key={index}>
+          <h2 className="app-content-entry-title">{title}</h2>
+
+          <ul>
+            {subTextArray.map((subText, subIndex) => (
+              <li key={`${index}-${subIndex}`}>{subText}</li>
+            ))}
+          </ul>
+        </section>
+      );
+    });
+  };
+
+  const getHeaderImageOrDivider = (): React.ReactNode => {
+    if (!headerImage) {
+      return <div className="app-header-divider"></div>;
+    }
+
+    return (
+      <div className="app--header-image">
+        <img src={headerImagePath} alt="App Logo" />
+      </div>
+    );
+  };
+
+  if (directory && directory === "portfolio") {
+    content = (
+      <>
+        <header>
+          <div className="app-header-content--wrapper">
+            <h1 className="app-header-title">About: {name}</h1>
+            <span className="app-header-subtext">{shortText}</span>
+          </div>
+
+          {getHeaderImageOrDivider()}
+        </header>
+
+        <main>
+          {getDescriptions()}
+
+          <div className="app-call-to-action-wrapper">{links}</div>
+        </main>
+
+        <footer></footer>
+      </>
+    );
+  }
+
   return (
     <div>
       <div
@@ -75,35 +160,7 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
           />
         </div>
 
-        <div className="desktop-app--content_wrapper">
-          {!!headerImage && (
-            <div className="app--header-image">
-              <img src={headerImagePath} alt="App Logo" />
-            </div>
-          )}
-
-          <p>{app.shortText}</p>
-
-          <div className="app-description_wrapper">
-            {app &&
-              app.description &&
-              app.description.length > 0 &&
-              app.description.map((paragraph, key) => {
-                return (
-                  <p key={key}>
-                    <img
-                      className="app-description--icon"
-                      src={iconImagePath}
-                      alt="bullet points for description"
-                    ></img>
-                    {paragraph}
-                  </p>
-                );
-              })}
-          </div>
-
-          {links}
-        </div>
+        <div className="desktop-app--content_wrapper">{content}</div>
       </div>
     </div>
   );
