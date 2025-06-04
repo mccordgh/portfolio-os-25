@@ -9,7 +9,7 @@ function DesktopStatusBar() {
   const [time, setTime] = useState("");
   const [timeInterval, setTimeInterval] = useState<NodeJS.Timeout | null>(null);
 
-  const { setSelectedApp } = useContext(AppsContext);
+  const { setSelectedApp, toggleExpansionClass } = useContext(AppsContext);
 
   useEffect(() => {
     if (!timeInterval) {
@@ -24,6 +24,7 @@ function DesktopStatusBar() {
   }, [timeInterval]);
 
   const clickHandler = () => {
+    toggleExpansionClass("about");
     setSelectedApp("about");
   };
 
@@ -31,22 +32,11 @@ function DesktopStatusBar() {
     <div className="desktop_banner-container">
       <div className="desktop_banner-left">
         <span id="portfolio-title">Portfolio OS v{version}</span>
-        <a
-          href="#"
-          // tabIndex={1}
-          className="banner-left--highlights"
-          onClick={clickHandler}
-          // onKeyUp={(e) => {
-          //   if (e.key === "Enter") {
-          //     clickHandler();
-          //   }
-          // }}
-        >
+        <a href="#" className="banner-left--highlights" onClick={clickHandler}>
           About This Portfolio
         </a>
         <span className="banner-left--highlights">
           <a
-            // tabIndex={2}
             className="resume-link"
             href="resources/matthew-mccord-resume.pdf"
             target="_blank"

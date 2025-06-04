@@ -3,6 +3,7 @@ import DesktopApp from "./app/DesktopApp";
 import { AppGroup } from "../../../models/AppData";
 
 import "./DesktopAppGroup.css";
+import { useRef } from "react";
 
 type DesktopAppGroupProps = {
   group: AppGroup;
@@ -15,14 +16,33 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
   const { group, expanded, toggleExpansionClass } = props;
   const { name, list, directory } = group;
 
+  const groupTitleRef = useRef<HTMLHeadingElement>(null);
+
+  const onFocusHandler = () => {
+    groupTitleRef.current?.classList.add("highlighted-element");
+  };
+
+  const onBlurHandler = () => {
+    groupTitleRef.current?.classList.remove("highlighted-element");
+  };
+
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
-      <div className="desktopGroupFolder" onClick={toggleExpansionClass}>
-        <div className="desktopGroupFolder_back"></div>
+      <div className="desktopGroupFolder">
+        <a
+          onFocus={onFocusHandler}
+          onBlur={onBlurHandler}
+          href="#"
+          onClick={toggleExpansionClass}
+        >
+          <div className="desktopGroupFolder_back"></div>
 
-        <div className="desktopGroupFolder_front">
-          <h1 className="desktopGroupTitle no-select">{name}</h1>
-        </div>
+          <div className="desktopGroupFolder_front">
+            <h1 className="desktopGroupTitle" ref={groupTitleRef}>
+              {name}
+            </h1>
+          </div>
+        </a>
       </div>
 
       <div className="desktopAppWrapper">

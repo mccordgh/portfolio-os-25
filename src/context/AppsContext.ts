@@ -9,6 +9,8 @@ export type AppsContextType = {
   apps: AppGroup[];
   selectedApp: AppDescription;
   setSelectedApp: (group: string, id?: number) => void;
+  expandedGroupName: string;
+  toggleExpansionClass: (groupName: string) => void;
 };
 
 const AppsContext = createContext<AppsContextType>({
@@ -16,6 +18,8 @@ const AppsContext = createContext<AppsContextType>({
   apps: [],
   selectedApp: {} as AppDescription,
   setSelectedApp: () => {},
+  expandedGroupName: "",
+  toggleExpansionClass: () => {},
 });
 
 export default AppsContext;

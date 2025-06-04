@@ -10,8 +10,8 @@ import Mccordinator from "../mccordinator/Mccordinator";
 import "./DesktopView.css";
 
 function DesktopView() {
-  const { apps, selectedApp } = useContext(AppsContext);
-  const [expandedGroupName, setExpandedGroupName] = useState("");
+  const { apps, selectedApp, expandedGroupName, toggleExpansionClass } =
+    useContext(AppsContext);
 
   const selected =
     selectedApp.name && selectedApp.name !== "placeholder" ? (
@@ -19,20 +19,6 @@ function DesktopView() {
     ) : (
       <></>
     );
-
-  const toggleExpansionClass = (groupName: string) => {
-    if (expandedGroupName === "") {
-      setExpandedGroupName(groupName);
-      return;
-    }
-
-    if (expandedGroupName === groupName) {
-      setExpandedGroupName("");
-      return;
-    }
-
-    setExpandedGroupName(groupName);
-  };
 
   return (
     <>

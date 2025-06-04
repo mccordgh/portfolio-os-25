@@ -13,7 +13,9 @@ const appsRepository = new AppsRepository();
 
 function Desktop() {
   const apps: AppGroup[] = appsRepository.getApps();
+
   const [selectedApp, setSelectedApp] = useState({} as AppDescription);
+  const [expandedGroupName, setExpandedGroupName] = useState<string>("");
   const [mode, setMode] = useState<ViewMode>(undefined);
 
   const setModeByClientWidth = () => {
@@ -31,11 +33,28 @@ function Desktop() {
     setModeByClientWidth();
   }, [mode]);
 
+  const toggleExpansionClass = (groupName: string): void => {
+    // initial setting of the expanded group
+    if (expandedGroupName === "") {
+      setExpandedGroupName(groupName);
+      return;
+    }
+
+    if (expandedGroupName === groupName) {
+      setExpandedGroupName("");
+      return;
+    }
+
+    setExpandedGroupName(groupName);
+  };
+
   const contextValue = {
     mode,
     apps,
     selectedApp,
     setSelectedApp: setSelectedAppLookup,
+    expandedGroupName,
+    toggleExpansionClass,
   };
 
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
