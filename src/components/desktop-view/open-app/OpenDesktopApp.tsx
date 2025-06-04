@@ -76,9 +76,11 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
         </div>
 
         <div className="desktop-app--content_wrapper">
-          <div className="app--header-image">
-            <img src={headerImagePath} alt="App Logo" />
-          </div>
+          {!!headerImage && (
+            <div className="app--header-image">
+              <img src={headerImagePath} alt="App Logo" />
+            </div>
+          )}
 
           <p>{app.shortText}</p>
 

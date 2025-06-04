@@ -1,10 +1,10 @@
 div.mccordinatorHead {
   background-position: center center;
   background-repeat: no-repeat;
-  bottom: 1rem;
+  bottom: 4rem;
   height: 13rem;
   position: fixed;
-  right: 2rem;
+  right: 5rem;
   width: 9rem;
   transform: rotate(5deg);
   transform-origin: bottom;
