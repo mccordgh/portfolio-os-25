@@ -23,20 +23,30 @@ function DesktopStatusBar() {
     }
   }, [timeInterval]);
 
+  const clickHandler = () => {
+    setSelectedApp("about");
+  };
+
   return (
     <div className="desktop_banner-container">
       <div className="desktop_banner-left">
         <span id="portfolio-title">Portfolio OS v{version}</span>
-        <span
+        <a
+          href="#"
+          // tabIndex={1}
           className="banner-left--highlights"
-          onClick={() => {
-            setSelectedApp("about");
-          }}
+          onClick={clickHandler}
+          // onKeyUp={(e) => {
+          //   if (e.key === "Enter") {
+          //     clickHandler();
+          //   }
+          // }}
         >
           About This Portfolio
-        </span>
+        </a>
         <span className="banner-left--highlights">
           <a
+            // tabIndex={2}
             className="resume-link"
             href="resources/matthew-mccord-resume.pdf"
             target="_blank"

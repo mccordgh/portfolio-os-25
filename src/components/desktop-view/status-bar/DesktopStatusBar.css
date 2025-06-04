@@ -37,9 +37,14 @@ div.desktop_banner-left {
   justify-content: flex-start;
 }
 
-div.desktop_banner-left .resume-link {
+div.desktop_banner-left .resume-link,
+div.desktop_banner-left a {
   font-weight: bold;
   color: var(--black);
+}
+
+div.desktop_banner-left a {
+  margin-left: 1rem;
 }
 
 div.desktop_banner-right {

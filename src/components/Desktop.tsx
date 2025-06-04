@@ -21,7 +21,8 @@ function Desktop() {
   };
 
   const setSelectedAppLookup = (group: string, id?: number) => {
-    setSelectedApp(appsRepository.setSelectedAppLookup(group, id));
+    const foundApp = appsRepository.findApp(group, id);
+    setSelectedApp(foundApp);
   };
 
   useEffect(() => {

@@ -10,7 +10,13 @@ function CloseButton(props: CloseButtonProps) {
 
   return (
     <div className={className}>
-      <span onClick={onClickCallback}>X</span>
+      <a
+        href="#"
+        onClick={onClickCallback}
+        aria-label="Close Button to close the open app window"
+      >
+        X
+      </a>
     </div>
   );
 }

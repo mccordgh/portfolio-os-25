@@ -34,15 +34,19 @@ class AppsRepository {
     return this.apps;
   }
 
-  setSelectedAppLookup(group: string, id?: number): AppDescription {
+  findApp(group: string, id?: number): AppDescription {
     // Special case when close app "X" is clicked to reset selected app to empty object
-    if (!id || !group || group === "closeApp") {
+    if (!group || group === "closeApp") {
       return {} as AppDescription;
     }
 
     // Special case for portfolio about page
     if (group === "about") {
       return this.getPortfolioAbout();
+    }
+
+    if (!id) {
+      return {} as AppDescription;
     }
 
     return this.findAppByIdAndGroup(group, id);
