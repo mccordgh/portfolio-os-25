@@ -156,7 +156,7 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
           <CloseButton
             view="desktop"
             onClickCallback={closeApp}
-            ref={closeButtonRef}
+            // ref={closeButtonRef}
           />
         </div>
 
