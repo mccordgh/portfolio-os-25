@@ -137,10 +137,10 @@ div.desktop-app_close {
   border-radius: 0.4rem;
   color: black;
   cursor: pointer;
-  height: 1.6rem;
+  height: 1.4rem;
   font-size: 1rem;
-  margin: 0.4rem;
-  width: 1.6rem;
+  margin-right: 1rem;
+  width: 1.4rem;
 }
 
 div.desktop-app_close:hover,
