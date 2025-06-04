@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import DesktopView from "./desktop-view/DesktopView";
 import MobileView from "./mobile-view/MobileView";
@@ -18,11 +18,30 @@ function Desktop() {
   const [expandedGroupName, setExpandedGroupName] = useState<string>("");
   const [mode, setMode] = useState<ViewMode>(undefined);
 
+  const lastTabbedToElement = useRef<HTMLAnchorElement>(null);
+  const savedTabbedElement = useRef<HTMLAnchorElement>(null);
+
+  const onKeyUpHandler = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === "Tab") {
+      lastTabbedToElement.current = event.target as HTMLAnchorElement;
+    }
+  };
+
   const setModeByClientWidth = () => {
     setMode(WindowDimensionsHelper.getModeByClientWidth());
   };
 
   const setSelectedAppLookup = (group: string, id?: number) => {
+    // If an id exists then we want to save the last tabbed to desktop icon so we can focus it after closing the opened app.
+    if (id) {
+      savedTabbedElement.current = lastTabbedToElement.current;
+    }
+
+    // If the group is "closeApp" (close button clicked on open app) then we want to focus the last saved tabbed to element aka desktop icon.
+    if (group === "closeApp" && lastTabbedToElement?.current) {
+      savedTabbedElement.current?.focus();
+    }
+
     const foundApp = appsRepository.findApp(group, id);
     setSelectedApp(foundApp);
   };
@@ -60,7 +79,16 @@ function Desktop() {
   const view = mode === "desktop" ? <DesktopView /> : <MobileView />;
 
   return (
-    <AppsContext.Provider value={contextValue}>{view}</AppsContext.Provider>
+    <AppsContext.Provider value={contextValue}>
+      <div
+        role="region"
+        className="App"
+        aria-labelledby="portfolio-title"
+        onKeyUp={onKeyUpHandler}
+      >
+        {view}
+      </div>
+    </AppsContext.Provider>
   );
 }
 

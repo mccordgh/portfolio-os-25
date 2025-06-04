@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useRef } from "react";
 import { AppDescription } from "../../../models/AppData";
 
 import AppsContext from "../../../context/AppsContext";
@@ -19,6 +19,7 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
 
   const openAppRef = useRef<HTMLDivElement>(null);
   const openAppBehindRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLAnchorElement>(null);
 
   const headerImagePath = `resources/${directory}/${headerImage}`;
   const iconImagePath = `resources/${directory}/${iconImage}`;
@@ -57,11 +58,6 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
     );
   };
 
-  useEffect(() => {
-    openAppRef.current?.focus();
-    console.log("focusing open app");
-  }, []);
-
   return (
     <div>
       <div
@@ -72,7 +68,11 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
       <div className="desktop-app_open fade-in-element" ref={openAppRef}>
         <div className="app_open-banner">
           <span className="windowTitle">{app.name}</span>
-          <CloseButton view="desktop" onClickCallback={closeApp} />
+          <CloseButton
+            view="desktop"
+            onClickCallback={closeApp}
+            ref={closeButtonRef}
+          />
         </div>
 
         <div className="desktop-app--content_wrapper">

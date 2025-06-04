@@ -54,7 +54,6 @@ class AnimationsHelper {
 
     const className = Object.values(animationClass)[0];
     element.classList.remove(className);
-    console.log(`Animation ${animationName} removed from element.`);
   }
 }
 

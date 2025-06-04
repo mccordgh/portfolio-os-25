@@ -46,21 +46,8 @@ function DesktopApp(props: DesktopAppProps) {
     );
   };
 
-  const onFocusHandler = () => {
-    // groupTitleRef.current?.classList.add("highlighted-element");
-  };
-
-  const onBlurHandler = () => {
-    // groupTitleRef.current?.classList.remove("highlighted-element");
-  };
-
   return (
-    <a
-      onFocus={onFocusHandler}
-      onBlur={onBlurHandler}
-      href="#"
-      onClick={onAppClick}
-    >
+    <a href="#" onClick={onAppClick}>
       <div className="desktopApp" ref={parentRef}>
         <div
           className="desktopAppBackground"

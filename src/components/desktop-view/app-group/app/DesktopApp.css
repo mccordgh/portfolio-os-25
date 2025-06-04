@@ -23,5 +23,6 @@ div.desktopAppTitle {
 }
 
 div.desktopAppTitle h2 {
+  color: var(--white);
   margin: 0;
 }
