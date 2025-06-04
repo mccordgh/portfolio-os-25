@@ -3,7 +3,11 @@ type LinkDescription = {
   text: string;
 };
 
-type AppDirectory = "social_media" | "game_dev" | "music";
+type AppDirectory = "social_media" | "game_dev" | "music" | "portfolio";
+
+type AppDescriptionText = {
+  [key: string]: string[];
+};
 
 export type AppDescription = {
   isMobileFriendly?: boolean; // able to play game or navigate on mobile
@@ -11,6 +15,7 @@ export type AppDescription = {
   iconImage?: string;
   shortText?: string;
   description?: string[];
+  descriptions?: AppDescriptionText;
   links?: LinkDescription[];
   headerImage?: string;
   activeLink?: string;
