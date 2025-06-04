@@ -2,11 +2,13 @@ import "./CallToActionButton.css";
 
 type CallToActionButtonProps = {
   buttonText: string;
-  href?: string;
+  href: string;
+  focusRef?: React.RefObject<HTMLAnchorElement | null>;
+  onKeyDown?: React.KeyboardEventHandler<HTMLAnchorElement>;
 };
 
 function CallToActionButton(props: CallToActionButtonProps) {
-  const { buttonText, href } = props;
+  const { buttonText, href, focusRef, onKeyDown } = props;
 
   return (
     <a
@@ -14,6 +16,8 @@ function CallToActionButton(props: CallToActionButtonProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      ref={focusRef}
+      onKeyDown={onKeyDown}
     >
       {buttonText}
     </a>
