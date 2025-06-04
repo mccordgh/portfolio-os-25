@@ -13,7 +13,7 @@ div.appgroupContainer {
   padding: 10rem 1rem;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  background-color: var(--dark-color-rgba);
+  background-color: var(--white);
   background-size: contain;
   background-position: center;
 }

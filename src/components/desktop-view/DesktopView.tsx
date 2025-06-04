@@ -15,7 +15,7 @@ function DesktopView() {
 
   const selected =
     selectedApp.name && selectedApp.name !== "placeholder" ? (
-      <OpenDesktopApp app={selectedApp} />
+      <OpenDesktopApp />
     ) : (
       <></>
     );

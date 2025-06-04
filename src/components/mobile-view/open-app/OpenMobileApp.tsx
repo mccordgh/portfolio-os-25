@@ -4,61 +4,19 @@ import "./OpenMobileApp.css";
 import AppsContext from "../../../context/AppsContext";
 import CloseButton from "../../buttons/CloseButton";
 import AnimationsHelper from "../../../helpers/AnimationsHelper";
+import AppAboutPage from "../../content/AppAboutPage";
 
 type OpenMobileAppProps = {
   app: AppDescription;
 };
 
 function OpenMobileApp(props: OpenMobileAppProps) {
-  const { mode, setSelectedApp } = useContext(AppsContext);
+  const { setSelectedApp } = useContext(AppsContext);
 
   const openAppRef = useRef<HTMLDivElement>(null);
 
   const { app } = props;
-  const {
-    directory,
-    headerImage,
-    iconImage,
-    links,
-    isMobileFriendly,
-    name,
-    shortText,
-    description,
-  } = app;
-
-  const image = `resources/${directory}/${headerImage}`;
-  const iconImagePath = `resources/${directory}/${iconImage}`;
-  const appLinks =
-    links && links.length ? (
-      <ul className="app-links">
-        {links?.map((link, key) => {
-          // The first link will direct user to go play the game in a browser.
-          // When the user is on mobile, any game with isMobileFriendly set to false will not be playable.
-          if (
-            key === 0 &&
-            mode === "mobile" &&
-            !isMobileFriendly &&
-            directory === "game_dev"
-          ) {
-            return (
-              <li key={key}>
-                <span>(To play this game, please use a Desktop device)</span>
-              </li>
-            );
-          }
-
-          return (
-            <li key={key}>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.text}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    ) : (
-      <></>
-    );
+  const { name } = app;
 
   const closeApp = () => {
     AnimationsHelper.removeAnimationFromElement(openAppRef.current, "fadeIn");
@@ -81,28 +39,7 @@ function OpenMobileApp(props: OpenMobileAppProps) {
         <CloseButton view="mobile" onClickCallback={closeApp} />
       </div>
 
-      <div className="appImageWrapper">
-        <img src={image} alt="App Logo" />
-      </div>
-
-      <p>{shortText}</p>
-
-      <div className="appDescriptionWrapper">
-        {description?.map((paragraph, key) => {
-          return (
-            <div key={key} className="app-description--image-wrapper">
-              <img
-                className="app-description--icon"
-                src={iconImagePath}
-                alt="bullet points for description"
-              ></img>
-              <p>{paragraph}</p>
-            </div>
-          );
-        })}
-      </div>
-
-      {appLinks}
+      <AppAboutPage />
     </div>
   );
 }

@@ -19,9 +19,7 @@ function AppAboutPage(props: AppAboutPageProps) {
 
   const onKeyDownHandler = (event: React.KeyboardEvent<HTMLAnchorElement>) => {
     // If the key pressed is Tab then we are on the last button and need to focus the close "X" button
-    console.log("key pressed");
     if (event.key === "Tab" && firstFocusRef) {
-      console.log("focusing first element");
       setTimeout(() => {
         lastFocusRef?.current?.focus();
       }, 0);
@@ -98,7 +96,7 @@ function AppAboutPage(props: AppAboutPageProps) {
   };
 
   return (
-    <div className="desktop-app--content_wrapper">
+    <div className="app--content_wrapper">
       <header>
         <div className="app-header-content--wrapper">
           <h1 className="app-header-title">About: {name}</h1>

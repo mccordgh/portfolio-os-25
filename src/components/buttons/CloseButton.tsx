@@ -1,4 +1,4 @@
-// import { useEffect } from "react";
+import "./CloseButton.css";
 
 type CloseButtonProps = {
   view: "mobile" | "desktop";
