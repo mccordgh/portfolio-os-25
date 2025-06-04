@@ -8,11 +8,11 @@ div.desktopGroupTitle {
 div.desktopGroupFolder {
   background-color: var(--dark-color);
   cursor: pointer;
-  height: 10rem;
+  height: 7rem;
   margin: 0;
   position: relative;
-  width: 12rem;
-  left: -4rem;
+  width: 8.4rem;
+  /* left: -4rem; */
   top: 3rem;
   z-index: 10;
   transition: all 0.4s ease-out;
@@ -35,7 +35,6 @@ div.desktopGroupFolder_back {
   border-radius: 1rem 0 0 1rem;
   display: inline-block;
   height: calc(100% - 5rem);
-  left: 4rem;
   position: absolute;
   top: 1rem;
   width: 4rem;
@@ -68,8 +67,7 @@ div.desktopGroupFolder_front {
   background-color: var(--folder-color);
   border-radius: 1rem 0 0 1rem;
   display: inline-block;
-  height: calc(100% - 5rem);
-  left: 3.8rem;
+  height: 5rem;
   position: absolute;
   top: 2rem;
   -webkit-transition:
@@ -134,7 +132,7 @@ div.desktopAppWrapper {
   flex-wrap: wrap;
   left: -100rem;
   position: relative;
-  top: -8rem;
+  top: -4rem;
   transition: all 0.6s ease-out;
   -webkit-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;

@@ -1,16 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: var(--black);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   --white: whitesmoke;
   --lightest-color: #b3cbb9;
@@ -24,6 +13,18 @@
 
   --folder-color: #ffa419;
   --folder-color-dark: #b26b00;
+}
+
+body {
+  font-family: "VT323", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-size: 10px; */
+  /* line-height  : 1.5; */
 }
 
 a {
@@ -41,11 +42,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
