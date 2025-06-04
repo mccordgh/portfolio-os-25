@@ -1,21 +1,21 @@
 [
   {
-    "text": "Hi, there! Thanks for dropping by. Would you like to know a little bit more about Matthew McCord?",
+    "text": "Hi, there! Thanks for dropping by! Would you like to know a little bit more about Matthew McCord?",
     "continue": "OH YEA!",
     "exit": "No thanks."
   },
   {
-    "text": "Matthew is a full stack web engineer since 2016. He also has a passion for game development.",
+    "text": "Matthew has been a professional full-stack web engineer since 2016, with a background as a self-taught programmer exploring game development, Windows APIs, and web technologies. Before that, he was a touring musician and worked various service industry gigs.",
     "continue": "Tell me more!",
     "exit": "Cool story..."
   },
   {
-    "text": "In his spare time, he likes to absorb software and game programming / design knowledge, hang out with his partner & doggos, play board games, and make music.",
+    "text": "He has a strong passion for game development and continually expands his knowledge in software engineering and game design.",
     "continue": "Darn tootin!",
     "exit": "Sounds dull..."
   },
   {
-    "text": "That's about all I can tell you now. Check out the LinkedIn, and play some of the games! :)",
+    "text": "In his free time, he enjoys spending time with his partner and dogs, playing board games, and making music. For more details, connect via LinkedIn and other socials—or check out his games!",
     "continue": "Lets talk again!",
     "exit": "I DEFINITELY will!"
   }
