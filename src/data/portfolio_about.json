@@ -1,20 +1,28 @@
 {
   "name": "Portfolio OS v2.0",
-  "directory": "portfolio/",
+  "directory": "portfolio",
   "shortText": "Portfolio of Matthew McCord",
-  "description": [
-    "Version 2.0 Update!:",
-    "Upgraded from React 16 to React 19.",
-    "From Javascript to TypeScript for better type safety.",
-    "Removed props drilling in favor of the Context API.",
-    "Utilized css-grid and more flexbox vs css positioning.",
-    "---",
-    "Version 1.0:",
-    "Desktop and Mobile have different UI / layout.",
-    "All graphics and animations done with CSS (excluding my pixelated head).",
-    "All portfolio data is brought in through .json files.",
-    "Deployed with Github Pages."
-  ],
+  "descriptions": {
+    "Who?": [
+      "Matthew McCord, a full-stack web engineer.",
+      "Interact with the floating head on the site for some more info!"
+    ],
+    "What?": [
+      "This is my personal portfolio website, showcasing my work.",
+      "It features a unique design and layout, with a more recent focus on user experience and accessibility."
+    ],
+    "Why?": [
+      "The initial version was created in 2018 to showcase my passion for web and game development, software engineering, and design.",
+      "I also wanted to make it fun and unique by incorporating a Windows OS style UI for desktop and an iOS style UI for mobile.",
+      "The latest version, released in 2025, aims to improve user experience, accessibility, and performance while maintaining the original design ethos."
+    ],
+    "How?": [
+      "Built with React and TypeScript, utilizing the Context API for state management.",
+      "Styled with CSS Grid and Flexbox for responsive design.",
+      "Data is fetched from JSON files to populate the portfolio content.",
+      "The site is designed to be accessible, with a focus on keyboard navigation and screen reader compatibility utilizing resources like WAVE and Accessibility Insights."
+    ]
+  },
   "links": [
     {
       "url": "https://mccordinator.com/",
