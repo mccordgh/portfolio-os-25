@@ -18,21 +18,11 @@ function DesktopAppGroup(props: DesktopAppGroupProps) {
 
   const groupTitleRef = useRef<HTMLHeadingElement>(null);
 
-  // const onFocusHandler = () => {
-  //   groupTitleRef.current?.classList.add("highlighted-element");
-  // };
-
-  // const onBlurHandler = () => {
-  //   groupTitleRef.current?.classList.remove("highlighted-element");
-  // };
-
   return (
     <div className={`desktopAppGroupWrapper ${expanded ? "expanded" : ""}`}>
       <div className="desktopGroupFolder">
         <a
           className="desktopGroupFolderLink"
-          // onFocus={onFocusHandler}
-          // onBlur={onBlurHandler}
           href="#"
           onClick={toggleExpansionClass}
         >

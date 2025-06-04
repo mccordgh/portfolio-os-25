@@ -1,7 +1,8 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import dialogue from "../../data/dialogue.json";
 
 import "./Mccordinator.css";
+import AppsContext from "../../context/AppsContext";
 
 type MccordinatorDialogue = {
   text: string;
@@ -21,6 +22,8 @@ function Mccordinator() {
 
   const firstDialogueOptionRef = useRef<HTMLAnchorElement>(null);
   const headLinkRef = useRef<HTMLAnchorElement>(null);
+
+  const { toggleExpansionClass } = useContext(AppsContext);
 
   const nextDialogueQueue = () => {
     const next = dialogueNumber >= dialogue.length - 1 ? 0 : dialogueNumber + 1;
@@ -42,6 +45,7 @@ function Mccordinator() {
 
   const showDialogue = () => {
     setShowBubble(true);
+    toggleExpansionClass("mccordinatorHead");
   };
 
   const clickyTheFace = () => {
