@@ -1,0 +1,10 @@
+a.call-to-action-button {
+  background-color: var(--light-color);
+  color: var(--black);
+  border: 0.2rem solid var(--dark-color);
+  border-radius: 1rem;
+  padding: 1rem 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
