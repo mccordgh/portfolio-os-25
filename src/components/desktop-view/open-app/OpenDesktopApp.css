@@ -143,6 +143,10 @@ div.desktop-app_close {
   width: 1rem;
 }
 
+div.desktop-app_close:hover {
+  background-color: lightgrey;
+}
+
 div.desktop-app_close span {
   display: flex;
   width: 100%;
@@ -195,4 +199,8 @@ div.app-button_exit {
 div.app-button_exit button {
   height: 1.6rem;
   width: 1.6rem;
+}
+
+div.openApp ul li a {
+  text-decoration: underline;
 }

@@ -135,3 +135,7 @@ div.app-description--image-wrapper {
 div.openApp .app-links {
   padding-bottom: 1rem;
 }
+
+div.desktop-app_open ul li a {
+  text-decoration: underline;
+}
