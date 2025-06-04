@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { AppDescription } from "../../../models/AppData";
 
 import AppsContext from "../../../context/AppsContext";
@@ -56,6 +56,11 @@ function OpenDesktopApp(props: OpenDesktopAppProps) {
       "fadeOut"
     );
   };
+
+  useEffect(() => {
+    openAppRef.current?.focus();
+    console.log("focusing open app");
+  }, []);
 
   return (
     <div>

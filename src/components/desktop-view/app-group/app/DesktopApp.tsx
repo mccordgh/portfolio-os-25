@@ -20,6 +20,7 @@ function DesktopApp(props: DesktopAppProps) {
   const { setSelectedApp } = useContext(AppsContext);
 
   const parentRef = useRef<HTMLDivElement>(null);
+  const groupTitleRef = useRef<HTMLHeadingElement>(null);
 
   const desktopAppStyleObject = {
     backgroundImage: `url(${ImageHelper.getImagePath(directory, iconImage || "")})`,
@@ -45,14 +46,32 @@ function DesktopApp(props: DesktopAppProps) {
     );
   };
 
-  return (
-    <div className="desktopApp" onClick={onAppClick} ref={parentRef}>
-      <div className="desktopAppBackground" style={desktopAppStyleObject}></div>
+  const onFocusHandler = () => {
+    // groupTitleRef.current?.classList.add("highlighted-element");
+  };
 
-      <div className="desktopAppTitle">
-        <h2>{name}</h2>
+  const onBlurHandler = () => {
+    // groupTitleRef.current?.classList.remove("highlighted-element");
+  };
+
+  return (
+    <a
+      onFocus={onFocusHandler}
+      onBlur={onBlurHandler}
+      href="#"
+      onClick={onAppClick}
+    >
+      <div className="desktopApp" ref={parentRef}>
+        <div
+          className="desktopAppBackground"
+          style={desktopAppStyleObject}
+        ></div>
+
+        <div className="desktopAppTitle">
+          <h2 ref={groupTitleRef}>{name}</h2>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
 
