@@ -27,13 +27,13 @@ function Banner() {
           Portfolio v{version}
         </span>
 
-        <span
+        <a
           onClick={() => {
             setSelectedApp("about");
           }}
         >
           About
-        </span>
+        </a>
         <span>
           <a
             className="resume-link"

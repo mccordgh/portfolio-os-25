@@ -126,6 +126,10 @@ div.app_close {
   justify-content: center;
 }
 
+div.app_close a {
+  color: var(--black);
+}
+
 div.app-description--image-wrapper {
   background-color: var(--white);
   padding: 1rem;

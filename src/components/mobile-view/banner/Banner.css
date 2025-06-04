@@ -31,15 +31,18 @@ div.banner-left .resume-link {
   color: var(--black);
 }
 
-div.banner-left span {
-  padding-right: 1rem;
-}
-
 div.banner-left span,
 div.banner-left a {
+  padding-right: 1rem;
+
   font-weight: bold;
   text-decoration: none;
   font-size: 0.8rem;
+}
+
+div.banner-left a {
+  color: var(--black);
+  text-decoration: underline;
 }
 
 .small-light--text {

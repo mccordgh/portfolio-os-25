@@ -40,6 +40,7 @@ div.desktop_banner-left {
 div.desktop_banner-left .resume-link,
 div.desktop_banner-left a {
   font-weight: bold;
+  text-decoration: underline;
   color: var(--black);
 }
 
