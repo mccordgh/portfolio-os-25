@@ -11,16 +11,20 @@ function CallToActionButton(props: CallToActionButtonProps) {
   const { buttonText, href, focusRef, onKeyDown } = props;
 
   return (
-    <a
-      className="call-to-action-button"
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      ref={focusRef}
-      onKeyDown={onKeyDown}
-    >
-      {buttonText}
-    </a>
+    <>
+      <div className="button--wrapper">
+        <a
+          className="call-to-action-button"
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          ref={focusRef}
+          onKeyDown={onKeyDown}
+        >
+          {buttonText}
+        </a>
+      </div>
+    </>
   );
 }
 

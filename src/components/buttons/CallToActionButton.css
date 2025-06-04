@@ -1,17 +1,24 @@
 a.call-to-action-button {
-  background-color: var(--light-color);
   color: var(--black);
-  border: 0.2rem solid var(--darkest-color);
-  border-radius: 1rem;
-  padding: 1rem 0.8rem;
   font-weight: 600;
-  font-size: 1rem;
-  margin-right: 1rem;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.8rem;
 }
 
-a.call-to-action-button:hover,
-a.call-to-action-button:focus {
+div.button--wrapper:hover {
   background-color: var(--lightest-color);
-  color: var(--black);
-  border-color: var(--dark-color);
+}
+
+div.button--wrapper {
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  padding: 1rem 0.8rem;
+
+  font-size: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0 12px 12px -12px var(--black);
+  background-color: var(--light-color);
 }
