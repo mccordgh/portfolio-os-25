@@ -12,11 +12,12 @@ div.mccordinatorHead {
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   animation: shake 1.8s infinite alternate;
+  cursor: pointer;
 }
 
 div.mccordinatorSpeechBubble {
   background-color: var(--white);
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: 0rem 0 12rem -2rem #000;
   -moz-box-shadow: -15px 10px 20px -12px #000;
   bottom: 14rem;
@@ -25,13 +26,14 @@ div.mccordinatorSpeechBubble {
   min-width: 10rem;
   max-width: 20rem;
   z-index: 2;
+  padding: 2rem;
 }
 
 div.mccordinatorSpeechBubble::after {
   background: var(--white);
   bottom: -0.6rem;
-  -webkit-box-shadow: 19px -30px 50px -10px #000;
-  box-shadow: 19px -30px 50px -10px #000;
+  -webkit-box-shadow: 19px -30px 50px -10px var(--black);
+  box-shadow: 19px -30px 50px -10px var(--black);
   content: "";
   height: 2rem;
   position: absolute;
@@ -51,31 +53,42 @@ div.mccordinatorSpeechBubble p {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.4rem;
+  padding-bottom: 1rem;
   margin: 0;
-  padding: 1rem;
   text-align: justify;
   width: 100%;
 }
 
-div.mccordinatorSpeechBubble span {
+.speechBubbleChoicesWrapper {
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.speechBubbleChoicesWrapper span {
   box-sizing: border-box;
   color: black;
   display: block;
   font-size: 1rem;
   font-weight: bold;
-  height: 1rem;
-  margin: 0.5rem 1rem 0;
+  margin: 0;
   width: calc(100% - 2rem);
   cursor: pointer;
+  padding: 0.4rem;
+  overflow-y: hidden;
+  height:;
 }
 
-div.mccordinatorSpeechBubble span:hover {
-  background-color: var(--white);
+.speechBubbleChoicesWrapper span:hover {
+  background-color: var(--light-transparent-bg);
 }
 
-div.mccordinatorSpeechBubble p + span {
+/* div.mccordinatorSpeechBubble p + span {
   margin-top: 1rem;
 }
 div.mccordinatorSpeechBubble span:last-child {
   margin-bottom: 1rem;
-}
+} */

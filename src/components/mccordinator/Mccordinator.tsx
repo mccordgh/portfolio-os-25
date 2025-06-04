@@ -57,8 +57,16 @@ function Mccordinator() {
       {showBubble && (
         <div className="mccordinatorSpeechBubble">
           <p>{bubbleText.text}</p>
-          <span onClick={nextDialogueQueue}> + {bubbleText.continue}</span>
-          <span onClick={closeDialogue}> + {bubbleText.exit}</span>
+          <div className="speechBubbleChoicesWrapper">
+            <span onClick={nextDialogueQueue}>
+              {" "}
+              {">"} {bubbleText.continue}
+            </span>
+            <span onClick={closeDialogue}>
+              {" "}
+              {">"} {bubbleText.exit}
+            </span>
+          </div>
         </div>
       )}
     </div>
