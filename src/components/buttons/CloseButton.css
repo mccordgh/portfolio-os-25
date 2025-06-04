@@ -1,0 +1,39 @@
+.app_close-button {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.6);
+  border-radius: 0.4rem;
+  color: black;
+  cursor: pointer;
+  height: 1rem;
+  font-size: 1rem;
+  margin-right: 0.6rem;
+  width: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-app_close-button {
+  background-color: grey;
+  border-top: 3px solid #333;
+  border-right: 3px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+  border-left: 3px solid #333;
+  border-radius: 0.4rem;
+  color: black;
+  cursor: pointer;
+  height: 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  width: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-app_close:hover,
+.desktop-app_close:focus {
+  background-color: lightgrey;
+}
