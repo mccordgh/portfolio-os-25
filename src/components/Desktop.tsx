@@ -33,7 +33,7 @@ function Desktop() {
 
   const setSelectedAppLookup = (group: string, id?: number) => {
     // If an id exists then we want to save the last tabbed to desktop icon so we can focus it after closing the opened app.
-    if (id) {
+    if (id || group === "about") {
       savedTabbedElement.current = lastTabbedToElement.current;
     }
 
