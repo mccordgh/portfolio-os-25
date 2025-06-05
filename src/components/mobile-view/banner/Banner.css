@@ -10,8 +10,9 @@ div.banner-container {
   overflow: hidden;
 }
 
-div.banner-container span.banner-left--highlights:hover {
-  background-color: var(--dark-color);
+div.banner-container span.banner-left--highlights:hover,
+a.banner-left--highlights:hover {
+  color: var(--white);
 }
 
 div.banner-right {

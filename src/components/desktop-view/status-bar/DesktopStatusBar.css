@@ -21,12 +21,10 @@ div.desktop_banner-container span.banner-left--highlights {
 }
 
 div.desktop_banner-container span.banner-left--highlights:hover {
-  background-color: var(--dark-color);
   color: var(--white);
 }
 
 div.desktop_banner-container span.banner-left--highlights a:hover {
-  background-color: var(--dark-color);
   color: var(--white);
 }
 

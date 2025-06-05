@@ -5,7 +5,7 @@
 .app--content_wrapper main li {
   font-size: 1rem;
   background-color: var(--white);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .app-content-entry-title {
@@ -18,7 +18,7 @@ div.app-call-to-action-wrapper {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.4rem 0 2rem;
+  padding: 2rem 0;
 }
 
 div.app-header-divider {

@@ -40,7 +40,8 @@ function AppAboutPage(props: AppAboutPageProps) {
       selectedApp.links.map((link, key) => {
         const { text, url } = link;
 
-        const isMobileButNotFriendly = mode === "mobile" && !isMobileFriendly;
+        const isMobileButNotFriendly =
+          mode === "mobile" && directory === "game_dev" && !isMobileFriendly;
 
         console.log({
           key,
@@ -90,6 +91,10 @@ function AppAboutPage(props: AppAboutPageProps) {
     if (!entries || !entries.length) return <></>;
 
     return entries.map(([title, subTextArray], index) => {
+      if (!subTextArray || !subTextArray.length) {
+        return <></>;
+      }
+
       return (
         <section key={index}>
           <h2 className="app-content-entry-title">{title}</h2>
@@ -121,7 +126,7 @@ function AppAboutPage(props: AppAboutPageProps) {
       <header>
         <div className="app-header-content--wrapper">
           <h1 className="app-header-title">About: {name}</h1>
-          <span className="app-header-subtext">{shortText}</span>
+          {shortText && <span className="app-header-subtext">{shortText}</span>}
         </div>
 
         {getHeaderImageOrDivider()}
