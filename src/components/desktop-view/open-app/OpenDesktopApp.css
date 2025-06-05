@@ -27,7 +27,7 @@ div.app--header-image {
   margin-top: 1rem;
   overflow-y: hidden;
   width: 100%;
-  height: 32rem;
+  height: 24rem;
 }
 
 div.app--header-image img {
@@ -127,4 +127,10 @@ div.app-button_exit button {
 
 div.openApp ul li a {
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  div.app--header-image {
+    height: 8rem;
+  }
 }

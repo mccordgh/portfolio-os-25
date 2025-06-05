@@ -12,7 +12,16 @@ function AppAboutPage(props: AppAboutPageProps) {
   const { firstFocusRef, lastFocusRef } = props;
 
   const { selectedApp } = useContext(AppsContext);
-  const { headerImage, descriptions, directory, shortText, name } = selectedApp;
+  const {
+    headerImage,
+    descriptions,
+    directory,
+    shortText,
+    name,
+    isMobileFriendly,
+  } = selectedApp;
+
+  const { mode } = useContext(AppsContext);
 
   const headerImagePath = `resources/${directory}/${headerImage}`;
   //   const iconImagePath = `resources/${directory}/${iconImage}`;
@@ -26,41 +35,53 @@ function AppAboutPage(props: AppAboutPageProps) {
     }
   };
 
-  const links = selectedApp?.links?.length ? (
-    selectedApp.links.map((link, key) => {
-      const { text, url } = link;
+  const getLinks = () => {
+    return selectedApp?.links?.length ? (
+      selectedApp.links.map((link, key) => {
+        const { text, url } = link;
 
-      if (key === 0 && firstFocusRef) {
-        return (
-          <CallToActionButton
-            focusRef={firstFocusRef}
-            key={key}
-            buttonText={text}
-            href={url}
-          />
-        );
-      }
+        const isMobileButNotFriendly = mode === "mobile" && !isMobileFriendly;
 
-      if (
-        selectedApp?.links &&
-        key === selectedApp.links.length - 1 &&
-        lastFocusRef
-      ) {
-        return (
-          <CallToActionButton
-            key={key}
-            buttonText={text}
-            href={url}
-            onKeyDown={onKeyDownHandler}
-          />
-        );
-      }
+        console.log({
+          key,
+          firstFocusRef,
+          isMobileButNotFriendly,
+          mode,
+          isMobileFriendly,
+        });
+        if (key === 0) {
+          return (
+            <CallToActionButton
+              disabled={isMobileButNotFriendly}
+              focusRef={firstFocusRef}
+              key={key}
+              buttonText={text}
+              disabledText="Play requires desktop device"
+              href={url}
+            />
+          );
+        }
 
-      return <CallToActionButton key={key} buttonText={text} href={url} />;
-    })
-  ) : (
-    <></>
-  );
+        const isLastItemInLinks =
+          selectedApp?.links && key === selectedApp.links.length - 1;
+
+        if (isLastItemInLinks && lastFocusRef) {
+          return (
+            <CallToActionButton
+              key={key}
+              buttonText={text}
+              href={url}
+              onKeyDown={onKeyDownHandler}
+            />
+          );
+        }
+
+        return <CallToActionButton key={key} buttonText={text} href={url} />;
+      })
+    ) : (
+      <></>
+    );
+  };
 
   const getDescriptions = (): React.ReactNode => {
     if (!descriptions) return <></>;
@@ -109,7 +130,7 @@ function AppAboutPage(props: AppAboutPageProps) {
       <main>
         {getDescriptions()}
 
-        <div className="app-call-to-action-wrapper">{links}</div>
+        <div className="app-call-to-action-wrapper">{getLinks()}</div>
       </main>
 
       <footer></footer>

@@ -16,6 +16,7 @@ div.appgroupContainer {
   background-color: var(--white);
   background-size: contain;
   background-position: center;
+  background-color: var(--dark-color);
 }
 
 div.mobileImage {
