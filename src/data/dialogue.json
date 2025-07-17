@@ -1,6 +1,6 @@
 [
   {
-    "text": "Hi, there! Thanks for dropping by! Would you like to know a little bit more about Matthew McCord?",
+    "text": "Hi, there! Thanks for dropping by! Be sure to check out the UI differences between desktop and mobile! Would you like to know a little bit more about Matthew McCord?",
     "continue": "OH YEA!",
     "exit": "No thanks."
   },
@@ -15,7 +15,7 @@
     "exit": "Sounds dull..."
   },
   {
-    "text": "In his free time, he enjoys spending time with his partner and dogs, playing board games, and making music. For more details, connect via LinkedIn and other socials—or check out his games!",
+    "text": "In his free time, he enjoys spending time with his partner, doggos, and cat, playing board games, and making music. For more details, connect via LinkedIn and other socials. And check out the games folder!",
     "continue": "Lets talk again!",
     "exit": "I DEFINITELY will!"
   }
