@@ -8,19 +8,29 @@
           "name": "ACME Time Fixers",
           "isMobileFriendly": false,
           "shortText": "Solve puzzles to fix time and save people from accidents!",
-          "description": [
-            "Written in HTML5/JS w/ Canvas",
-            "Collaboration for Gamedev JS Jam 2020!",
-            "I did the programming, sound design, some art, and some game design."
-          ],
+          "descriptions": {
+            "What": [
+              "ACME Time Fixers is a game de based around the theme \"Future\". for Gamedev JS Jam 2020.",
+              "In this game, you play as a new recruit, who needs to solve puzzles in order to learn the ropes on the fly and fix time anomalies!",
+              "The game is a point-and-click adventure with a focus on exploration and puzzle-solving."
+            ],
+            "Why": [
+              "I wanted to collaborate on a game for Gamedev JS Jam 2020 and explore what it could be like to build a UI of windows with pure javascript and assets."
+            ],
+            "How": [
+              "ACME Time Fixers was made over a two-week period as part of a 3-person team.",
+              "I did the programming, sound design and music, some art, and some game design.",
+              "We won 12th place out of 44 entries."
+            ]
+          },
           "links": [
             {
               "url": "https://mccordgh.github.io/gamedev_js_2020/",
-              "text": "Play ACME Time Fixers!"
+              "text": "Play me!"
             },
             {
               "url": "https://github.com/mccordgh/gamedev_js_2020",
-              "text": "View Github Source"
+              "text": "View Code"
             }
           ],
           "iconImage": "acme_time_fixers_icon.png",
@@ -30,19 +40,34 @@
           "name": "Bee Budz",
           "isMobileFriendly": true,
           "shortText": "Fly around, collect pollen, help your bee budz!",
-          "description": [
-            "Written in Pico-8",
-            "Collaboration for Global Game Jam 2019!",
-            "I did the sfx, music, graphics (bees inspired by Bennett Foddy's pico-8 game \"Plan Bee\"), and just enough coding to lay out the sections of the outer world"
-          ],
+          "descriptions": {
+            "What": [
+              "Bee Budz is a game made based around the theme \"What home means to you\" for Global Game Jam 2019.",
+              "In this game, you play as a bee that collects pollen and helps other bees.",
+              "The game is a top-down adventure with a focus on exploration and puzzle-solving by bringing the proper colored pollen to the matching bee."
+            ],
+            "Why": [
+              "I wanted to collaborate on a game for Global Game Jam 2019 and explore the Pico-8 fantasy console's capabilities."
+            ],
+            "How": [
+              "Bee Budz was made over a weekend as part of a 2-person team.",
+              "I did some of the coding in the LUA language to build the outside level.",
+              "I focused mainly on the music, sound fx, and graphics which were also created in Pico-8.",
+              "Inspired by Bennett Foddy's pico-8 game \"Plan Bee\"."
+            ]
+          },
           "links": [
             {
               "url": "https://www.lexaloffle.com/bbs/?tid=33064",
-              "text": "Play Bee Budz!"
+              "text": "Play me!"
             },
             {
               "url": "https://github.com/global-game-jam-2019-team/the_letter_bee",
-              "text": "View Github Source"
+              "text": "View Code"
+            },
+            {
+              "url": "https://globalgamejam.org/",
+              "text": "Global Game Jam"
             }
           ],
           "iconImage": "bee_budz_icon.png",
@@ -52,28 +77,39 @@
           "name": "The CORE",
           "isMobileFriendly": false,
           "shortText": "A procedurally generated adventure!",
-          "description": [
-            "Written in JavaScript",
-            "The CORE was written for the yearly code-golfing competition js13kgames, running from August 13 2018 to September 13 2018. The goal of this competition is to submit a full game made within a month, with all assets, libraries, etc coming in at under 13Kb compressed and able to run offline. The theme of this competition was \"offline.\"",
-            "You are one of many workers trapped in a factory and forced to work on THE CORE, a sinister mind control machine. The first version of THE CORE has everyone in the factory (workers, guards, managers) under it's control. The second version will enslave the world! Find the four keys, and use the on THE CORE to take it offline for good!",
-            "For a fun surprise, make sure to speak to a guard after you have taken the machine offline :)"
-          ],
+          "descriptions": {
+            "What": [
+              "The Core is a game based around the theme \"Offline\" for the js13kgames competition.",
+              "In this game you are a worker in a factory where an evil mind control machine is online and controlling the population.",
+              "The game is a top-down adventure where you must navigate randomized room layouts to find the four keys that can shut down the machine for good."
+            ],
+            "Why": [
+              "I wanted to go solo on this gamejam and experiment with graphics and sound capabilities of a 13kb sized game."
+            ],
+            "How": [
+              "The Core and it's game engine was made entirely in Javascript using no third party tools and coming in under 13kb offline.",
+              "I did all the programming, sound, graphics, and game design.",
+              "The graphics are all 8x8 pixel sprites scaled up.",
+              "The background music slows down and changes every  time you add a key to the machine.",
+              "For a surprise easter egg, talk to a guard after shutting the machine down!"
+            ]
+          },
           "links": [
             {
               "url": "https://mccordgh.github.io/the_line_js13kgames_2018",
-              "text": "Play The CORE!"
+              "text": "Play me!"
             },
             {
               "url": "https://github.com/mccordgh/the_line_js13kgames_2018",
-              "text": "View Github Source"
+              "text": "View Code"
             },
             {
               "url": "https://github.com/mccordgh/the_line_js13kgames_2018#post-mortem",
-              "text": "Post-mortem write up"
+              "text": "Post-mortem"
             },
             {
               "url": "https://js13kgames.com",
-              "text": "js13kgames.com"
+              "text": "js13kgames"
             }
           ],
           "iconImage": "the_core_icon.png",
@@ -83,19 +119,32 @@
           "name": "Defend The Castle",
           "isMobileFriendly": false,
           "shortText": "A twist on the classic tower defense genre!",
-          "description": [
-            "Written in JavaScript",
-            "Defend the Castle is a fast-paced arcade-style video game. The engine and game were written from scratch, and it runs right in your browser (best on Firefox and Google Chrome).",
-            "I wanted to create this game from scratch, to better understand how game engines work under the hood. The biggest challenge surfaced when I discovered that the tutorial I was following didn't actually bring the game to a basic completion. The series had left me with a solid foundation, no doubt, consisting of a tile map loader, a game camera, keyboard input and a hero to control, some basic collision detection, and some entity handling. The rest was up to me. Did I really want to stick this through, knowing it would be extremely challenging? In the end, I had to fully immerse myself in to this code base, and really learn how it worked in order to achieve the results that I desired. It was a wonderful learning experience."
-          ],
+          "descriptions": {
+            "What": [
+              "Defend the Castle is my first ever game made for my Nashville Software School front-end capstone project.",
+              "In this game you run around slaying bats as they try to dive bomb the castle and blow it up.",
+              "This is a top down arcade-style hack-n-slash where you try to survive as long as you can for the highest score to make the leaderboards."
+            ],
+            "Why": [
+              "I wanted to not only create a game, but create the game engine itself.",
+              "I also wanted to explore how much I could get done during the few weeks leading up to our presentations.",
+              "Initially I wanted to make something like the first Legend of Zelda game, but due to time constraints I pivoted to the arcade-style hack-n-slash."
+            ],
+            "How": [
+              "I had no idea what I was doing with game engines, so I found a youtube tutorial and followed along, experimenting as I went to make sure I understood and not just copy-pasted the code.",
+              "Halfway through the video tutorial series it came to an abrupt halt, leaving me to figure out the rest. Luckily, I was up for the challenge!",
+              "The game engine includes tile map loader, game camera, keyboard input, collision detection, entity handling, sprite animations, and more.",
+              "The engine is using an old library called Class.js used to emulate classes before ECMAScript 2015!"
+            ]
+          },
           "links": [
             {
               "url": "https://mccordgh.github.io/Defend_The_Castle",
-              "text": "Play Defend The Castle!"
+              "text": "Play me!"
             },
             {
               "url": "https://www.github.com/mccordgh/Defend_The_Castle",
-              "text": "View Github Source"
+              "text": "View Code"
             }
           ],
           "iconImage": "defend_the_castle_icon.png",
@@ -105,14 +154,22 @@
           "name": "Golden Beak Golf",
           "isMobileFriendly": true,
           "shortText": "Golfing meets flappy bird!",
-          "description": [
-            "Written in Pico-8 fantasy console.",
-            "Golden Beak Golf v1.0 was written during Ludum Dare 41 game jam taking place April 20th to April 23rd, 2018. The theme was \"Combine two incompatible genres\".",
-            "Golden Beak Golf v1.1 was an update to smooth out a couple of things:",
-            "• Main menu redesign.",
-            "• Graphics tweaks, and more animated sprites in background.",
-            "• Press Z to replay working properly."
-          ],
+          "descriptions": {
+            "What": [
+              "Golden Beak Golf is a game based around the theme \"Combine two incompatible genres\" made for the Ludum Dare 41 game jam.",
+              "In this game you play as a golfer who is trying to navigate your egg-ball through a crazy moving-tree obstacle course.",
+              "This is a golfing and flappy-bird combo you'll have to see for yourself."
+            ],
+            "Why": [
+              "I wanted to go solo on a game jam while exploring the Pico-8 fantasy console's capabilities."
+            ],
+            "How": [
+              "I did all the programming, sound, and graphics inside of Pico-8.",
+              "The first day I mostly brainstormed and when I couldn't think of anything, I went for a drive to the store for some snacks.",
+              "I was thinking about flappy bird and how much of a sensation it was, then I saw someone golfing.",
+              "I imaged the golf ball as an egg and the rest is history."
+            ]
+          },
           "links": [
             {
               "url": "https://www.lexaloffle.com/bbs/?tid=31164",
@@ -130,21 +187,31 @@
           "name": "Waves '87: Business Cruizin'",
           "isMobileFriendly": false,
           "shortText": "Take a cruise. No seriously, TAKE A CRUISE.",
-          "description": [
-            "Written in Python with the Ren'Py graphic novel engine.",
-            "This game was made during Global Game Jam 2017, which took place over 48 hour weekend period in January of 2017.",
-            "All sounds effects and music were recorded during Global Game Jam 2017",
-            "Kawa is your typical business man. Loathed by his peers and about to be fired from his job, a chance encounter with pirates may just turn his life around...",
-            "Builds of the game are available below for Linux, Mac, and PC."
-          ],
+          "descriptions": {
+            "What": [
+              "Waves '87: Business Cruizin' is a game made for the Global Game Jam 2017.",
+              "In this game you play as Kawa, a savvy business man, on a cruise with his company. Very quickly you end up fired, overboard, washed up, and in the company of some strange pirates.",
+              "This is a graphic novel where you can choose your dialogue options with some timed-clicking for boss fights."
+            ],
+            "Why": [
+              "During the Global Game Jam ideas pitching I was with some friends and we wanted to make something based around the 80s music and theme-wise.",
+              "We found two guys who did really cool watercolor art and, once they agreed to join us, we knew we had to make a graphic novel.",
+              "This was a really fun first game jam and collaboration with a few of my fellow classmates from Nashville Software School."
+            ],
+            "How": [
+              "Written in Python using the Ren'Py graphic novel engine.",
+              "I shared the programming responsibility with a couple others, we would work independently on chapters after getting a quick framework setup.",
+              "Myself and one other person worked on the music and sound effects."
+            ]
+          },
           "links": [
             {
               "url": "https://mccordinator.itch.io/waves-87-business-cruizin",
-              "text": "Play Waves '87 Business Cruizin'!"
+              "text": "Play me!"
             },
             {
               "url": "https://github.com/GGJ-2017-waves-team/waves87",
-              "text": "View Github Source!"
+              "text": "View Code"
             }
           ],
           "iconImage": "waves_87_icon.png",
@@ -153,19 +220,29 @@
         {
           "name": "UUD4T",
           "isMobileFriendly": true,
-          "shortText": "A game about repairing the world with WD-40.",
-          "description": [
-            "Written in Unity game engine.",
-            "This game was made during Global Game Jam 2020.",
-            "Cross-site collaboration with a dev and artist in Galway, Ireland.",
-            "You are trapped in a building, but fear not!",
-            "Use the magical can that repairs anything, removes rust & propels you through the air.",
-            "Move through the building cleaning the rust & avoiding the angry robots!"
-          ],
+          "shortText": "Repair the world with WD-40!",
+          "descriptions": {
+            "What": [
+              "UUD4T is a game based around the theme \"Repair\" made for Global Game Jam 2020 in collaboration with a developer and artist from Galway, Ireland.",
+              "In this game you play as an unnamed protagonist who uses a can of WD-40 to fly around and clean up the world.",
+              "This is a side-scrolling adventure game where you must use your WD-40 can to spray dirty spots clean and propel yourself through the air to reach higher platforms."
+            ],
+            "Why": [
+              "I'm always down for a game jam!",
+              "This was a fun and special jam because we paired up with our sister city Galway, Ireland.",
+              "I volunteered myself and one other person to team up with two people from Galway."
+            ],
+            "How": [
+              "Written in the Unity game engine",
+              "I was responsible for programming the player character, including movement, animations, flying with spray cans, and interacting with dirty spots by spraying them clean.",
+              "A local teammate handled sound design, while one person in Galway created the artwork and another handled the remaining programming.",
+              "The time zone difference made for an interesting workflow—while I was working, the Galway team was often asleep, and vice versa."
+            ]
+          },
           "links": [
             {
               "url": "https://v3.globalgamejam.org/2020/games/uud4t-0",
-              "text": "View / Play UUD4T on GlobalGameJam.org!"
+              "text": "Play me!"
             }
           ],
           "iconImage": "uud4t-icon.png",
@@ -178,8 +255,15 @@
       "directory": "community_content",
       "list": [
         {
-          "name": "Veevalidate Talk",
+          "name": "Presentation: Veevalidate Talk",
           "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
+          "descriptions": {
+            "What": ["Veevalidate is a form validation library for Vuejs"],
+            "Why": [
+              "I was asked to give a talk at a Vue.js meetup by the organizer, and I felt that the Veevalidate library would be a great thing to showcase.",
+              "From this talk I learned a lot about the Veevalidate library (useful for my position at the time with Bernard Health), and how to present information to an audience in verbal and slide form."
+            ]
+          },
           "description": [
             "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
             "From this talk I learned a lot about Veevalidate, and how to present information to an audience.",
@@ -188,30 +272,39 @@
           "links": [
             {
               "url": "https://github.com/mccordgh/vee-validate-presentation",
-              "text": "View the slides here."
+              "text": "View slides"
             },
             {
-              "url": "https://vee-validate.logaretm.com/v4/",
-              "text": "Veevalidate v4 (latest) official site"
+              "url": "https://vee-validate.logaretm.com/",
+              "text": "Veevalidate site"
             }
           ],
           "iconImage": "vue-js-icon.png",
           "headerImage": "veevalidate-code-snippet.png"
         },
         {
-          "name": "React Native Android",
+          "name": "Article: React Native Android",
           "shortText": "Article written on medium.com",
-          "description": [
-            "I was facing a frustrating issue that when finally solved, I wanted to document for anyone else that may be facing it.",
-            "The article provides a guide for setting up Android emulation on a MacBook, building on a previous article by Matt Mcnamee.",
-            "It outlines the steps to install Android Studio and configure the necessary Android system images,",
-            "The guide also includes instructions for accessing the SDK Manager, selecting the appropriate packages, and creating an Android Virtual Device (AVD) using the Nexus 5X configuration.",
-            "Finally, it explains how to launch the emulator and run apps using Expo or React Native commands."
-          ],
+          "descriptions": {
+            "What": [
+              "This is an article about development with React-Native where Android Studio is involved.",
+              "The article provides a guide for setting up Android emulation on a MacBook, building on a previous article by Matt Mcnamee.",
+              "I discuss some issues and frustrations I was having, and the solutions I was able to find."
+            ],
+            "Why": [
+              "When I face a big issue or blocker, especially with open source, I feel it's a really good idea to document any solutions I can find in order to help others and possibly myself in the future!"
+            ],
+            "How": [
+              "The article outlines the steps to install Android Studio and configure the necessary Android system images,",
+              "The guide also includes instructions for accessing the SDK Manager, selecting the appropriate packages, and creating an Android Virtual Device (AVD) using the Nexus 5X configuration.",
+              "Finally, it explains how to launch the emulator and run apps using Expo or React Native commands."
+            ]
+          },
+          "description": [],
           "links": [
             {
               "url": "https://medium.com/@mccordinator/react-native-android-development-for-mac-in-2019-401ed2eeb798",
-              "text": "View the article here."
+              "text": "View article"
             }
           ],
           "iconImage": "medium-icon.png",
@@ -220,17 +313,24 @@
         {
           "name": "Video: Global Game Jam 2020",
           "shortText": "Presenting a game made for GGJ 2020 for the theme \"Repair\".",
+          "descriptions": {
+            "What": [
+              "This is a live presentation and demo where I represent my team for the Global Game Jam 2020.",
+              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
+              "My team's portion of the the linked presentation begins at timestamp \"1:50:31\""
+            ]
+          },
           "description": [
             "GGJ 2020 was hosted on-site at the Science Center in Seattle, WA."
           ],
           "links": [
             {
               "url": "https://youtu.be/ss1gLg25BHU?si=-VQQkiFZ2fEOAoWg&t=6631",
-              "text": "Presentation on youtube @ 1:50:31"
+              "text": "Presentation Video"
             },
             {
               "url": "https://globalgamejam.org",
-              "text": "Visit Global Game Jam!"
+              "text": "Global Game Jam"
             }
           ],
           "iconImage": "ggj-icon.png",
@@ -239,17 +339,24 @@
         {
           "name": "Video: Seattle Indies Game Jam 2019",
           "shortText": "Presenting a game made for Seattle Indies Game Jam 2019 for the theme \"Intentionally broken\".",
+          "descriptions": {
+            "What": [
+              "This is a live presentation and demo where I represent my team for the Seattle Indies Game Jam 2019.",
+              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
+              "My team's portion of the the linked presentation begins at timestamp 1:58:55"
+            ]
+          },
           "description": [
             "Seattle indies Game Jam 2019 was hosted on-site at the Science Center in Seattle, WA."
           ],
           "links": [
             {
               "url": "https://youtu.be/b1J8RZjH-kc?si=3KlD21k2LNtAXdWg&t=7135",
-              "text": "Presentation on youtube @ 1:58:55"
+              "text": "Presentation Video"
             },
             {
               "url": "https://www.seattleindies.org/",
-              "text": "Visit Seattle Indies!"
+              "text": "Seattle Indies"
             }
           ],
           "iconImage": "seattle-indies-icon.png",
@@ -258,17 +365,24 @@
         {
           "name": "Video: Global Game Jam 2019",
           "shortText": "Presenting a game made for GGJ 2019 for the theme \"What home means to you\"",
+          "descriptions": {
+            "What": [
+              "This is a live presentation and demo where I represent my team for the Global Game Jam 2019.",
+              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
+              "My team's portion of the the linked presentation begins at timestamp \"1:46:41\""
+            ]
+          },
           "description": [
             "GGJ 2019 was hosted on-site at the Science Center in Seattle, WA."
           ],
           "links": [
             {
               "url": "https://youtu.be/gs6iah5wkwM?si=USfyuFGgRBU4Nj0W&t=6401",
-              "text": "Presentation on youtube @ 1:46:41"
+              "text": "Presentation Video"
             },
             {
               "url": "https://globalgamejam.org",
-              "text": "Visit Global Game Jam!"
+              "text": "Global Game Jam"
             }
           ],
           "iconImage": "ggj-icon.png",
@@ -319,20 +433,23 @@
         {
           "name": "Future Unlimited",
           "shortText": "\"Throwback rarely feels this genuine, a real accomplishment amongst so much nostalgia.\" - Adam Kivel, consequenceofsound.net",
-          "description": [
-            "Wrote and recorded songs with the band, toured the country, and played bass guitar (and sometimes keyboards).",
-            "We played festivals such as Bonaroo, Austin City Limits, Art Basel, and SXSW.",
-            "We have a music video directed by Shia LaBeouf for the single, \"Haunted Love\"",
-            "We self-released two EPs and multiple singles."
-          ],
+          "descriptions": {
+            "What": [
+              "I wrote and recorded songs with Future Unlimited and toured the country, while playing bass guitar and keyboards.",
+              "We played festivals such as Bonaroo, Austin City Limits, Art Basel, and SXSW.",
+              "We have a music video directted by Shia LaBeouf for the single \"Haunted Love\"",
+              "We self-released two EPs and multiple singles."
+            ],
+            "When": ["From 2011 to 2015."]
+          },
           "links": [
             {
               "url": "https://soundcloud.com/future-unlimited",
-              "text": "Hear the music"
+              "text": "Listen"
             },
             {
               "url": "https://www.youtube.com/watch?v=jo2Z9DygPxY",
-              "text": "Live from the Basement / Nashville, TN 2014"
+              "text": "Live (Nashville)"
             }
           ],
           "iconImage": "future_unlimited_icon.jpg",
@@ -341,20 +458,23 @@
         {
           "name": "Scatter the Ashes",
           "shortText": "\"STA has potential to remind us 20-somethings why we decided to like music in the first place.\" - Jennifer R. Vertullo, epitaph.com",
-          "description": [
-            "Played bass guitar, toured the country and some of Canada, wrote and recorded music with the band.",
-            "We played a few festivals including a stint on the Warped Tour.",
-            "We were featured on Punk-O-Rama volumes 9 and 10, the last ever Punk-O-Rama released by Epitaph.",
-            "We released a full length LP through Epitaph records."
-          ],
+          "descriptions": {
+            "What": [
+              "I wrote and recorded songs with Scatter The Ashes and toured the country and some of Canada, while playing bass guitar.",
+              "We played a few festivals like SXSW, including a stint on the Warped Tour.",
+              "We released a full length LP through Epitaph records.",
+              "We were also featured on Punk-O-Rama volumes 9 and 10, the last ever Punk-O-Rama compilations released by Epitaph."
+            ],
+            "When": ["From 2000 to 2005"]
+          },
           "links": [
             {
               "url": "https://open.spotify.com/artist/4BgMsEFXpb7U1uFdtaPzuD",
-              "text": "Hear the music"
+              "text": "Listen"
             },
             {
               "url": "https://www.youtube.com/watch?v=CpEDzLKOEZc",
-              "text": "Live from the Epitaph Tour 2005"
+              "text": "Live (Epitaph Tour)"
             }
           ],
           "iconImage": "scatter_the_ashes_icon.jpg",
@@ -363,16 +483,23 @@
         {
           "name": "Mother/Father",
           "shortText": "\" Mother/Father definitely achieves a small sense of authenticity with their purist approach to late '70s gothic rock.\" - nashvillescene.com",
-          "description": [
-            "Toured the country playing bass guitar, and wrote and recorded music.",
-            "Produced and managed by Jacquire King (known for his work with Kings of Leon, Modest Mouse, Tom Waits, and more) and Jon Stinson.",
-            "Released two EPs.",
-            "Opened for Kings of Leon and White Lies at the Bridgestone Arena in Nashville, TN."
-          ],
+          "descriptions": {
+            "What": [
+              "I wrote and recorded songs with Mother/Father and toured the country while playing bass guitar.",
+              "Produced and managed by Jacquire King (known for his work with Kings of Leon, Modest Mouse, Tom Waits, and more).",
+              "Released two EPs.",
+              "Opened for Kings of Leon and White Lies at the Bridgestone Arena in Nashville, TN."
+            ],
+            "When": ["From 2006 to 2009"]
+          },
           "links": [
             {
+              "url": "https://music.apple.com/us/artist/mother-father/304371068",
+              "text": "Listen"
+            },
+            {
               "url": "https://www.youtube.com/watch?v=3tasyOiLx0U",
-              "text": "Live (Acoustic) on Balcony TV"
+              "text": "Live (Balcony TV)"
             }
           ],
           "iconImage": "mother_father_icon.jpg",
@@ -381,13 +508,24 @@
         {
           "name": "MCCORDINATOR",
           "shortText": "",
+          "descriptions": {
+            "What": ["Home demos and recordings from my small house studio."],
+            "Why": [
+              "I wanted to learn about sound recording, design, and production.",
+              "I also had some ideas for songs that I wanted to flesh out a bit."
+            ],
+            "How": [
+              "I started off with Reason, but mostly have utilized Ableton Live for my recordings.",
+              "Instruments used include: midi keyboards, bass guitar, electric guitar, samplers, acoustic guitars, random instruments and items for percussion."
+            ]
+          },
           "description": [
             "Solo work recording music in a self-made, home studio."
           ],
           "links": [
             {
               "url": "https://soundcloud.com/mmmmmusic",
-              "text": "SoundCloud demos"
+              "text": "Listen"
             }
           ],
           "iconImage": "mccordinator_icon.png",

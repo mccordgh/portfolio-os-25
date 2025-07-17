@@ -251,90 +251,18 @@
       ]
     },
     {
-      "name": "Content",
-      "directory": "community_content",
+      "name": "Socials",
+      "directory": "social_media",
       "list": [
         {
-          "name": "Presentation: Veevalidate Talk",
-          "shortText": "Presentation given at a Vuejs Meetup in Seattle, WA.",
-          "descriptions": {
-            "What": ["Veevalidate is a form validation library for Vuejs"],
-            "Why": [
-              "I was asked to give a talk at a Vue.js meetup by the organizer, and I felt that the Veevalidate library would be a great thing to showcase.",
-              "From this talk I learned a lot about the Veevalidate library (useful for my position at the time with Bernard Health), and how to present information to an audience in verbal and slide form."
-            ]
-          },
-          "description": [
-            "I was asked to give a talk about Veevalidate, a form validation library for Vuejs.",
-            "From this talk I learned a lot about Veevalidate, and how to present information to an audience.",
-            "The slides linked below were shown during my talk."
-          ],
-          "links": [
-            {
-              "url": "https://github.com/mccordgh/vee-validate-presentation",
-              "text": "View slides"
-            },
-            {
-              "url": "https://vee-validate.logaretm.com/",
-              "text": "Veevalidate site"
-            }
-          ],
-          "iconImage": "vue-js-icon.png",
-          "headerImage": "veevalidate-code-snippet.png"
+          "iconImage": "linkedin_icon.png",
+          "name": "LinkedIn",
+          "activeLink": "https://www.linkedin.com/in/mccordinator"
         },
         {
-          "name": "Article: React Native Android",
-          "shortText": "Article written on medium.com",
-          "descriptions": {
-            "What": [
-              "This is an article about development with React-Native where Android Studio is involved.",
-              "The article provides a guide for setting up Android emulation on a MacBook, building on a previous article by Matt Mcnamee.",
-              "I discuss some issues and frustrations I was having, and the solutions I was able to find."
-            ],
-            "Why": [
-              "When I face a big issue or blocker, especially with open source, I feel it's a really good idea to document any solutions I can find in order to help others and possibly myself in the future!"
-            ],
-            "How": [
-              "The article outlines the steps to install Android Studio and configure the necessary Android system images,",
-              "The guide also includes instructions for accessing the SDK Manager, selecting the appropriate packages, and creating an Android Virtual Device (AVD) using the Nexus 5X configuration.",
-              "Finally, it explains how to launch the emulator and run apps using Expo or React Native commands."
-            ]
-          },
-          "description": [],
-          "links": [
-            {
-              "url": "https://medium.com/@mccordinator/react-native-android-development-for-mac-in-2019-401ed2eeb798",
-              "text": "View article"
-            }
-          ],
-          "iconImage": "medium-icon.png",
-          "headerImage": "medium-article-screenshot.png"
-        },
-        {
-          "name": "Video: Global Game Jam 2020",
-          "shortText": "Presenting a game made for GGJ 2020 for the theme \"Repair\".",
-          "descriptions": {
-            "What": [
-              "This is a live presentation and demo where I represent my team for the Global Game Jam 2020.",
-              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
-              "My team's portion of the the linked presentation begins at timestamp \"1:50:31\""
-            ]
-          },
-          "description": [
-            "GGJ 2020 was hosted on-site at the Science Center in Seattle, WA."
-          ],
-          "links": [
-            {
-              "url": "https://youtu.be/ss1gLg25BHU?si=-VQQkiFZ2fEOAoWg&t=6631",
-              "text": "Presentation Video"
-            },
-            {
-              "url": "https://globalgamejam.org",
-              "text": "Global Game Jam"
-            }
-          ],
-          "iconImage": "ggj-icon.png",
-          "headerImage": "ggj-2020-video-header.png"
+          "iconImage": "github_icon.png",
+          "name": "Github",
+          "activeLink": "https://github.com/mccordgh"
         },
         {
           "iconImage": "dev-to_icon.png",
@@ -342,41 +270,9 @@
           "activeLink": "https://dev.to/mccordinator"
         },
         {
-          "name": "Video: Global Game Jam 2019",
-          "shortText": "Presenting a game made for GGJ 2019 for the theme \"What home means to you\"",
-          "descriptions": {
-            "What": [
-              "This is a live presentation and demo where I represent my team for the Global Game Jam 2019.",
-              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
-              "My team's portion of the the linked presentation begins at timestamp \"1:46:41\""
-            ]
-          },
-          "description": [
-            "GGJ 2019 was hosted on-site at the Science Center in Seattle, WA."
-          ],
-          "links": [
-            {
-              "url": "https://youtu.be/gs6iah5wkwM?si=USfyuFGgRBU4Nj0W&t=6401",
-              "text": "Presentation Video"
-            },
-            {
-              "url": "https://globalgamejam.org",
-              "text": "Global Game Jam"
-            }
-          ],
-          "iconImage": "ggj-icon.png",
-          "headerImage": "ggj-2019-video-header.png"
-        }
-      ]
-    },
-    {
-      "name": "Socials",
-      "directory": "social_media",
-      "list": [
-        {
-          "iconImage": "github_icon.png",
-          "name": "Github",
-          "activeLink": "https://github.com/mccordgh"
+          "iconImage": "steam_icon.png",
+          "name": "Steam",
+          "activeLink": "https://steamcommunity.com/id/mccordinator"
         },
         {
           "iconImage": "bluesky_icon.webp",
@@ -384,24 +280,9 @@
           "activeLink": "https://bsky.app/profile/mccordinator.bsky.social"
         },
         {
-          "iconImage": "linkedin_icon.png",
-          "name": "LinkedIn",
-          "activeLink": "https://www.linkedin.com/in/mccordinator"
-        },
-        {
           "iconImage": "x_icon.webp",
           "name": "X",
           "activeLink": "https://x.com/mattmccordmattm"
-        },
-        {
-          "iconImage": "steam_icon.png",
-          "name": "Steam",
-          "activeLink": "https://steamcommunity.com/id/mccordinator"
-        },
-        {
-          "iconImage": "itchio_icon.png",
-          "name": "Itch.io",
-          "activeLink": "https://mccordinator.itch.io/"
         }
       ]
     },
