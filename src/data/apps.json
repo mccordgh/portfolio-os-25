@@ -337,30 +337,9 @@
           "headerImage": "ggj-2020-video-header.png"
         },
         {
-          "name": "Video: Seattle Indies Game Jam 2019",
-          "shortText": "Presenting a game made for Seattle Indies Game Jam 2019 for the theme \"Intentionally broken\".",
-          "descriptions": {
-            "What": [
-              "This is a live presentation and demo where I represent my team for the Seattle Indies Game Jam 2019.",
-              "In the video we present the gameplay and I discuss several aspects of the development of the game.",
-              "My team's portion of the the linked presentation begins at timestamp 1:58:55"
-            ]
-          },
-          "description": [
-            "Seattle indies Game Jam 2019 was hosted on-site at the Science Center in Seattle, WA."
-          ],
-          "links": [
-            {
-              "url": "https://youtu.be/b1J8RZjH-kc?si=3KlD21k2LNtAXdWg&t=7135",
-              "text": "Presentation Video"
-            },
-            {
-              "url": "https://www.seattleindies.org/",
-              "text": "Seattle Indies"
-            }
-          ],
-          "iconImage": "seattle-indies-icon.png",
-          "headerImage": "seattle-indies-2019-jam-header.png"
+          "iconImage": "dev-to_icon.png",
+          "name": "Dev.to",
+          "activeLink": "https://dev.to/mccordinator"
         },
         {
           "name": "Video: Global Game Jam 2019",
