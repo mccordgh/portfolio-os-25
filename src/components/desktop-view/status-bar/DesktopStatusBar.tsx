@@ -35,7 +35,7 @@ function DesktopStatusBar() {
         <a href="#" className="banner-left--highlights" onClick={clickHandler}>
           About This Portfolio
         </a>
-        <span className="banner-left--highlights">
+        {/* <span className="banner-left--highlights">
           <a
             className="resume-link"
             href="resources/matthew-mccord-resume.pdf"
@@ -44,7 +44,7 @@ function DesktopStatusBar() {
           >
             Resume as PDF
           </a>
-        </span>
+        </span> */}
       </div>
 
       <div className="desktop_banner-right">

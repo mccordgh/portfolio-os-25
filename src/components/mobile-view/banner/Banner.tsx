@@ -34,7 +34,7 @@ function Banner() {
         >
           About
         </a>
-        <span>
+        {/* <span>
           <a
             className="resume-link"
             href="resources/matthew-mccord-resume.pdf"
@@ -43,7 +43,7 @@ function Banner() {
           >
             Resume as PDF
           </a>
-        </span>
+        </span> */}
       </div>
 
       <div className="banner-right">
